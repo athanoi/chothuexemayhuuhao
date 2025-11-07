@@ -107,6 +107,57 @@ META = {
 };
 
 {
+  "PATCH": {
+    "ONEFILE_SPEC": {
+      "META": {
+        "TITLE": "Cho thuê xe máy Hoàn Kiếm – Phố Cổ – Long Biên (Gần Bến xe Gia Lâm)",
+        "DESCRIPTION": "Địa chỉ cho thuê xe máy uy tín tại Hoàn Kiếm, Phố Cổ, Long Biên (gần Bến xe Gia Lâm). Xe ga, xe số, xe điện; giao tận nơi 20–40 phút; hỗ trợ 24/7; thuê theo giờ, ngày, tuần, tháng; giá tốt, chất lượng."
+      },
+      "META_EXTRA": {
+        "OG_TYPE": "website"
+      },
+      "STYLE_SYSTEM": {
+        "LANG": "vi"
+      },
+      "BODY_MANIFEST": {
+        "SECTIONS_REMOVE": ["reviews"],
+        "SECTIONS_PATCH": [
+          {
+            "ID": "home",
+            "TYPE": "hero_gateway",
+            "VARIANT": "ultra",
+            "LAYOUT": "side-image-right",
+            "THEME": "UltraTitanGlass",
+            "HEADLINE": "Địa chỉ cho thuê xe máy Hoàn Kiếm – Phố Cổ – Long Biên",
+            "SUBTEXT": "Gần Bến xe Gia Lâm • Xe ga/xe số/xe điện • Giao 20–40 phút • Thuê theo giờ/ngày/tuần/tháng • Hỗ trợ 24/7",
+            "BADGES": [
+              "Giá tốt, chất lượng",
+              "Uy tín khu Hoàn Kiếm – Phố Cổ – Long Biên"
+            ]
+          }
+        ]
+      },
+      "FOOTER": {
+        "TAGLINE": {
+          "TITLE": "Địa chỉ cho thuê xe máy – Hoàn Kiếm • Phố Cổ • Long Biên",
+          "DESC": "Gần Bến xe Gia Lâm • Giao 20–40 phút • Thuê theo giờ/ngày/tuần/tháng • Hỗ trợ 24/7"
+        },
+        "TRUST_STRIP": "Giao xe 20–40 phút • Hỗ trợ 24/7 • Xe bảo dưỡng định kỳ • Giá minh bạch"
+      },
+      "META_KEYWORDS_OVERRIDE": [
+        "cho thuê xe máy Hoàn Kiếm",
+        "thuê xe máy Phố Cổ",
+        "thuê xe máy Long Biên",
+        "gần Bến xe Gia Lâm",
+        "thuê xe máy theo giờ",
+        "thuê xe máy theo ngày",
+        "thuê xe máy theo tuần",
+        "thuê xe máy theo tháng",
+        "xe ga, xe số, xe điện"
+      ]
+    }
+  }
+}
     "MENU": [
       { "🏠 Trang chủ": "./" },
       { "📄 Giới thiệu": "gioithieu.html" },
