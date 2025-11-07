@@ -99,7 +99,7 @@ META = {
   KEYWORDS: "thuê xe máy, thuê xe máy Hà Nội, thuê xe máy Hoàn Kiếm, thuê xe ga, thuê xe số, thuê xe điện",
   AUTHOR: "Cho thuê xe máy Hà Nội Nguyễn Hào",
   ROBOTS: "index, follow",
-  OG_IMAGE_URL: "https://thuexemaynguyentu.com/wp-content/uploads/2025/09/BANNER-THUE-XE-MAY-1.png",
+  OG_IMAGE_URL: "https://raw.githubusercontent.com/athanoi/chothuexemayhuuhao/refs/heads/main/IMG_5540.jpeg",
   OG_TYPE: "website",
   TWITTER_CARD: "summary_large_image",
   TWITTER_SITE: "@thuexemayhuuhao",
