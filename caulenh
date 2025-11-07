@@ -346,7 +346,7 @@ SEO_LINKING_HINT = {
 };
 
 ⚙️ Quy định render
-	•	hero thành phiên bản UltraTitanGlass tối ưu nhất, có ảnh bên phải, hiệu ứng cao cấp, chuẩn SEO – A11Y – Perf, nội dung tập trung khu vực Hoàn Kiếm – Phố Cổ – Long Biên (gần Bến xe Gia Lâm), kèm CTA và badge đầy đủ.
+	•	hero thành phiên bản UltraTitanGlass tối ưu nhất, Không có ảnh, hiệu ứng cao cấp, chuẩn SEO – A11Y – Perf, nội dung tập trung khu vực Hoàn Kiếm – Phố Cổ – Long Biên (gần Bến xe Gia Lâm), kèm CTA và badge đầy đủ.
 	•	Tự nhận biết page active
 	•	Footer chia 6 cột glass grid, có quickcall mini
 	•	Light/Dark mode tự động, có nút ☀️/🌙 góc phải
