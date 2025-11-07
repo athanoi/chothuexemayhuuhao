@@ -44,6 +44,7 @@ NAP = {
 - FA6 Free; icon Zalo dùng SVG inline  
 
 **Nội dung chính**  
+Chạy generator để xuất index.html one-file hoàn chỉnh kiểu mini-app: menu + hero mini-app + body + footer đồng bộ style, kiểm tra menu/footer, 10 style theme, lazyload, glass, không schema.
 - Hero mini-app: CTA 3 nút  
 - Vài section mẫu: giới thiệu, lợi ích, quy trình, đánh giá, liên hệ  
 - Footer glass chia 6 cột, sinh từ JSON `FOOTER_COLUMNS`  
@@ -346,6 +347,8 @@ SEO_LINKING_HINT = {
 };
 
 ⚙️ Quy định render
+      Chạy generator để xuất index.html one-file hoàn chỉnh kiểu mini-app: menu + hero mini-app + body + footer đồng bộ style, kiểm tra menu/footer, 10 style theme, lazyload, glass, không schema.
+
 	•	hero thành phiên bản UltraTitanGlass tối ưu nhất, Không có ảnh, hiệu ứng cao cấp, chuẩn SEO – A11Y – Perf, nội dung tập trung khu vực Hoàn Kiếm – Phố Cổ – Long Biên (gần Bến xe Gia Lâm), kèm CTA và badge đầy đủ.
 	•	Tự nhận biết page active
 	•	Footer chia 6 cột glass grid, có quickcall mini
@@ -394,7 +397,8 @@ DARKMODE_TUNER = {
 ---
 
 Mục tiêu: 1 khối Ultra App liền mạch = Menu + Hero + QuickCall (glassmorphism cao cấp, dark/light, mượt trên mọi kích thước).
-
+Chạy generator để xuất index.html one-file hoàn chỉnh kiểu mini-app: menu + hero mini-app + body + footer đồng bộ style, kiểm tra menu/footer, 10 style theme, lazyload, glass, không schema.
+"
 	•	Hero: Mini App Ultra multi-layer glass, không ảnh nền, gradient động + radial highlights; chữ cascade; CTA gradient (ripple + tilt); khi cuộn hero fade → header chuyển sang glass/translucent.
 	•	QuickCall: Mini App mini Ultra nút tròn bên trái, glass blur đa tầng, glow nhẹ, ripple; mở trượt 4 nút (Gọi, Zalo, Bản đồ, WhatsApp) với icon; accent theo theme; trap focus khi cần.
 	•	Đồng bộ: chia sẻ biến theme (--accent, radii, glass blur), cùng timing transition; dark/light toggle lưu localStorage (mặc định theo prefers-color-scheme).
