@@ -109,52 +109,74 @@ META = {
 {
   "PATCH": {
     "ONEFILE_SPEC": {
-      "META": {
-        "TITLE": "Cho thuê xe máy Hoàn Kiếm – Phố Cổ – Long Biên (Gần Bến xe Gia Lâm)",
-        "DESCRIPTION": "Địa chỉ cho thuê xe máy uy tín tại Hoàn Kiếm, Phố Cổ, Long Biên (gần Bến xe Gia Lâm). Xe ga, xe số, xe điện; giao tận nơi 20–40 phút; hỗ trợ 24/7; thuê theo giờ, ngày, tuần, tháng; giá tốt, chất lượng."
-      },
-      "META_EXTRA": {
-        "OG_TYPE": "website"
-      },
-      "STYLE_SYSTEM": {
-        "LANG": "vi"
-      },
       "BODY_MANIFEST": {
-        "SECTIONS_REMOVE": ["reviews"],
-        "SECTIONS_PATCH": [
+        "SECTIONS": [
           {
             "ID": "home",
             "TYPE": "hero_gateway",
             "VARIANT": "ultra",
             "LAYOUT": "side-image-right",
             "THEME": "UltraTitanGlass",
+            "GLASS_LEVEL": 1,
+            "GRADIENT": ["#0A84FF", "#00C49A"],
             "HEADLINE": "Địa chỉ cho thuê xe máy Hoàn Kiếm – Phố Cổ – Long Biên",
-            "SUBTEXT": "Gần Bến xe Gia Lâm • Xe ga/xe số/xe điện • Giao 20–40 phút • Thuê theo giờ/ngày/tuần/tháng • Hỗ trợ 24/7",
+            "SUBTEXT": "Gần Bến xe Gia Lâm • Xe ga/xố/điện • Giao tận nơi 20–40 phút • Thuê theo giờ/ngày/tuần/tháng • Hỗ trợ 24/7",
+            "KEYWORDS": ["Hoàn Kiếm","Phố Cổ","Long Biên","gần Bến xe Gia Lâm","thuê xe theo giờ","thuê xe theo ngày","thuê xe theo tuần","thuê xe theo tháng"],
             "BADGES": [
-              "Giá tốt, chất lượng",
-              "Uy tín khu Hoàn Kiếm – Phố Cổ – Long Biên"
-            ]
+              "⭐ 4.9/5 từ khách hàng",
+              "Giá tốt – minh bạch",
+              "Giao nhanh 20–40 phút"
+            ],
+            "KPI_CHIPS": [
+              "1000+ lượt thuê/năm",
+              "Hỗ trợ 24/7",
+              "Xe bảo dưỡng định kỳ"
+            ],
+            "PRIMARY_CTA": { "label": "📞 Gọi ngay", "href": "tel:+84942467674" },
+            "SECONDARY_CTA": { "label": "💬 Zalo", "href": "https://zalo.me/0942467674" },
+            "TERTIARY_LINKS": [
+              { "label": "📍 Xem bản đồ", "href": "https://maps.app.goo.gl/SR1hcwnCQjPkAvDh7?g_st=ipc" },
+              { "label": "🏷️ Bảng giá tổng", "href": "banggia.html" }
+            ],
+            "MEDIA": {
+              "STYLE": "glass-card",
+              "POSITION": "right",
+              "RATIO": "16:10",
+              "SRC": "https://thuexemaynguyentu.com/wp-content/uploads/2025/09/BANNER-THUE-XE-MAY-1.png",
+              "PLACEHOLDER": "logo",
+              "ALT": "Thuê xe máy Hoàn Kiếm – Phố Cổ – Long Biên, gần Bến xe Gia Lâm"
+            },
+            "DECOR": {
+              "ACCENT_BLOBS": true,
+              "MESH_GRADIENT": true,
+              "LIGHT_RAYS": true,
+              "CONTRAST_SAFE": true
+            },
+            "MICRO_INTERACTIONS": {
+              "CARD_TILT": true,
+              "HOVER_GLOW": true,
+              "RIPPLE": true,
+              "STAGGER_MS": 60
+            },
+            "A11Y": {
+              "ARIA_LABEL": "Cổng vào thuê xe máy tại Hoàn Kiếm – Phố Cổ – Long Biên, gần Bến xe Gia Lâm",
+              "CONTRAST_MIN": "4.5:1",
+              "FOCUS_VISIBLE": true
+            },
+            "PERF": {
+              "LAZYLOAD_MEDIA": true,
+              "GPU_TRANSFORMS_ONLY": true,
+              "INLINE_CSS_BUDGET_KB_MAX": 35
+            },
+            "SEO_HINTS": {
+              "TITLE_MATCH_H1": true,
+              "PRIMARY_REGION_KEYWORDS": true,
+              "LINK_DENSITY_MAX": 5,
+              "REL_CANONICAL_FIX": true
+            }
           }
         ]
-      },
-      "FOOTER": {
-        "TAGLINE": {
-          "TITLE": "Địa chỉ cho thuê xe máy – Hoàn Kiếm • Phố Cổ • Long Biên",
-          "DESC": "Gần Bến xe Gia Lâm • Giao 20–40 phút • Thuê theo giờ/ngày/tuần/tháng • Hỗ trợ 24/7"
-        },
-        "TRUST_STRIP": "Giao xe 20–40 phút • Hỗ trợ 24/7 • Xe bảo dưỡng định kỳ • Giá minh bạch"
-      },
-      "META_KEYWORDS_OVERRIDE": [
-        "cho thuê xe máy Hoàn Kiếm",
-        "thuê xe máy Phố Cổ",
-        "thuê xe máy Long Biên",
-        "gần Bến xe Gia Lâm",
-        "thuê xe máy theo giờ",
-        "thuê xe máy theo ngày",
-        "thuê xe máy theo tuần",
-        "thuê xe máy theo tháng",
-        "xe ga, xe số, xe điện"
-      ]
+      }
     }
   }
 }
@@ -407,3 +429,4 @@ Mục tiêu: 1 khối Ultra App liền mạch = Menu + Hero + QuickCall (glassmo
 	•	Đồng bộ: chia sẻ biến theme (--accent, radii, glass blur), cùng timing transition; dark/light toggle lưu localStorage (mặc định theo prefers-color-scheme).
 	•	A11y & perf: keyboard nav, visible focus, contrast ok, prefers-reduced-motion giảm hiệu ứng; tắt tilt/blur nặng trên thiết bị yếu.
 	
+yêu câu 2 địa chỉ 2 doanh nghiệp trên trang này cứ tuân thủ . tên thương hiệu " Cho thuê xe máy Hữu Hào "
