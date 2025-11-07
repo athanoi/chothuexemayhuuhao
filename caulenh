@@ -96,16 +96,13 @@ AUTO_ACCENT_PALETTE = {
 META = {
   TITLE: "Dịch vụ cho thuê xe máy Hoàn Kiếm, Hà Nội – Nguyễn Tú",
   DESCRIPTION: "Thuê xe máy Hà Nội giá rẻ, uy tín – Nguyễn Tú. Xe ga, xe số, xe điện, giao nhanh 20–40 phút, cọc nhẹ, hỗ trợ 24/7.",
-  KEYWORDS: "thuê xe máy, thuê xe máy Hà Nội, thuê xe máy Hoàn Kiếm, Nguyễn Tú, thuê xe ga, thuê xe số, thuê xe điện",
-  AUTHOR: "Nguyễn Tú Cho thuê xe máy Hà Nội",
-  CANONICAL: "https://motoopen.github.io/thuexemayohoankiem/index.html",
-  THEME_COLOR: "#0A84FF",
+  KEYWORDS: "thuê xe máy, thuê xe máy Hà Nội, thuê xe máy Hoàn Kiếm, thuê xe ga, thuê xe số, thuê xe điện",
+  AUTHOR: "Cho thuê xe máy Hà Nội Nguyễn Hào",
   ROBOTS: "index, follow",
   OG_IMAGE_URL: "https://thuexemaynguyentu.com/wp-content/uploads/2025/09/BANNER-THUE-XE-MAY-1.png",
   OG_TYPE: "website",
   TWITTER_CARD: "summary_large_image",
-  TWITTER_SITE: "@thuexemaynguyentu",
-  PUBLISHER: "https://thuexemaynguyentu.com"
+  TWITTER_SITE: "@thuexemayhuuhao",
 };
 
 {
@@ -228,15 +225,15 @@ BODY_SECTIONS = {
   USE_SCROLL_ANIM: true,
   SECTIONS: [
     {
-      TITLE: "Giới thiệu thuê xe máy Hoàn Kiếm, Hà Nội",
+      TITLE: "Giới thiệu thuê xe máy Long Biên, Hà Nội",
       TYPE: "intro",
       CONTENT: [
-        "Dịch vụ cho thuê xe máy Nguyễn Tú cung cấp các dòng xe ga, xe số, xe điện mới, giao tận nơi chỉ trong 20–40 phút.",
-        "Thủ tục đơn giản – chỉ cần CCCD hoặc hộ chiếu. Hỗ trợ 24/7 cho du khách và dân văn phòng tại Hà Nội."
+        "Dịch vụ cho thuê xe máy Hữu Hào cung cấp các dòng xe ga, xe số, xe điện mới, giao tận nơi chỉ trong 20–40 phút.",
+        "Thủ tục cọc nhẹ đơn giản – chỉ cần CCCD hoặc hộ chiếu. Hỗ trợ 24/7 cho du khách và dân văn phòng tại Hà Nội."
       ]
     },
     {
-      TITLE: "Lý do nên chọn Nguyễn Tú",
+      TITLE: "Lý do nên chọn Hữu Hào",
       TYPE: "benefits",
       POINTS: [
         "🚀 Xe mới, sạch, bảo dưỡng thường xuyên.",
@@ -246,7 +243,7 @@ BODY_SECTIONS = {
       ]
     },
     {
-      TITLE: "Quy trình thuê xe",
+      TITLE: "Quy trình thuê xe máy",
       TYPE: "steps",
       STEPS: [
         "1️⃣ Chọn loại xe phù hợp nhu cầu (ga / số / điện).",
@@ -259,8 +256,8 @@ BODY_SECTIONS = {
       TITLE: "Khách hàng nói gì",
       TYPE: "testimonials",
       REVIEWS: [
-        {"name": "Linh – Du khách", "stars": 5, "text": "Xe đẹp, giao nhanh, giá hợp lý. Dịch vụ rất chuyên nghiệp!"},
-        {"name": "Đức – Freelancer", "stars": 5, "text": "Đi êm, tiết kiệm xăng, nhân viên hỗ trợ nhiệt tình."},
+        {"name": "Long – Du khách", "stars": 5, "text": "Xe đẹp, giao nhanh, giá hợp lý. Dịch vụ rất chuyên nghiệp!"},
+        {"name": "Hà – Freelancer", "stars": 5, "text": "Đi êm, tiết kiệm xăng, nhân viên hỗ trợ nhiệt tình."},
         {"name": "Sarah – Traveller", "stars": 4, "text": "Easy communication, fast delivery, good price."}
       ]
     },
