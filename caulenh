@@ -100,6 +100,7 @@ META = {
   AUTHOR: "Cho thuê xe máy Hà Nội Nguyễn Hào",
   ROBOTS: "index, follow",
   OG_IMAGE_URL: "https://raw.githubusercontent.com/athanoi/chothuexemayhuuhao/refs/heads/main/IMG_5540.jpeg",
+  <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/athanoi/chothuexemayhuuhao/refs/heads/main/IMG_5540.jpeg">
   OG_TYPE: "website",
   TWITTER_CARD: "summary_large_image",
   TWITTER_SITE: "@thuexemayhuuhao",
