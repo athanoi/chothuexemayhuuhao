@@ -375,7 +375,7 @@ SEO_LINKING_HINT = {
 };
 
 ⚙️ Quy định render
-	•	Tự sinh menu và footer từ JSON trên
+	•	
 	•	Tự nhận biết page active
 	•	Footer chia 6 cột glass grid, có quickcall mini
 	•	Light/Dark mode tự động, có nút ☀️/🌙 góc phải
