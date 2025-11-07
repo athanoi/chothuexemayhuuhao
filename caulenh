@@ -106,80 +106,6 @@ META = {
   TWITTER_SITE: "@thuexemayhuuhao",
 };
 
-{
-  "PATCH": {
-    "ONEFILE_SPEC": {
-      "BODY_MANIFEST": {
-        "SECTIONS": [
-          {
-            "ID": "home",
-            "TYPE": "hero_gateway",
-            "VARIANT": "ultra",
-            "LAYOUT": "side-image-right",
-            "THEME": "UltraTitanGlass",
-            "GLASS_LEVEL": 1,
-            "GRADIENT": ["#0A84FF", "#00C49A"],
-            "HEADLINE": "Địa chỉ cho thuê xe máy Hoàn Kiếm – Phố Cổ – Long Biên",
-            "SUBTEXT": "Gần Bến xe Gia Lâm • Xe ga/xố/điện • Giao tận nơi 20–40 phút • Thuê theo giờ/ngày/tuần/tháng • Hỗ trợ 24/7",
-            "KEYWORDS": ["Hoàn Kiếm","Phố Cổ","Long Biên","gần Bến xe Gia Lâm","thuê xe theo giờ","thuê xe theo ngày","thuê xe theo tuần","thuê xe theo tháng"],
-            "BADGES": [
-              "⭐ 4.9/5 từ khách hàng",
-              "Giá tốt – minh bạch",
-              "Giao nhanh 20–40 phút"
-            ],
-            "KPI_CHIPS": [
-              "1000+ lượt thuê/năm",
-              "Hỗ trợ 24/7",
-              "Xe bảo dưỡng định kỳ"
-            ],
-            "PRIMARY_CTA": { "label": "📞 Gọi ngay", "href": "tel:+84942467674" },
-            "SECONDARY_CTA": { "label": "💬 Zalo", "href": "https://zalo.me/0942467674" },
-            "TERTIARY_LINKS": [
-              { "label": "📍 Xem bản đồ", "href": "https://maps.app.goo.gl/SR1hcwnCQjPkAvDh7?g_st=ipc" },
-              { "label": "🏷️ Bảng giá tổng", "href": "banggia.html" }
-            ],
-            "MEDIA": {
-              "STYLE": "glass-card",
-              "POSITION": "right",
-              "RATIO": "16:10",
-              "SRC": "https://thuexemaynguyentu.com/wp-content/uploads/2025/09/BANNER-THUE-XE-MAY-1.png",
-              "PLACEHOLDER": "logo",
-              "ALT": "Thuê xe máy Hoàn Kiếm – Phố Cổ – Long Biên, gần Bến xe Gia Lâm"
-            },
-            "DECOR": {
-              "ACCENT_BLOBS": true,
-              "MESH_GRADIENT": true,
-              "LIGHT_RAYS": true,
-              "CONTRAST_SAFE": true
-            },
-            "MICRO_INTERACTIONS": {
-              "CARD_TILT": true,
-              "HOVER_GLOW": true,
-              "RIPPLE": true,
-              "STAGGER_MS": 60
-            },
-            "A11Y": {
-              "ARIA_LABEL": "Cổng vào thuê xe máy tại Hoàn Kiếm – Phố Cổ – Long Biên, gần Bến xe Gia Lâm",
-              "CONTRAST_MIN": "4.5:1",
-              "FOCUS_VISIBLE": true
-            },
-            "PERF": {
-              "LAZYLOAD_MEDIA": true,
-              "GPU_TRANSFORMS_ONLY": true,
-              "INLINE_CSS_BUDGET_KB_MAX": 35
-            },
-            "SEO_HINTS": {
-              "TITLE_MATCH_H1": true,
-              "PRIMARY_REGION_KEYWORDS": true,
-              "LINK_DENSITY_MAX": 5,
-              "REL_CANONICAL_FIX": true
-            }
-          }
-        ]
-      }
-    }
-  }
-}
     "MENU": [
       { "🏠 Trang chủ": "./" },
       { "📄 Giới thiệu": "gioithieu.html" },
@@ -306,6 +232,51 @@ BODY_SECTIONS = {
         "Thủ tục cọc nhẹ đơn giản – chỉ cần CCCD hoặc hộ chiếu. Hỗ trợ 24/7 cho du khách và dân văn phòng tại Hà Nội."
       ]
     },
+{
+  "PATCH": {
+    "ONEFILE_SPEC": {
+      "BODY_MANIFEST": {
+        "SECTIONS_INSERT_BEFORE": {
+          "TARGET_ID": "benefits",
+          "NEW_SECTION": {
+            "ID": "pricing-top",
+            "TYPE": "pricing_table",
+            "TITLE": "Bảng giá thuê xe máy",
+            "SUBTEXT": "Giá tham khảo – thuê linh hoạt theo giờ, ngày, tuần, tháng",
+            "LAYOUT": "grid-3",
+            "CARDS": [
+              {
+                "icon": "⏱️",
+                "name": "Thuê theo giờ",
+                "price": "Từ 30.000đ/giờ",
+                "desc": "Phù hợp khách cần di chuyển ngắn",
+                "href": "ngay.html"
+              },
+              {
+                "icon": "📅",
+                "name": "Thuê theo ngày",
+                "price": "Từ 100.000đ/ngày",
+                "desc": "Linh hoạt – giao xe tận nơi 20–40 phút",
+                "href": "ngay.html"
+              },
+              {
+                "icon": "🗓️",
+                "name": "Tuần / Tháng",
+                "price": "Tiết kiệm hơn",
+                "desc": "Hợp khách lưu trú dài ngày, đi công tác",
+                "href": "tuan.html"
+              }
+            ],
+            "MORE_LINK": {
+              "label": "🏷️ Xem bảng giá chi tiết",
+              "href": "banggia.html"
+            }
+          }
+        }
+      }
+    }
+  }
+}
     {
       TITLE: "Lý do nên chọn Hữu Hào",
       TYPE: "benefits",
@@ -375,7 +346,7 @@ SEO_LINKING_HINT = {
 };
 
 ⚙️ Quy định render
-	•	
+	•	hero thành phiên bản UltraTitanGlass tối ưu nhất, có ảnh bên phải, hiệu ứng cao cấp, chuẩn SEO – A11Y – Perf, nội dung tập trung khu vực Hoàn Kiếm – Phố Cổ – Long Biên (gần Bến xe Gia Lâm), kèm CTA và badge đầy đủ.
 	•	Tự nhận biết page active
 	•	Footer chia 6 cột glass grid, có quickcall mini
 	•	Light/Dark mode tự động, có nút ☀️/🌙 góc phải
