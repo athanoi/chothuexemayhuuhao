@@ -29,9 +29,9 @@ NAP = {
   map: "https://maps.app.goo.gl/UrmE3YBPNfFVGSew6",
   hours: "Mở cửa: 8h00 – 17h00 (Giao xe 24/7 theo yêu cầu)",
   social: {
-    facebook: "https://m.facebook.com/chothuexemaynguyentu/",
-    instagram: "https://www.instagram.com/thuexemaynguyentu/",
-    tripadvisor: "https://www.tripadvisor.com/Attraction_Review-g21333608-d9826317-Reviews-Nguyen_Tu_Motorbike_Rental-Long_Bien_Hanoi.html"
+    facebook: "https://m.facebook.com/thuexemayhanoigiare/",
+    blogs: "https://thuexemaynguyentu.com",
+    tripadvisor: "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html"
   }
 };
 
