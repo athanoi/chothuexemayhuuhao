@@ -238,7 +238,6 @@ APP_SHELL={
 	💎 Nâng cấp UX đề xuất
 	•	🔁 Smart Context: tự đổi nội dung theo giờ ( 1 nút bong bóng sổ ra 4 nút )
 	•	⏱ Auto-CTA: xuất hiện sau 10s nếu user chưa tương tác.
-	•	🧭 Mini Tooltip: khi hover hiển thị hotline, tên người phụ trách.
 	•	🪄 Hiệu ứng mở nhanh: bật animation xoay icon hoặc bounce nhẹ.
 phone; 0942467674 ( zalo, whatsaap )  map https://maps.app.goo.gl/65L4sktHLoWYtBgw7?g_st=ipc
 
@@ -268,20 +267,12 @@ DARKMODE_TUNER = {
 };
 
 ---
-
-
-Tạo toàn bộ mã nguồn Mini App ULTRA (Hero + QuickCall + Theme Engine + App Shell) 
- tối ưu mobile.   
-
-Tự động tạo các phần:
-- HERO ULTRA MINI 4 CTA
-- QUICKCALL MINI NÂNG CAO (gọi / map, auto glow + smart context)
-
-Menu và Footer trang đã được tối ưu hoàn toàn cho di động.
-	•	Cuối cùng:
-©  Cho thuê xe máy Hà Nội ( Back link trang chủ ) 
-- ANIMATION ENGINE (tilt card, scroll reveal, transition smooth)
-- RESPONSIVE toàn diện (mobile first)
-Fade In Ultra: Hiệu ứng xuất hiện siêu mượt, chuyển từ mờ sang rõ với ánh sáng tinh tế và độ sâu điện ảnh, tạo cảm giác cao cấp và chuyên nghiệp ngay từ giây đầu tiên.
-Tên thương hiệu : Cho thuê xe máy - Hữu Hào
+Tạo một file duy nhất `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" — Mobile-first. Bao gồm:
+- App Shell, responsive menu + footer (footer có: "© Cho thuê xe máy Hà Nội (Back link trang chủ)").
+- HERO ULTRA với 4 CTA (ví dụ: Đặt xe, Gọi ngay, Xem bản đồ, Giá & Điều khoản).
+- QUICKCALL MINI (gọi + mở map), hiệu ứng auto glow, và "smart context" (nếu trên điện thoại: gọi trực tiếp, nếu desktop: mở modal với số & map).
+- Theme Engine (CSS variables, dark/light switch).
+- Animation Engine: tilt card, scroll reveal, smooth transitions, "Fade In Ultra".
+- Tối ưu mobile, không dùng thư viện bên ngoài, có comment ngắn trong code, và dùng placeholders: PHONE_NUMBER, LAT, LNG.
+ (không giải thích thêm).
 
