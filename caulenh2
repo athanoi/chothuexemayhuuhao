@@ -235,21 +235,6 @@ APP_SHELL={
 	•	🪄 Hiệu ứng mở nhanh: bật animation xoay icon hoặc bounce nhẹ.
 phone; 0942467674 ( zalo, whatsaap )  map https://maps.app.goo.gl/65L4sktHLoWYtBgw7?g_st=ipc
 
-
-===================== HIỆU ỨNG =====================
-	•	Card tilt GPU, hover phản sáng xanh titan.
-	•	Scroll animation mềm.
-	•	ViewTransition fade.
-	•	Input glass blur, outline #0A84FF.
-	•	Footer phản sáng bạc khi hover icon.
-	•	Responsive hoàn chỉnh, iOS safe-area.
-💡 Tổng hợp hiệu ứng:
-	•	Style: Glass titan xanh mờ, bóng nhẹ, bo 20px.
-	•	Theme random: Đổi theme khi load, accent đồng bộ.
-	•	Selector: Có glow, animation, lưu theme cuối.
-	•	Feature: Chat, gọi nhanh, nghiêng card, scroll animation.
-	•	App shell: Menu cố định App mini phù hợp theme, hero Mini App
-
 ### 🌗 DARKMODE_TUNER
 DARKMODE_TUNER = {
   ENABLED: true,
@@ -260,35 +245,35 @@ DARKMODE_TUNER = {
   NOTES: "Bảo đảm độ tương phản AA, không nhấp nháy khi đổi theme."
 };
 
----
-🔒 QUY ĐỊNH
-	•	Được phép thêm <div> hoặc <wrapper> để căn layout.
-	•	Được phép dùng JS inline cho toggle menu, quick call, mini nav, theme.
-	•	Không được gọi API hay import thư viện khác ngoài 3 font trên.
-	•	Tất cả phải nằm trong 1 file index.html duy nhất.
+HIỆU ỨNG & UX (chi tiết)
+	•	Card tilt: nhẹ, on-hover, GPU-accelerated; tắt trên reduced-motion.
+	•	Button ripple: tạo hiệu ứng ripple bằng JS/CSS (nhỏ, performant).
+	•	Scroll reveal: IntersectionObserver để thêm class .in cho .reveal.
+	•	View transition: nếu document.startViewTransition tồn tại, wrap nội bộ link click (không áp dụng cho links ngoài).
+	•	Input focus: outline/glow với màu --accent.
+	•	QuickCall: đóng/mở bằng aria-expanded, trap focus khi mở, ẩn khi input focus (mobile).
+	•	Accessibility: keyboard nav, :focus-visible, aria-labels, contrast AA.
+	•	Performance: minimal DOM, no heavy libraries, lazy load map iframe, defer script.
+	•	SEO: meta tags (title, description, canonical, og tags), lang="vi", proper heading structure h1..h2 etc.
+	•	Local storage: lưu theme (tên theme) và trạng thái dark/light; button toggle ở header.
 
-⸻
+KẾT QUẢ MONG MUỐN
+	•	Xuất một file index.html thỏa mọi yêu cầu trên.
+	•	Không đổi chuỗi dữ liệu thương hiệu, số điện thoại, email, địa chỉ, link mạng xã hội đã cho.
+	•	Nội dung tiếng Việt tự nhiên, ngắn gọn, không dùng “ạ/nhé/nha”.
+	•	Tập trung vào UX mobile-first, sau đó responsive cho desktop.
+	•	Nếu có bất kỳ tính năng nào không thể hỗ trợ trong 1 file (ví dụ: server-side), hãy implement fallback front-end (ví dụ: mailto cho form).
 
-{
-  "GENERATE":"index.html",
-  "SINGLE_FILE": true,
-  "FIX_DUPLICATES": true,
-  "BRAND":"Cho thuê xe máy Hà Nội - Hữu Hào",
-  "PHONES_ARRAY": true,
-  "CONTACT_ENDPOINT": null,
-  "ALLOW_EXTERNAL_LIBS": ["google-fonts(max 3)"],
-  "MAP_IFRAME_IF_AVAILABLE": true,
-  "SEO_READY": true,
-  "ACCESSIBLE": true,
-  "RESPONSIVE": true,
-  "THEME_RANDOMIZER": true,
-  "OUTPUT":"Return only the full file content for index.html"
-}
-💬 Cuối cùng:
+KIỂM TRA TỰ ĐỘNG (hãy đảm bảo khi xuất)
+	•	File có <meta name="description"> với nội dung description bên trên.
+	•	Font CDN links có đủ 3 font được liệt kê.
+	•	JS được bọc IIFE và script tag có defer.
+	•	Không dùng fetch/AJAX để gửi form (dùng mailto hoặc chỉ front-end).
+	•	Map iframe sử dụng link map.
+	•	QuickCall link dùng tel:+84942467674, https://zalo.me/0354904601, https://wa.me/84942467674, và map link.
+	•	Footer có 6 cột, bằng dữ liệu đã cung cấp.
+	•	Bảo đảm không xuất thêm file nào khác, không thêm schema JSON-LD.
 
-“Áp dụng hiệu ứng Fade Ultra + Cascade (Signature App Motion)
-
-Tạo một file `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" —Bao gồm:
-- App Shell, responsive menu + footer (footer có: "© Cho thuê xe máy Hà Nội (Back link trang chủ)").
-
-tôi chủ 2 địa điểm nên thông tin là chuẩn không phải lúng túng, những icon trùng nhau cũng không vấn đề cứ làm 
+YÊU CẦU VỀ PHẦN TRẢ VỀ (rất quan trọng)
+	•	Chỉ trả về mã nguồn index.html (toàn bộ file, bắt đầu từ <!DOCTYPE html> đến </html>). Không mô tả, không giải thích, không thêm văn bản nào khác.
+	•	File phải có indent hợp lý, dễ đọc.
