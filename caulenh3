@@ -358,3 +358,14 @@ VALIDATION={
 CREATIVE_HINTS_EXTRA={
   AI_STYLE_NOTE:"Tăng độ phản chiếu, đổ bóng nhẹ, có ripple khi click, fade-in toàn trang, hiệu ứng glass layer mượt.",
   UX_NOTE:"Menu cố định,, khoảng cách padding dễ đọc, icon và text cân đối, nút CTA nổi bật.",
+### 🌗 DARKMODE_TUNER
+DARKMODE_TUNER = {
+  ENABLED: true,
+  TRANSITION: "all 0.4s ease",
+  AUTO_SYNC: true,
+  FIX_CONTRAST: true,
+  MODE_TOGGLE_ICON: "☀️ / 🌙",
+  NOTES: "Bảo đảm độ tương phản AA, không nhấp nháy khi đổi theme."
+};
+
+
