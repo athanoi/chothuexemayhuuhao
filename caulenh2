@@ -2,12 +2,6 @@ Bạn là **chuyên gia front-end & UX sáng tạo**, chuyên làm website nhanh
 Hãy sinh **1 file index.html** hoàn chỉnh cho dịch vụ **Cho thuê xe máy Hà Nội – Hữu Hào **.  
 Toàn bộ HTML + CSS + JS nội tuyến 
 
-NHIỆM VỤ:
-Tạo đúng 1 file  HTML + CSS + JS nội tuyến, không tách file
-Không dùng jQuery, không Bootstrap,
-Chỉ dùng font từ CDN (Inter + Material Symbols Rounded + Font Awesome 6 Free).  
-Tạo tên thương hiệu và ý tưởng logo cho ứng dụng cao cấp ‘HH’. Phong cách hiện đại, tối giản, sang trọng, kiểu ‘ultra app’. Gợi ý slogan và tông màu phù hợp. Không ảnh
-
 # ===================== SEO / META =====================
 name: "Cho thuê xe máy Hà Nội - Hữu Hào",
   description: "Địa chỉ cho thuê xe máy uy tín tại Hoàn Kiếm, Phố Cổ, Long Biên (gần Bến xe Gia Lâm). Xe ga, xe số, xe điện; giao tận nơi 20–40 phút; hỗ trợ 24/7; thuê theo giờ, ngày, tuần, tháng; giá tốt, chất lượng.",
@@ -267,7 +261,7 @@ DARKMODE_TUNER = {
 };
 
 ---
-Tạo một file duy nhất `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" — Mobile-first. Bao gồm:
+Tạo một file duy nhất `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" —Bao gồm:
 - App Shell, responsive menu + footer (footer có: "© Cho thuê xe máy Hà Nội (Back link trang chủ)").
 - HERO ULTRA với 4 CTA (ví dụ: Đặt xe, Gọi ngay, Xem bản đồ, Giá & Điều khoản).
 - QUICKCALL MINI (gọi + mở map), hiệu ứng auto glow, và "smart context" (nếu trên điện thoại: gọi trực tiếp, nếu desktop: mở modal với số & map).
