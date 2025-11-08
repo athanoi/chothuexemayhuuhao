@@ -271,7 +271,7 @@ DARKMODE_TUNER = {
 
 💬 Cuối cùng:
 
-“Áp dụng hiệu ứng Fade Ultra + Cascade (Signature App Motion) cho menu, hero, section, và mini nav: blur nhẹ, easing cubic-bezier(0.16,1,0.3,1), delay tuần tự, không đổi layout.”
+“Áp dụng hiệu ứng Fade Ultra + Cascade (Signature App Motion)
 
 Tạo một file `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" —Bao gồm:
 - App Shell, responsive menu + footer (footer có: "© Cho thuê xe máy Hà Nội (Back link trang chủ)").
