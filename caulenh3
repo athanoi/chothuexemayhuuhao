@@ -39,31 +39,193 @@ USE_PARALLAX=false
 USE_CONTACT_FORM=true
 USE_MAP_EMBED=true
 
+# ===================== SEO / META =====================
+name: "Cho thuê xe máy Hà Nội - Hữu Hào",
+  description: "Địa chỉ cho thuê xe máy uy tín tại Hoàn Kiếm, Phố Cổ, Long Biên (gần Bến xe Gia Lâm). Xe ga, xe số, xe điện; giao tận nơi 20–40 phút; hỗ trợ 24/7; thuê theo giờ, ngày, tuần, tháng; giá tốt, chất lượng.",
+  phone: "0354904601",
+  phone: "0942467674",
+  zalo: "https://zalo.me/0354904601",
+  whatsapp: "https://wa.me/84942467674",
+  email: "nguyenhuuhao0202@gmail.com",
+  website: "https://athanoi.github.io/chothuexemayhuuhao/",
+  address: "Ngõ 5 Đ. Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội ( Gần Bến Xe Gia Lâm)",
+  address: "112 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+  map: "https://maps.app.goo.gl/UrmE3YBPNfFVGSew6",
+  hours: "Mở cửa: 8h00 – 17h00 (Giao xe 24/7 theo yêu cầu)",
+  social: {
+    facebook: "https://m.facebook.com/thuexemayhanoigiare/",
+    blogs: "https://thuexemaynguyentu.com",
+  tripadvisor: "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html"
+
+### 🎨 STYLE + RANDOM THEME
+
+const STYLE = {
+  STYLE_PRESET: "UltraTitanGlass",
+  ACCENT: "#0A84FF",
+  ACCENT2: "#00C49A",
+  RADIUS: "20px",
+  LANG: "vi",
+  DEFAULT_THEME: "auto",
+  BODY_BG_LIGHT: "#f9fafa",
+  BODY_BG_DARK: "#0c0d0f",
+  GLASS: true,
+  BLUR: "10px",
+  SHADOW: "0 4px 20px rgba(0,0,0,0.1)"
+};
+
+THEME_RANDOMIZER={
+  ENABLED:true,
+  POOL:[
+    "UltraTitanGlass",
+    "NeoMint",
+    "MidnightPurple",
+    "AeroGlassBlue",
+    "MinimalWhite",
+    "SunsetOrange",
+    "FacebookUltra",
+    "MotoDarkCarbon"
+  ],
+  SYNC_ACCENT:true,
+  RANDOMIZE_ON_LOAD:true
+};
+
+STYLE_SELECTOR={
+  ENABLED:true,
+  AUTO_ADAPT:true,
+  DEFAULT:"UltraTitanGlass"
+};
+
+THEME_SELECTOR_UI={
+  ENABLE_ANIM:true,
+  CARD_HOVER_GLOW:true,
+  TRANSITION_TIME:"0.3s",
+  CARD_RADIUS:"16px",
+  USE_ICON_PREVIEW:true,
+  SAVE_LAST_THEME:true,
+  AUTO_APPLY:true,
+  LABEL:"Tùy chỉnh giao diện",
+  DESCRIPTION:"Chọn phong cách hiển thị yêu thích"
+};
+
+---
+
+### ⚙️ FEATURES & APP SHELL
+FEATURES={
+  
+  USE_QUICKCALL:true,
+  USE_QUICKCALL_LEFT:true,
+  USE_CARD_TILT:true,
+  USE_SCROLL_ANIM:true,
+  USE_VIEW_TRANSITIONS:true,
+  USE_CONTACT_FORM:true,
+  USE_HERO_MINIAPP:true
+};
+
+APP_SHELL={
+  ENABLED:true,
+  SYNC_MENU_FOOTER:true,
+  STYLE_MATCH_THEME:true,
+  MENU_MODE:"glass-fixed",
+  HERO_MODE:"service-grid",
+  AUTO_THEME_SYNC:true
+};
+
+---
+
 # ===================== MENU CHÍNH =====================
 
-MENU_CHINH = [
-  {"🏠 Trang chủ": "#home"},
-  {"📄 Giới thiệu": "#gioithieu"},
-  {"🏷️ Bảng giá": "#banggia"},
-  {"❓ FAQ": "#faq"},
+"MENU": [
+  { "🏠 Trang chủ": "./" },
+  { "📄 Giới thiệu": "gioithieu.html" },
+
   {
-    "⚖️ Chính sách & Điều khoản": [
-      {"📜 Chính sách thuê xe": "#chinhsach"},
-      {"⚖️ Điều khoản dịch vụ": "#dieukhoan"}
+    "⚙️ Dịch vụ": [
+      { "🏷️ Bảng giá": "banggia.html" },
+      { "📑 Thủ tục thuê xe": "thutuc.html" },
+      { "💰 Đặt cọc": "datcoc.html" },
+      { "🎁 Ưu đãi & khuyến mãi": "uudai.html" },
+      { "📅 Thuê theo ngày": "ngay.html" },
+      { "🗓️ Thuê theo tuần": "tuan.html" },
+      { "📆 Thuê theo tháng": "thang.html" }
     ]
   },
-  {"💬 Liên hệ": "#lienhe"}
-]
 
-# ===================== HERO =====================
-- Gradient xanh titan (#0A84FF → #1B5FFF → #111826).  
-- H1: ⭐ CHO THUÊ XE MÁY HÀ NỘI – NGUYỄN TÚ  
-- Mô tả: 📍 Xe mới, giao nhanh, giá hợp lý, hỗ trợ 24/7.  
-- CTA:  
-  - 📞 Gọi ngay → tel:0942467674  
-  - 💬 Chat Zalo → ZALO  
-- Chips: ⚡ Giao nhanh 20’, 💰 Cọc nhẹ, 🛵 Xe ga/xe số, 🚚 Giao tận nơi.  
-- Mini-form “🧭 Gợi ý lịch trình” (3 input + nút Gợi ý).
+  {
+    "📍 Khu vực giao xe": [
+      { "Long Biên": "longbien.html" },
+      { "Gia Lâm": "gialam.html" },
+      { "Phố Cổ": "phoco.html" },
+      { "Hoàn Kiếm": "hoankiem.html" },
+      { "Ba Đình": "badinh.html" },
+      { "Tây Hồ": "tayho.html" },
+      { "Đống Đa": "dongda.html" },
+      { "Cầu Giấy": "caugiay.html" },
+      { "Hà Đông": "hadong.html" },
+      { "Thanh Xuân": "thanhxuan.html" },
+      { "Từ Liêm": "tuliem.html" },
+      { "Ga Hà Nội": "gahn.html" }
+    ]
+  },
+
+  { "❓ Câu hỏi thường gặp (FAQ)": "faq.html" },
+  { "💬 Liên hệ & hỗ trợ": "lienhe.html" },
+  { "📜 Điều khoản sử dụng": "dieukhoansudung.html" },
+  { "🔒 Chính sách bảo mật": "chinhsachbaomat.html" }
+],
+
+"FOOTER_6COL": {
+  "STYLE": "glass",
+  "GRID": { "DESKTOP": 6, "TABLET": 3, "MOBILE": 2 },
+  "TAGLINE": {
+    "TITLE": "Thuê xe máy uy tín – Nguyễn Tú",
+    "DESC": "Giao xe 20–40 phút • Giá minh bạch • Giấy tờ đầy đủ • Hỗ trợ 24/7"
+  },
+  "COLS": {
+    "col1_TrangChu": [
+      { "🏠 Trang chủ": "./" },
+      { "📄 Giới thiệu": "gioithieu.html" }
+    ],
+    "col2_DichVu": [
+      { "🏷️ Bảng giá": "banggia.html" },
+      { "📅 Theo ngày": "ngay.html" },
+      { "🗓️ Theo tuần": "tuan.html" },
+      { "📆 Theo tháng": "thang.html" },
+      { "🎁 Ưu đãi": "uudai.html" },
+      { "📑 Thủ tục": "thutuc.html" },
+      { "💰 Đặt cọc": "datcoc.html" }
+    ],
+    "col3_DiaDiem": [
+      { "Long Biên": "longbien.html" },
+      { "Gia Lâm": "gialam.html" },
+      { "Phố Cổ": "phoco.html" },
+      { "Hoàn Kiếm": "hoankiem.html" },
+      { "Ba Đình": "badinh.html" },
+      { "Tây Hồ": "tayho.html" },
+      { "Đống Đa": "dongda.html" },
+      { "Cầu Giấy": "caugiay.html" },
+      { "Hà Đông": "hadong.html" },
+      { "Thanh Xuân": "thanhxuan.html" },
+      { "Từ Liêm": "tuliem.html" },
+      { "Ga Hà Nội": "gahn.html" }
+    ],
+    "col4_ThongTin": [
+      { "❓ FAQ": "faq.html" },
+      { "📜 Điều khoản sử dụng": "dieukhoansudung.html" },
+      { "🔒 Chính sách bảo mật": "chinhsachbaomat.html" }
+    ],
+    "col5_LienHe": [
+      { "💬 Liên hệ": "lienhe.html" },
+      { "🌐 Website": "https://thuexemaynguyentu.com" },
+      { "📞 Gọi": "tel:+84942467674" },
+      { "💬 Zalo": "https://zalo.me/0354904601" },
+      { "🟢 WhatsApp": "https://wa.me/84942467674" }
+    ],
+    "col6_Social": [
+      { "Facebook": "https://m.facebook.com/thuexemayhanoigiare/" },
+      { "Instagram": "https://www.instagram.com/nguyentumotorbike/" },
+      { "YouTube": "https://www.youtube.com/channel/UCvUBwV24U4c5-q1iJ-ZL0Rg" },
+      { "TripAdvisor": "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html" }
+    ]
 
 # ===================== SECTION CHÍNH =====================
 1️⃣ Vì sao chọn chúng tôi — 6 lợi ích (verified, headset_mic, location_on, workspace_premium, shield, timer).  
@@ -75,30 +237,6 @@ MENU_CHINH = [
  7️⃣điều khoả sử dụng
 8️⃣ chính sách bảo mật
 
-FOOTER = {
-  "column_1_tagline": {
-    "title": "Thuê xe máy uy tín tại Hà Nội",
-    "description": "Giao xe nhanh – giấy tờ đầy đủ – giá tốt – hỗ trợ 24/7."
-  },
-
-  "column_2_links": [
-    {"🏠 Trang chủ": "#home"},
-    {"📄 Giới thiệu": "#gioithieu"},
-    {"🏷️ Bảng giá": "#banggia"}
-  ],
-
-  "column_3_links": [
-    {"❓ FAQ": "#faq"},
-    {"📜 Chính sách thuê xe": "#chinhsach"},
-    {"⚖️ Điều khoản dịch vụ": "#dieukhoan"},
-    {"💬 Liên hệ": "#lienhe"}
-  ],
-
-  "column_4_contact": {
-    "form_fields": ["Họ tên", "Số điện thoại", "Nội dung"],
-    "social_links"
-  }
-}
 
 	•	Cuối cùng:
 ©  Nguyễn Tú Cho thuê xe máy Hà Nội · “⬆️ Lên đầu trang”.
