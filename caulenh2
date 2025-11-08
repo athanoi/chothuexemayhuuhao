@@ -263,10 +263,3 @@ DARKMODE_TUNER = {
 ---
 Tạo một file duy nhất `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" —Bao gồm:
 - App Shell, responsive menu + footer (footer có: "© Cho thuê xe máy Hà Nội (Back link trang chủ)").
-- HERO ULTRA với 4 CTA (ví dụ: Đặt xe, Gọi ngay, Xem bản đồ, Giá & Điều khoản).
-- QUICKCALL MINI (gọi + mở map), hiệu ứng auto glow, và "smart context" (nếu trên điện thoại: gọi trực tiếp, nếu desktop: mở modal với số & map).
-- Theme Engine (CSS variables, dark/light switch).
-- Animation Engine: tilt card, scroll reveal, smooth transitions, "Fade In Ultra".
-- Tối ưu mobile, không dùng thư viện bên ngoài, có comment ngắn trong code, và dùng placeholders: PHONE_NUMBER, LAT, LNG.
- (không giải thích thêm).
-
