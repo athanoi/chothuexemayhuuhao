@@ -239,13 +239,7 @@ APP_SHELL={
 4️⃣ Quy trình thuê xe — 4 bước animation fade-slide.  
  5️⃣ Đánh giá khách hàng — Slider ⭐⭐⭐⭐⭐ (3 người, feedback thực).  
 6️⃣ Faq: Hỏi đáp 5 câu
- 7️⃣điều khoả sử dụng
-8️⃣ chính sách bảo mật
-
-
-	•	Cuối cùng:
-©   Cho thuê xe máy Hà Nội · “⬆️ Lên đầu trang”.
-	•	Nút 🌞/🌙 đổi theme TitanBlue realtime.
+ 
 
 ===================== QUICKCALL (BÊN TRÁI) =====================
 	•	Dock trái giữa màn hình (glass blur Titan).
@@ -368,4 +362,16 @@ DARKMODE_TUNER = {
   NOTES: "Bảo đảm độ tương phản AA, không nhấp nháy khi đổi theme."
 };
 
+💬 Cuối cùng:
 
+	•	Cuối cùng:
+©   Cho thuê xe máy Hà Nội · “⬆️ Lên đầu trang”.
+	•	Nút 🌞/🌙 đổi theme TitanBlue realtime.
+
+
+“Áp dụng hiệu ứng Fade Ultra + Cascade (Signature App Motion)
+
+Tạo một file `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" —Bao gồm:
+- App Shell, responsive menu + footer (footer có: "© Cho thuê xe máy Hà Nội (Back link trang chủ)").
+
+tôi chủ 2 địa điểm nên thông tin là chuẩn không phải lúng túng, những icon trùng nhau cũng không vấn đề cứ làm 
