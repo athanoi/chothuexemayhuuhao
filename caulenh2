@@ -105,7 +105,6 @@ APP_SHELL={
   SYNC_MENU_FOOTER:true,
   STYLE_MATCH_THEME:true,
   MENU_MODE:"glass-fixed",
-  FOOTER_MODE:"mini-dock",
   HERO_MODE:"service-grid",
   AUTO_THEME_SYNC:true
 };
