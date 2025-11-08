@@ -267,7 +267,7 @@ phone; 0942467674 ( zalo, whatsaap )  map https://maps.app.goo.gl/65L4sktHLoWYtB
 	•	Theme random: Đổi theme khi load, accent đồng bộ.
 	•	Selector: Có glow, animation, lưu theme cuối.
 	•	Feature: Chat, gọi nhanh, nghiêng card, scroll animation.
-	•	App shell: Menu cố định App mini phù hợp theme, footer dock nhỏ, hero Mini App
+	•	App shell: Menu cố định App mini phù hợp theme, hero Mini App
 STYLE={
   PRESET:"UltraTitanGlass",
   ACCENT:"#0A84FF",
