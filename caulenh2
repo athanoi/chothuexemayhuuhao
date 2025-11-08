@@ -268,48 +268,6 @@ phone; 0942467674 ( zalo, whatsaap )  map https://maps.app.goo.gl/65L4sktHLoWYtB
 	•	Selector: Có glow, animation, lưu theme cuối.
 	•	Feature: Chat, gọi nhanh, nghiêng card, scroll animation.
 	•	App shell: Menu cố định App mini phù hợp theme, hero Mini App
-STYLE={
-  PRESET:"UltraTitanGlass",
-  ACCENT:"#0A84FF",
-  ACCENT2:"#00C49A",
-  RADIUS:"20px",
-  LANG:"vi",
-  THEME:"auto",
-  GLASS:true,
-  BLUR:"10px",
-  SHADOW:"0 4px 20px rgba(0,0,0,0.1)"
-};
-
-THEME_RANDOMIZER={
-  ENABLE:true,
-  POOL:["UltraTitanGlass","NeoMint","MidnightPurple","AeroGlassBlue","MinimalWhite","SunsetOrange","FacebookUltra","MotoDarkCarbon"],
-  SYNC_ACCENT:true,
-  ON_LOAD:true
-};
-
-THEME_SELECTOR={
-  ENABLE:true,
-  ANIM:true,
-  GLOW:true,
-  SAVE:true,
-  LABEL:"🎨 Giao diện",
-  DESC:"Chọn phong cách bạn thích"
-};
-
-FEATURES={
-  QUICKCALL:true,
-  CARD_TILT:true,
-  SCROLL_ANIM:true,
-  HERO_MINI:true
-};
-
-APP_SHELL={
-  ENABLE:true,
-  MENU:"glass-fixed",
-  FOOTER:"mini-dock",
-  HERO:"service-grid",
-  SYNC_THEME:true
-};
 
 ### 🌗 DARKMODE_TUNER
 DARKMODE_TUNER = {
