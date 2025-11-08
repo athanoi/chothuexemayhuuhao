@@ -295,7 +295,6 @@ THEME_SELECTOR={
 };
 
 FEATURES={
-  CHAT:true,
   QUICKCALL:true,
   CARD_TILT:true,
   SCROLL_ANIM:true,
