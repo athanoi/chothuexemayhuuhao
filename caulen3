@@ -25,11 +25,57 @@ name: "Cho thuê xe máy Hà Nội - Hữu Hào",
   tripadvisor: "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html"
 
 # ===================== STYLE / GIAO DIỆN =====================
-STYLE_PRESET="ProUltraTitanBlue"
-ACCENT="#0A84FF"
-ACCENT2="#1B5FFF"
-RADIUS="18px"
-LANG="vi"
+### 🎨 STYLE + RANDOM THEME
+
+const STYLE = {
+  STYLE_PRESET: "UltraTitanGlass",
+  ACCENT: "#0A84FF",
+  ACCENT2: "#00C49A",
+  RADIUS: "20px",
+  LANG: "vi",
+  DEFAULT_THEME: "auto",
+  BODY_BG_LIGHT: "#f9fafa",
+  BODY_BG_DARK: "#0c0d0f",
+  GLASS: true,
+  BLUR: "10px",
+  SHADOW: "0 4px 20px rgba(0,0,0,0.1)"
+};
+
+THEME_RANDOMIZER={
+  ENABLED:true,
+  POOL:[
+    "UltraTitanGlass",
+    "NeoMint",
+    "MidnightPurple",
+    "AeroGlassBlue",
+    "MinimalWhite",
+    "SunsetOrange",
+    "FacebookUltra",
+    "MotoDarkCarbon"
+  ],
+  SYNC_ACCENT:true,
+  RANDOMIZE_ON_LOAD:true
+};
+
+STYLE_SELECTOR={
+  ENABLED:true,
+  AUTO_ADAPT:true,
+  DEFAULT:"UltraTitanGlass"
+};
+
+THEME_SELECTOR_UI={
+  ENABLE_ANIM:true,
+  CARD_HOVER_GLOW:true,
+  TRANSITION_TIME:"0.3s",
+  CARD_RADIUS:"16px",
+  USE_ICON_PREVIEW:true,
+  SAVE_LAST_THEME:true,
+  AUTO_APPLY:true,
+  LABEL:"Tùy chỉnh giao diện",
+  DESCRIPTION:"Chọn phong cách hiển thị yêu thích"
+};
+
+---
 
 # ===================== TÙY CHỌN TÍNH NĂNG =====================
 USE_QUICKCALL=true
@@ -40,6 +86,11 @@ USE_VIEW_TRANSITIONS=true
 USE_GALLERY_LIGHTBOX=true
 USE_PARALLAX=false
 USE_CONTACT_FORM=true
+USE_BOTTOM_BAR = true
+USE_SIDE_DRAWER = true
+USE_SEO_META=true
+USE_OPEN_GRAPH=true
+USE_CARD_TILT = true
 
 ### 🌗 DARKMODE_TUNER
 DARKMODE_TUNER = {
