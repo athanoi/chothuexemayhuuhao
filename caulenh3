@@ -8,17 +8,23 @@ Toàn bộ JS bọc trong IIFE, đặt trước `</body>`, dùng `defer`.
 Văn bản tiếng Việt tự nhiên, KHÔNG chứa “ạ/nhé/nha”.
 
 # ===================== SEO / META =====================
-TITLE="Liên Hệ   Thuê xe máy  – Nguyễn Tú"
-DESCRIPTION=" thuê xe máy tại Hoàn Kiếm, Hà Nội. Xe số, xe ga, xe 50cc, xe điện. Giao tận nơi 20–40’, cọc nhẹ, hỗ trợ 24/7."
-KEYWORDS="thuê xe máy Hoàn Kiếm, thuê xe máy Hà Nội, xe ga, xe số, xe điện, thuê xe máy Nguyễn Tú, cho thuê xe máy giá rẻ"
-PHONE="0942467674"
-ZALO="https://zalo.me/0942467674"
-MAP="https://maps.app.goo.gl/SR1hcwnCQjPkAvDh7?g_st=ipc"
-EMAIL="thuexemaynguyentu@gmail.com"
-ADDRESS="112 Nguyễn Văn Cừ, Long Biên, Hà Nội"
-ADDRESS="Ngõ Hài Tượng, Phố Cổ, Hoàm Kiếm, Hà Nội"
-LOGO_URL="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/cropped-Thue-xe-may-min-1-1.png"
-OG_IMAGE="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/BANNER-THUE-XE-MAY-1.png"
+# ===================== SEO / META =====================
+name: "Cho thuê xe máy Hà Nội - Hữu Hào",
+  description: "Địa chỉ cho thuê xe máy uy tín tại Hoàn Kiếm, Phố Cổ, Long Biên (gần Bến xe Gia Lâm). Xe ga, xe số, xe điện; giao tận nơi 20–40 phút; hỗ trợ 24/7; thuê theo giờ, ngày, tuần, tháng; giá tốt, chất lượng.",
+  phone: "0354904601",
+  phone: "0942467674",
+  zalo: "https://zalo.me/0354904601",
+  whatsapp: "https://wa.me/84942467674",
+  email: "nguyenhuuhao0202@gmail.com",
+  website: "https://athanoi.github.io/chothuexemayhuuhao/",
+  address: "Ngõ 5 Đ. Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội ( Gần Bến Xe Gia Lâm)",
+  address: "112 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+  map: "https://maps.app.goo.gl/UrmE3YBPNfFVGSew6",
+  hours: "Mở cửa: 8h00 – 17h00 (Giao xe 24/7 theo yêu cầu)",
+  social: {
+    facebook: "https://m.facebook.com/thuexemayhanoigiare/",
+    blogs: "https://thuexemaynguyentu.com",
+  tripadvisor: "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html"
 
 # ===================== STYLE / GIAO DIỆN =====================
 STYLE_PRESET="ProUltraTitanBlue"
@@ -28,13 +34,12 @@ RADIUS="18px"
 LANG="vi"
 
 # ===================== TÙY CHỌN TÍNH NĂNG =====================
-USE_CHAT=true
+
 USE_QUICKCALL=true
 USE_PRODUCTS=true
 USE_CARD_TILT=true
 USE_SCROLL_ANIM=true
 USE_VIEW_TRANSITIONS=true
-USE_GALLERY_LIGHTBOX=true
 USE_PARALLAX=false
 USE_CONTACT_FORM=true
 USE_MAP_EMBED=true
@@ -239,7 +244,7 @@ APP_SHELL={
 
 
 	•	Cuối cùng:
-©  Nguyễn Tú Cho thuê xe máy Hà Nội · “⬆️ Lên đầu trang”.
+©   Cho thuê xe máy Hà Nội · “⬆️ Lên đầu trang”.
 	•	Nút 🌞/🌙 đổi theme TitanBlue realtime.
 
 ===================== QUICKCALL (BÊN TRÁI) =====================
@@ -352,4 +357,4 @@ VALIDATION={
 
 CREATIVE_HINTS_EXTRA={
   AI_STYLE_NOTE:"Tăng độ phản chiếu, đổ bóng nhẹ, có ripple khi click, fade-in toàn trang, hiệu ứng glass layer mượt.",
-  UX_NOTE:"Menu cố định, footer mini-app, khoảng cách padding dễ đọc, icon và text cân đối, nút CTA nổi bật.",
+  UX_NOTE:"Menu cố định,, khoảng cách padding dễ đọc, icon và text cân đối, nút CTA nổi bật.",
