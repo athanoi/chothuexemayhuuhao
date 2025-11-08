@@ -22,18 +22,18 @@ name: "Cho thuê xe máy Hà Nội - Hữu Hào",
 
 ### 🎨 STYLE + RANDOM THEME
 
-STYLE={
-  STYLE_PRESET:"UltraTitanGlass",
-  ACCENT:CONFIG.MAIN_COLOR,
-  ACCENT2:"#00C49A",
-  RADIUS:"20px",
-  LANG:"vi",
-  DEFAULT_THEME:"auto",
-  BODY_BG_LIGHT:"#f9fafa",
-  BODY_BG_DARK:"#0c0d0f",
-  GLASS:true,
-  BLUR:"10px",
-  SHADOW:"0 4px 20px rgba(0,0,0,0.1)"
+const STYLE = {
+  STYLE_PRESET: "UltraTitanGlass",
+  ACCENT: "#0A84FF",
+  ACCENT2: "#00C49A",
+  RADIUS: "20px",
+  LANG: "vi",
+  DEFAULT_THEME: "auto",
+  BODY_BG_LIGHT: "#f9fafa",
+  BODY_BG_DARK: "#0c0d0f",
+  GLASS: true,
+  BLUR: "10px",
+  SHADOW: "0 4px 20px rgba(0,0,0,0.1)"
 };
 
 THEME_RANDOMIZER={
