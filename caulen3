@@ -218,69 +218,6 @@ Mục tiêu: 1 khối Ultra App liền mạch = Menu + Hero + QuickCall (glassmo
 	•	Đồng bộ: chia sẻ biến theme (--accent, radii, glass blur), cùng timing transition; dark/light toggle lưu localStorage (mặc định theo prefers-color-scheme).
 	•	A11y & perf: keyboard nav, visible focus, contrast ok, prefers-reduced-motion giảm hiệu ứng; tắt tilt/blur nặng trên thiết bị yếu.
 	
-Kết thúc:"Chạy generator để xuất index.html one-file hoàn chỉnh kiểu mini-app: menu + hero mini-app + body + footer đồng bộ style, kiểm tra menu/footer, 10 style theme, lazyload, glass, không schema.
-"
-
-### 🌈 NÂNG CẤP TOÀN DIỆN CHO GEMINI (AI + UX + SEO + HIỆU ỨNG)
-
-AI_DIRECTIVE="Sinh giao diện theo cảm hứng app di động, hiệu ứng glassmorphism, shadow mềm, layout responsive, tối ưu UX theo hướng chạm – phản hồi nhanh. Tự điều chỉnh ánh sáng, tone màu theo theme, bố cục rõ ràng, tập trung CTA chính.";
-
-INTERACT_LAYER={
-  HOVER_CARD:true,
-  BUTTON_RIPPLE:true,
-  ICON_BOUNCE:true,
-  IMAGE_TILT:true,
-  SMOOTH_SCROLL:true,
-  TRANSITION_EASE:"cubic-bezier(0.25,0.1,0.25,1)"
-};
-
-SMART_SEO={
-  AUTO_KEYWORDS:true,
-  LINK_DENSITY_MAX:5,
-  AUTO_INTERNAL_LINK:true,
-  TITLE_MATCH_H1:true,
-  REL_CANONICAL_FIX:true,
-  LAZY_OG:true,
-  AUTO_META_REWRITE:true
-};
-
-USER_FLOW_HINTS={
-  DEFAULT_PATH:["Trang chủ","Dịch vụ","Bảng giá","Liên hệ"],
-  TIME_ON_SECTION:5,
-  CTA_BEHAVIOR:"focus-first-button",
-  SCROLL_ANIM_EASE:"ease-out",
-  INTERACTION_TONE:"friendly-UX"
-};
-
-THEME_RANDOMIZER={
-  ENABLED:true,
-  POOL:[
-    "UltraTitanGlass",
-    "NeoMint",
-    "MidnightPurple",
-    "AeroGlassBlue",
-    "MinimalWhite",
-    "SunsetOrange",
-    "FacebookUltra",
-    "MotoDarkCarbon"
-  ],
-  SYNC_ACCENT:true,
-  RANDOMIZE_ON_LOAD:true
-};
-
-VALIDATION={
-  HTML:true,
-  LINK:true,
-  ACCESSIBILITY:true,
-  SEO:true,
-  PERFORMANCE:true,
-  REPORT:"console",
-  FIX_MINOR:true
-};
-
-CREATIVE_HINTS_EXTRA={
-  AI_STYLE_NOTE:"Tăng độ phản chiếu, đổ bóng nhẹ, có ripple khi click, fade-in toàn trang, hiệu ứng glass layer mượt.",
-  UX_NOTE:"Menu cố định, footer mini-app, khoảng cách padding dễ đọc, icon và text cân đối, nút CTA nổi bật.",
 KẾT QUẢ MONG MUỐN
 	•	Xuất một file index.html thỏa mọi yêu cầu trên.
 	•	Không đổi chuỗi dữ liệu thương hiệu, số điện thoại, email, địa chỉ, link mạng xã hội đã cho.
@@ -291,7 +228,6 @@ KẾT QUẢ MONG MUỐN
 KIỂM TRA TỰ ĐỘNG (hãy đảm bảo khi xuất)
 	•	File có <meta name="description"> với nội dung description bên trên.
 	•	Font CDN links có đủ 3 font được liệt kê.
-	•	JS được bọc IIFE và script tag có defer.
 	•	Không dùng fetch/AJAX để gửi form (dùng mailto hoặc chỉ front-end).
 	•	Map iframe sử dụng link map.
 	•	QuickCall link dùng tel:+84942467674, https://zalo.me/0354904601, https://wa.me/84942467674, và map link.
