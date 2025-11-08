@@ -311,6 +311,18 @@ APP_SHELL={
   SYNC_THEME:true
 };
 
+### 🌗 DARKMODE_TUNER
+DARKMODE_TUNER = {
+  ENABLED: true,
+  TRANSITION: "all 0.4s ease",
+  AUTO_SYNC: true,
+  FIX_CONTRAST: true,
+  MODE_TOGGLE_ICON: "☀️ / 🌙",
+  NOTES: "Bảo đảm độ tương phản AA, không nhấp nháy khi đổi theme."
+};
+
+---
+
 
 Tạo toàn bộ mã nguồn Mini App ULTRA (Hero + QuickCall + Chat + Theme Engine + App Shell) 
  tối ưu mobile.   
