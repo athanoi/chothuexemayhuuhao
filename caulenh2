@@ -261,5 +261,17 @@ DARKMODE_TUNER = {
 };
 
 ---
+🔒 QUY ĐỊNH
+	•	Được phép thêm <div> hoặc <wrapper> để căn layout.
+	•	Được phép dùng JS inline cho toggle menu, quick call, mini nav, theme.
+	•	Không được gọi API hay import thư viện khác ngoài 3 font trên.
+	•	Tất cả phải nằm trong 1 file index.html duy nhất.
+
+⸻
+
+💬 Cuối cùng:
+
+“Áp dụng hiệu ứng Fade Ultra + Cascade (Signature App Motion) cho menu, hero, section, và mini nav: blur nhẹ, easing cubic-bezier(0.16,1,0.3,1), delay tuần tự, không đổi layout.”
+
 Tạo một file `index.html` (HTML/CSS/vanilla JS) cho "Cho thuê xe máy - Hữu Hào" —Bao gồm:
 - App Shell, responsive menu + footer (footer có: "© Cho thuê xe máy Hà Nội (Back link trang chủ)").
