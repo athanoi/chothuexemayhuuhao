@@ -4,8 +4,7 @@ NHIỆM VỤ:
 Tạo đúng 1 file `index.html` (HTML + CSS + JS nội tuyến, không tách file).  
 Không dùng jQuery, không Bootstrap, không gọi API.  
 Chỉ dùng font từ CDN (Inter + Material Symbols Rounded + Font Awesome 6 Free).  
-Toàn bộ JS bọc trong IIFE, đặt trước `</body>`, dùng `defer`.  
-Văn bản tiếng Việt tự nhiên, KHÔNG chứa “ạ/nhé/nha”.
+
 
 # ===================== SEO / META =====================
 # ===================== SEO / META =====================
