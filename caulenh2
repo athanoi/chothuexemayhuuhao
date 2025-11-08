@@ -269,6 +269,21 @@ DARKMODE_TUNER = {
 
 ⸻
 
+{
+  "GENERATE":"index.html",
+  "SINGLE_FILE": true,
+  "FIX_DUPLICATES": true,
+  "BRAND":"Cho thuê xe máy Hà Nội - Hữu Hào",
+  "PHONES_ARRAY": true,
+  "CONTACT_ENDPOINT": null,
+  "ALLOW_EXTERNAL_LIBS": ["google-fonts(max 3)"],
+  "MAP_IFRAME_IF_AVAILABLE": true,
+  "SEO_READY": true,
+  "ACCESSIBLE": true,
+  "RESPONSIVE": true,
+  "THEME_RANDOMIZER": true,
+  "OUTPUT":"Return only the full file content for index.html"
+}
 💬 Cuối cùng:
 
 “Áp dụng hiệu ứng Fade Ultra + Cascade (Signature App Motion)
