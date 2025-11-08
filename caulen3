@@ -32,7 +32,6 @@ RADIUS="18px"
 LANG="vi"
 
 # ===================== TÙY CHỌN TÍNH NĂNG =====================
-USE_CHAT=true
 USE_QUICKCALL=true
 USE_PRODUCTS=true
 USE_CARD_TILT=true
