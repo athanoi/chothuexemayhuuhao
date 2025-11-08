@@ -237,11 +237,11 @@ APP_SHELL={
 
 # ===================== SECTION CHÍNH =====================
 1️⃣ Vì sao chọn chúng tôi — 6 lợi ích (verified, headset_mic, location_on, workspace_premium, shield, timer).  
-2️⃣ Dịch vụ nổi bật — Card tilt + CTA “Xem chi tiết” → `dichvu.html`.  
+2️⃣ Thủ Tục thuê xe máy nổi bật — Card tilt + CTA “Xem chi tiết” → `thutuc.html`.  
 3️⃣ Bảng giá tóm tắt — CTA “Xem bảng giá chi tiết” → `banggia.html`.  
 4️⃣ Quy trình thuê xe — 4 bước animation fade-slide.  
 6️⃣ Đánh giá khách hàng — Slider ⭐⭐⭐⭐⭐ (3 người, feedback thực).  
-7️⃣ Cam kết & bảo hành — đoạn ngắn + link `chinhsach.html`.
+7️⃣ Cam kết & bảo hành 
 
 ===================== QUICKCALL (BÊN TRÁI) =====================
 	💎 Nâng cấp UX đề xuất
@@ -324,3 +324,4 @@ Menu và Footer trang đã được tối ưu hoàn toàn cho di động.
 - ANIMATION ENGINE (tilt card, scroll reveal, transition smooth)
 - RESPONSIVE toàn diện (mobile first)
 Tạo code hoàn chỉnh, comment rõ ràng, chia section logic, code sạch, Không dùng jQuery, không Bootstrap, không gọi API. 
+Fade In Ultra: Hiệu ứng xuất hiện siêu mượt, chuyển từ mờ sang rõ với ánh sáng tinh tế và độ sâu điện ảnh, tạo cảm giác cao cấp và chuyên nghiệp ngay từ giây đầu tiên.
