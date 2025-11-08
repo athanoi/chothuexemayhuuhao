@@ -29,13 +29,6 @@ name: "Cho thuê xe máy Hà Nội - Hữu Hào",
     tripadvisor: "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html"
 OG_IMAGE="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/BANNER-THUE-XE-MAY-1.png"
 
-# ===================== STYLE / GIAO DIỆN =====================
-STYLE_PRESET="ProUltraTitanBlue"
-ACCENT="#0A84FF"
-ACCENT2="#1B5FFF"
-RADIUS="18px"
-LANG="vi"
-
 ### 🎨 STYLE + RANDOM THEME
 
 STYLE={
