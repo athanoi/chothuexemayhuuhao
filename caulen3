@@ -41,19 +41,48 @@ USE_MAP_EMBED=true
 
 # ===================== MENU CHÍNH =====================
 
-MENU_CHINH = [
-  {"🏠 Trang chủ": "#home"},
-  {"📄 Giới thiệu": "#gioithieu"},
-  {"🏷️ Bảng giá": "#banggia"},
-  {"❓ FAQ": "#faq"},
+# ===================== MENU CHÍNH =====================
+
+"MENU": [
+  { "🏠 Trang chủ": "./" },
+  { "📄 Giới thiệu": "gioithieu.html" },
+
   {
-    "⚖️ Chính sách & Điều khoản": [
-      {"📜 Chính sách thuê xe": "#chinhsach"},
-      {"⚖️ Điều khoản dịch vụ": "#dieukhoan"}
+    "⚙️ Dịch vụ": [
+      { "🏷️ Bảng giá": "banggia.html" },
+      { "📑 Thủ tục thuê xe": "thutuc.html" },
+      { "💰 Đặt cọc": "datcoc.html" },
+      { "🎁 Ưu đãi & khuyến mãi": "uudai.html" },
+      { "📅 Thuê theo ngày": "ngay.html" },
+      { "🗓️ Thuê theo tuần": "tuan.html" },
+      { "📆 Thuê theo tháng": "thang.html" }
     ]
   },
-  {"💬 Liên hệ": "#lienhe"}
-]
+
+  {
+    "📍 Khu vực giao xe": [
+      { "Long Biên": "longbien.html" },
+      { "Gia Lâm": "gialam.html" },
+      { "Phố Cổ": "phoco.html" },
+      { "Hoàn Kiếm": "hoankiem.html" },
+      { "Ba Đình": "badinh.html" },
+      { "Tây Hồ": "tayho.html" },
+      { "Đống Đa": "dongda.html" },
+      { "Cầu Giấy": "caugiay.html" },
+      { "Hà Đông": "hadong.html" },
+      { "Thanh Xuân": "thanhxuan.html" },
+      { "Từ Liêm": "tuliem.html" },
+      { "Ga Hà Nội": "gahn.html" }
+    ]
+  },
+
+  { "❓ Câu hỏi thường gặp (FAQ)": "faq.html" },
+  { "💬 Liên hệ & hỗ trợ": "lienhe.html" },
+  { "📜 Điều khoản sử dụng": "dieukhoansudung.html" },
+  { "🔒 Chính sách bảo mật": "chinhsachbaomat.html" }
+],
+
+
 
 # ===================== HERO =====================
 - Gradient xanh titan (#0A84FF → #1B5FFF → #111826).  
@@ -74,31 +103,60 @@ MENU_CHINH = [
 6️⃣ Faq: Hỏi đáp 5 câu
  
 
-FOOTER = {
-  "column_1_tagline": {
-    "title": "Thuê xe máy uy tín tại Hà Nội",
-    "description": "Giao xe nhanh – giấy tờ đầy đủ – giá tốt – hỗ trợ 24/7."
+"FOOTER_6COL": {
+  "STYLE": "glass",
+  "GRID": { "DESKTOP": 6, "TABLET": 3, "MOBILE": 2 },
+  "TAGLINE": {
+    "TITLE": "Thuê xe máy uy tín – Nguyễn Tú",
+    "DESC": "Giao xe 20–40 phút • Giá minh bạch • Giấy tờ đầy đủ • Hỗ trợ 24/7"
   },
-
-  "column_2_links": [
-    {"🏠 Trang chủ": "#home"},
-    {"📄 Giới thiệu": "#gioithieu"},
-    {"🏷️ Bảng giá": "#banggia"}
-  ],
-
-  "column_3_links": [
-    {"❓ FAQ": "#faq"},
-    {"📜 Chính sách thuê xe": "#chinhsach"},
-    {"⚖️ Điều khoản dịch vụ": "#dieukhoan"},
-    {"💬 Liên hệ": "#lienhe"}
-  ],
-
-  "column_4_contact": {
-    "form_fields": ["Họ tên", "Số điện thoại", "Nội dung"],
-    "social_links"
-  }
-}
-
+  "COLS": {
+    "col1_TrangChu": [
+      { "🏠 Trang chủ": "./" },
+      { "📄 Giới thiệu": "gioithieu.html" }
+    ],
+    "col2_DichVu": [
+      { "🏷️ Bảng giá": "banggia.html" },
+      { "📅 Theo ngày": "ngay.html" },
+      { "🗓️ Theo tuần": "tuan.html" },
+      { "📆 Theo tháng": "thang.html" },
+      { "🎁 Ưu đãi": "uudai.html" },
+      { "📑 Thủ tục": "thutuc.html" },
+      { "💰 Đặt cọc": "datcoc.html" }
+    ],
+    "col3_DiaDiem": [
+      { "Long Biên": "longbien.html" },
+      { "Gia Lâm": "gialam.html" },
+      { "Phố Cổ": "phoco.html" },
+      { "Hoàn Kiếm": "hoankiem.html" },
+      { "Ba Đình": "badinh.html" },
+      { "Tây Hồ": "tayho.html" },
+      { "Đống Đa": "dongda.html" },
+      { "Cầu Giấy": "caugiay.html" },
+      { "Hà Đông": "hadong.html" },
+      { "Thanh Xuân": "thanhxuan.html" },
+      { "Từ Liêm": "tuliem.html" },
+      { "Ga Hà Nội": "gahn.html" }
+    ],
+    "col4_ThongTin": [
+      { "❓ FAQ": "faq.html" },
+      { "📜 Điều khoản sử dụng": "dieukhoansudung.html" },
+      { "🔒 Chính sách bảo mật": "chinhsachbaomat.html" }
+    ],
+    "col5_LienHe": [
+      { "💬 Liên hệ": "lienhe.html" },
+      { "🌐 Website": "https://thuexemaynguyentu.com" },
+      { "📞 Gọi": "tel:+84942467674" },
+      { "💬 Zalo": "https://zalo.me/0354904601" },
+      { "🟢 WhatsApp": "https://wa.me/84942467674" }
+    ],
+    "col6_Social": [
+      { "Facebook": "https://m.facebook.com/thuexemayhanoigiare/" },
+      { "Instagram": "https://www.instagram.com/nguyentumotorbike/" },
+      { "YouTube": "https://www.youtube.com/channel/UCvUBwV24U4c5-q1iJ-ZL0Rg" },
+      { "TripAdvisor": "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html" }
+    ]
+  },
 
 ===================== QUICKCALL (BÊN TRÁI) =====================
 	•	Dock trái giữa màn hình (glass blur Titan).
