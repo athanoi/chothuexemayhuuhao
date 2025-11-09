@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MotoAI v38.1 — Test & Force Learn</title>
+<style>
+  body{font-family:-apple-system,system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:24px}
+  h1{font-size:18px;margin:0 0 12px}
+  .controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  button{padding:10px 14px;border-radius:10px;border:1px solid #e1e4e8;background:#fff;cursor:pointer}
+  button:hover{background:#f6f8fa}
+  #out{white-space:pre-wrap;background:#0b1220;color:#e6edf3;padding:12px;border-radius:8px;min-height:120px}
+</style>
+
+<!-- Cấu hình trước khi nạp script -->
+
+<script>
+  window.MotoAI_CONFIG = {
+    brand: "Nguyen Tu",
+    phone: "0942467674",
+    themeColor: "#0084FF",
+    autolearn: true,
+    viOnly: true,
+    deepContext: true,
+    extraSites: [location.origin],
+    smart: { semanticSearch: true, extractiveQA: true, autoPriceLearn: true }
+  };
+</script>
+
+<!-- Nạp script MotoAI đã chỉnh -->
+
+<script src="https://athanoi.github.io/chothuexemayhuuhao/motoai_v38_1_debug_semantic_pricing.js"></script>
+
+<script>
+(function(){
+  function log(msg){
+    var out = document.getElementById('out');
+    out.textContent += (msg || '') + "\n";
+  }
+
+  function clearAll(){
+    try{ if(window.MotoAI_v38 && window.MotoAI_v38.clearLearnCache) window.MotoAI_v38.clearLearnCache(); }catch(e){}
+    try{
+      [
+        'MotoAI_v38_session',
+        'MotoAI_v38_ctx',
+        'MotoAI_v38_learn',
+        'MotoAI_v38_auto_prices',
+        'MotoAI_v38_learnStamp',
+        'MotoAI_v38_lastClean',
+        'MotoAI_v38_debug_stats'
+      ].forEach(function(k){ localStorage.removeItem(k); });
+      log('Đã xoá cache, session, auto-prices, debug stats.');
+    }catch(e){ log('Lỗi xoá cache: ' + e); }
+  }
+
+  async function forceLearn(){
+    if(!window.MotoAI_v38 || !window.MotoAI_v38.learnNow){ log('MotoAI chưa sẵn sàng.'); return; }
+    try{
+      var res = await window.MotoAI_v38.learnNow([location.origin], true);
+      var cnt = res ? Object.keys(res).length : 0;
+      log('Ép học lại xong: ' + cnt + ' origin.');
+      var dbg = window.MotoAI_v38.debugDump ? window.MotoAI_v38.debugDump() : {};
+      log('DebugDump: ' + JSON.stringify(dbg, null, 2));
+    }catch(e){
+      log('Lỗi learnNow: ' + e);
+    }
+  }
+
+  function ready(fn){
+    if(document.readyState === 'complete' || document.readyState === 'interactive') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+
+  ready(function(){
+    // Gán nút điều khiển
+    document.getElementById('btn-open').onclick = function(){ if(window.MotoAI_v38) window.MotoAI_v38.open(); };
+    document.getElementById('btn-clear').onclick = function(){ clearAll(); };
+    document.getElementById('btn-learn').onclick = function(){ forceLearn(); };
+    document.getElementById('btn-dump').onclick = function(){
+      if(window.MotoAI_v38 && window.MotoAI_v38.debugDump) log('DebugDump: ' + JSON.stringify(window.MotoAI_v38.debugDump(), null, 2));
+    };
+
+    // Quy trình auto: xoá cache -> đợi script sẵn sàng -> ép học lại
+    clearAll();
+    var tries = 0, iv = setInterval(function(){
+      tries++;
+      if(window.MotoAI_v38 && window.MotoAI_v38.learnNow){
+        clearInterval(iv);
+        forceLearn();
+      }else if(tries > 60){ // ~12s
+        clearInterval(iv);
+        log('Không tìm thấy MotoAI_v38 sau 12s.');
+      }
+    }, 200);
+  });
+})();
+</script>
+
+</head>
+<body>
+<h1>MotoAI v38.1 — Test nhanh</h1>
+<div class="controls">
+  <button id="btn-open">Mở Chat</button>
+  <button id="btn-clear">Xoá Cache</button>
+  <button id="btn-learn">Ép Học Lại</button>
+  <button id="btn-dump">Debug Dump</button>
+</div>
+<pre id="out"></pre>
+</body>
+</html>
