@@ -21,17 +21,6 @@
     <meta name="geo.position" content="21.041536;105.872352">
     <meta name="ICBM" content="21.041536, 105.872352">
 
-    <meta name="telephone" content="0354904601">
-    <meta name="telephone" content="0942467674">
-    <meta property="business:contact_data:street_address" content="Ngõ 5 Đ. Nguyễn Văn Cừ, Bồ Đề, Long Biên">
-    <meta property="business:contact_data:locality" content="Hà Nội">
-    <meta property="business:contact_data:country_name" content="Việt Nam">
-    <meta property="business:contact_data:email" content="nguyenhuuhao0202@gmail.com">
-    <meta property="business:contact_data:phone_number" content="0942467674">
-    <meta property="business:contact_data:website" content="https://athanoi.github.io/chothuexemayhuuhao/">
-    <meta property="place:location:latitude" content="21.041536">
-    <meta property="place:location:longitude" content="105.872352">
-
     <meta property="og:title" content="Thuê xe máy Long Biên, Hà Nội - Hữu Hào | Giao xe Hoàn Kiếm, Phố Cổ">
     <meta property="og:description" content="Hữu Hào - Thuê xe máy Long Biên, Hà Nội. Giao xe 20-40 phút tại Hoàn Kiếm, Phố Cổ. Dịch vụ uy tín, hỗ trợ 24/7.">
     <meta property="og:type" content="website">
@@ -45,16 +34,15 @@
     <meta name="twitter:description" content="Hữu Hào - Thuê xe máy Long Biên, Hà Nội. Giao xe 20-40 phút tại Hoàn Kiếm, Phố Cổ. Hỗ trợ 24/7.">
     <meta name="twitter:image" content="https://thuexemaynguyentu.com/wp-content/uploads/2025/09/BANNER-THUE-XE-MAY-1.png">
 
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛵</text></svg>">
 
     <!-- Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -86,35 +74,6 @@
         { "@type": "Place", "name": "Quận Hoàn Kiếm" },
         { "@type": "Place", "name": "Phố Cổ Hà Nội" },
         { "@type": "City", "name": "Hà Nội" }
-      ],
-      "potentialAction": [
-        {
-          "@type": "ReserveAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://zalo.me/0354904601",
-            "inLanguage": "vi-VN",
-            "actionPlatform": [
-              "https://schema.org/DesktopWebPlatform",
-              "https://schema.org/IOSPlatform",
-              "https://schema.org/AndroidPlatform"
-            ]
-          },
-          "result": { "@type": "Reservation", "name": "Đặt xe qua Zalo" }
-        },
-        {
-          "@type": "ReserveAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "tel:+84942467674",
-            "inLanguage": "vi-VN",
-            "actionPlatform": [
-              "https://schema.org/IOSPlatform",
-              "https://schema.org/AndroidPlatform"
-            ]
-          },
-          "result": { "@type": "Reservation", "name": "Gọi đặt xe" }
-        }
       ]
     }
     </script>
@@ -134,9 +93,6 @@
         --transition-long: 0.5s ease;
         --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         
-        /* Logo Config */
-        --logo-h: clamp(26px,3.4vw,42px);
-
         /* App Shell */
         --header-height: 70px;
         --footer-cols: 6;
@@ -246,70 +202,10 @@
       .card { background-color: var(--card-bg); border-radius: var(--radius); border: 1px solid var(--border-color); box-shadow: var(--shadow); padding: 1.5rem; transition: all var(--transition-time); }
       .card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
       .glass.card { background: var(--glass-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(var(--blur)); }
-
       .chip { display: inline-block; padding: 0.3em 0.8em; font-size: 0.85rem; font-weight: 500; border-radius: 99px; background: var(--glass-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(5px); }
-      
       .material-symbols-rounded { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; font-size: 1.2em; vertical-align: middle; }
 
-      /* 3.1. Component: Logo Ultra */
-      .logo-ultra {
-        position: relative; display: inline-flex; align-items: center; gap: .65rem;
-        padding: .45em .9em; min-height: calc(var(--logo-h) + 12px);
-        border-radius: 999px; text-decoration: none;
-        background: linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.06)), var(--glass-bg);
-        border: 1px solid var(--glass-border);
-        backdrop-filter: blur(var(--blur)); -webkit-backdrop-filter: blur(var(--blur));
-        box-shadow: 0 8px 26px rgba(0,0,0,.12);
-        transition: all var(--transition-time);
-      }
-      .logo-ultra:hover { opacity: 1; transform: translateY(-1px); box-shadow: 0 12px 32px rgba(0,0,0,.18); }
-      .logo-ultra::after {
-        content: ""; position: absolute; inset: -2px; border-radius: inherit; pointer-events: none;
-        background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.25) 20%, transparent 40%);
-        transform: translateX(-140%); animation: logoShine 4.2s ease-in-out infinite;
-      }
-      @keyframes logoShine { 60%{ transform:translateX(140%);} 100%{ transform:translateX(140%);} }
-      @media (prefers-reduced-motion: reduce){ .logo-ultra::after{ animation:none; } }
-
-      .logo-badge {
-        width: var(--logo-h); height: var(--logo-h);
-        display: inline-flex; align-items: center; justify-content: center;
-        border-radius: 12px;
-        background: conic-gradient(from 210deg, var(--accent) 0 30%, var(--accent-2) 30% 70%, var(--accent) 70% 100%);
-        border: 1px solid rgba(255,255,255,.35);
-        box-shadow: inset 0 1px 0 rgba(255,255,255,.45), 0 3px 12px rgba(0,0,0,.18);
-        position: relative; overflow: hidden;
-      }
-      .logo-badge::before {
-        content: ""; position: absolute; inset: 0; border-radius: inherit;
-        background: radial-gradient(90% 90% at 10% 10%, rgba(255,255,255,.5), transparent 60%);
-        pointer-events: none; mix-blend-mode: screen;
-      }
-      .logo-badge .material-symbols-rounded {
-        font-variation-settings: 'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 24;
-        font-size: calc(var(--logo-h) * .72);
-        color: #fff; line-height: 1;
-        filter: drop-shadow(0 1px 0 rgba(0,0,0,.25));
-      }
-      .logo-title {
-        font-weight: 800; letter-spacing: .2px; line-height: 1;
-        font-size: clamp(18px, 2.2vw, 24px);
-        background: linear-gradient(90deg, var(--accent), var(--accent-2));
-        -webkit-background-clip: text; background-clip: text; color: transparent;
-        text-wrap: nowrap;
-      }
-      /* Dark mode tinh chỉnh cho logo */
-      [data-theme="dark"] .logo-ultra {
-        background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)), var(--glass-bg-dark);
-        border-color: var(--glass-border-dark);
-        box-shadow: 0 10px 32px rgba(0,0,0,.35);
-      }
-      [data-theme="dark"] .logo-badge {
-        border-color: rgba(255,255,255,.22);
-        box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 4px 16px rgba(0,0,0,.4);
-      }
-
-      /* 4. Animations & Transitions */
+      /* 4. Animations */
       @keyframes fadeInUltra { from { opacity: 0; transform: translateY(20px) scale(0.98); filter: blur(5px); } to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); } }
       .fade-in-ultra { animation: fadeInUltra 0.8s ease-out both; }
       .scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
@@ -330,6 +226,52 @@
       .app-header.glass-fixed { background: var(--glass-bg); backdrop-filter: blur(var(--blur)); border-bottom: 1px solid var(--glass-border); }
       .app-header .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
       
+      /* ===== LOGO ULTRA (NEW UPGRADE) ===== */
+      .header-actions { position: relative; z-index: 3; display: flex; align-items: center; gap: 0.75em; }
+      .app-header .logo, .app-footer .logo {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          gap: .5rem;
+          font-weight: 800;
+          letter-spacing: .2px;
+          text-decoration: none;
+          background: linear-gradient(90deg, var(--accent), var(--accent-2));
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: var(--accent); /* Fallback */
+      }
+      .app-header .logo .icon, .app-footer .logo .icon {
+          background: none;
+          -webkit-background-clip: initial;
+          -webkit-text-fill-color: var(--accent);
+          color: var(--accent);
+          font-size: 1.25em;
+          line-height: 1;
+      }
+      /* Logo Glow & Shine */
+      .app-header .logo::before, .app-footer .logo::before {
+          content: ""; position: absolute; inset: -8px; border-radius: 16px;
+          background: radial-gradient(60% 60% at 50% 50%, var(--accent) 0%, transparent 70%);
+          filter: blur(12px); opacity: .35; pointer-events: none; z-index: -1;
+      }
+      .app-header .logo::after, .app-footer .logo::after {
+          content: ""; position: absolute; inset: 0; border-radius: 12px;
+          background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.7) 45%, transparent 60%);
+          transform: translateX(-130%); animation: logoShine 3s ease-in-out infinite;
+          pointer-events: none; z-index: 1; mix-blend-mode: overlay;
+      }
+      @media (prefers-reduced-motion: reduce){ .app-header .logo::after, .app-footer .logo::after{ animation: none; opacity: 0; } }
+      @keyframes logoShine { 0%, 15% { transform: translateX(-130%); } 100% { transform: translateX(130%); } }
+      
+      /* Logo Responsive Sizes */
+      @media (min-width: 1025px){ .app-header .logo{ font-size: 1.7rem; } }
+      @media (max-width: 1024px){ .app-header .logo{ font-size: 1.5rem; } }
+      @media (max-width: 768px){  .app-header .logo{ font-size: 1.4rem; } }
+      /* ===== END LOGO ULTRA ===== */
+
+      /* Nav & Menu */
       .main-nav { display: none; }
       .main-nav ul { list-style: none; display: flex; gap: 0.5em; }
       .main-nav li { position: relative; }
@@ -337,14 +279,12 @@
       .main-nav a:hover { background-color: var(--border-color); opacity: 1; }
       .main-nav .dropdown { display: none; position: absolute; top: 100%; left: 0; background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius-sm); box-shadow: var(--shadow); min-width: 240px; padding: 0.5em; z-index: 1001; }
       .main-nav li:hover > .dropdown { display: block; }
-      .main-nav .dropdown a { width: 100%; }
-      
-      .header-actions { display: flex; align-items: center; gap: 0.75em; }
       .theme-toggle, .style-toggle, .mobile-menu-toggle { background: none; border: none; color: var(--text-color); cursor: pointer; font-size: 1.5rem; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color var(--transition-time); }
       .theme-toggle:hover, .style-toggle:hover, .mobile-menu-toggle:hover { background-color: var(--border-color); }
       .theme-toggle .icon-dark, [data-theme="dark"] .theme-toggle .icon-light { display: none; }
       [data-theme="dark"] .theme-toggle .icon-dark { display: block; }
       
+      /* Mobile Menu */
       .mobile-menu-toggle { display: block; }
       .mobile-nav { position: fixed; top: 0; right: 0; bottom: 0; width: 300px; max-width: 90vw; background: var(--card-bg); z-index: 2000; transform: translateX(100%); transition: transform var(--transition-long); box-shadow: -10px 0 30px rgba(0,0,0,0.2); padding: 1.5rem; padding-top: calc(var(--header-height) + 1rem); overflow-y: auto; padding-bottom: env(safe-area-inset-bottom); }
       .mobile-nav.open { transform: translateX(0); }
@@ -357,7 +297,7 @@
       .mobile-nav li.submenu-open > .dropdown { display: block; }
       .mobile-nav li.submenu-open > a .submenu-toggle { transform: rotate(90deg); }
       
-      /* 6. Section: Hero (Ultra Mini) */
+      /* 6. Sections */
       .hero-section { min-height: 90vh; display: flex; align-items: center; justify-content: center; padding: 4rem 0; background: linear-gradient(135deg, #111826 0%, #1B5FFF 50%, #0A84FF 100%); color: #fff; text-align: center; overflow: hidden; }
       .hero-section .container { position: relative; z-index: 2; }
       .hero-section h1 { font-size: 3rem; margin-bottom: 0.5em; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
@@ -375,13 +315,11 @@
       .form-group.full-width { grid-column: 1 / -1; }
       .hero-miniapp .btn { width: 100%; margin-top: 1rem; }
       
-      /* 7. Section: Why Us */
       .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
       .benefit-card { text-align: center; }
       .benefit-card .icon { font-size: 3rem; color: var(--accent); margin-bottom: 0.5em; line-height: 1; }
       .benefit-card h3 { font-size: 1.25rem; }
       
-      /* 8. Section: Procedure (Card Tilt) */
       .procedure-section { background-color: var(--card-bg); }
       .tilt-card { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; padding: 2.5rem; border-radius: var(--radius-lg); transform-style: preserve-3d; transition: transform 0.1s linear; }
       .tilt-card-inner { transform: translateZ(20px); }
@@ -390,9 +328,7 @@
       .tilt-card li { padding: 0.5em 0; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5em; }
       .tilt-card .material-symbols-rounded { font-size: 1.5rem; font-variation-settings: 'FILL' 1; }
       .tilt-card .btn-glass { color: #fff; border-color: rgba(255,255,255,0.5); }
-      .tilt-card .btn-glass:hover { background: rgba(255,255,255,0.2); }
       
-      /* 9. Section: Pricing */
       .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; text-align: center; }
       .pricing-card { padding: 2rem; }
       .pricing-card h3 { font-size: 1.5rem; color: var(--accent); }
@@ -403,13 +339,11 @@
       .pricing-card li:last-child { border-bottom: none; }
       .pricing-cta { margin-top: 2rem; text-align: center; }
       
-      /* 10. Section: Booking Process */
       .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
       .step-card { position: relative; padding-top: 3.5rem; }
       .step-number { position: absolute; top: 1.5rem; left: 1.5rem; font-size: 1.5rem; font-weight: 800; color: var(--accent); background-color: var(--body-bg); border: 1px solid var(--border-color); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
       .step-card h3 { font-size: 1.2rem; }
       
-      /* 11. Section: Testimonials */
       .testimonial-slider { position: relative; max-width: 800px; margin: 0 auto; overflow: hidden; }
       .slider-track { display: flex; transition: transform var(--transition-long); }
       .slide { flex: 0 0 100%; padding: 0 1rem; }
@@ -421,7 +355,6 @@
       .slider-nav button { background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-color); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; transition: all var(--transition-time); }
       .slider-nav button:hover { background-color: var(--accent); color: #fff; border-color: var(--accent); }
       
-      /* 12. Section: FAQ (Accordion) */
       .faq-container { max-width: 800px; margin: 0 auto; }
       .faq-item details { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius-sm); margin-bottom: 1rem; overflow: hidden; }
       .faq-item summary { font-size: 1.1rem; font-weight: 600; padding: 1rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
@@ -430,7 +363,6 @@
       .faq-item details[open] summary::after { transform: rotate(45deg); }
       .faq-content { padding: 1.5rem; border-top: 1px solid var(--border-color); }
       
-      /* 13. Section: Contact Form */
       .contact-form { max-width: 700px; margin: 0 auto; }
       .contact-form .form-grid { grid-template-columns: 1fr; }
       .contact-form .form-group label { color: var(--text-muted); }
@@ -439,7 +371,7 @@
       .contact-form .form-group textarea { min-height: 150px; resize: vertical; }
       #form-success-message { display: none; background-color: var(--accent-2); color: #fff; padding: 1em; border-radius: var(--radius-sm); text-align: center; margin-top: 1rem; }
       
-      /* 14. App Shell: Footer */
+      /* 7. Footer */
       .app-footer { background: var(--card-bg); border-top: 1px solid var(--border-color); padding-top: 4rem; padding-bottom: 2rem; color: var(--text-muted); margin-top: auto; }
       .footer-top { display: grid; grid-template-columns: repeat(var(--footer-cols), 1fr); gap: 2rem; margin-bottom: 3rem; }
       .footer-col h5 { font-size: 1rem; font-weight: 600; color: var(--text-color); margin-bottom: 1em; }
@@ -447,36 +379,30 @@
       .footer-col li { margin-bottom: 0.75em; }
       .footer-col a { color: var(--text-muted); font-size: 0.95rem; }
       .footer-col a:hover { color: var(--accent); opacity: 1; }
-      .footer-tagline .logo-ultra { font-size: 1rem; margin-bottom: 0.5em; }
+      .footer-tagline .logo { font-size: 1.5rem; color: var(--text-color); margin-bottom: 0.5em; }
       .social-inline { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1em; }
       .social-inline a { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; font-size: 1rem; border-radius: 14px; color: var(--text-color); background: var(--glass-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(5px); transition: all var(--transition-time); }
       .social-inline a:hover { color: #fff; background: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 20px var(--accent-glow); opacity: 1; }
       .footer-trust-strip { text-align: center; padding: 1.5rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); margin-bottom: 2rem; font-size: 0.9rem; }
       .footer-bottom { text-align: center; font-size: 0.9rem; }
       
-      /* 15. QuickCall (Left) */
+      /* 8. Widgets */
       .quick-call-widget { position: fixed; bottom: 20px; left: 20px; z-index: 998; padding-left: env(safe-area-inset-left); padding-bottom: env(safe-area-inset-bottom); }
       .fab-main { width: 56px; height: 56px; background-color: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; cursor: pointer; box-shadow: 0 4px 20px var(--accent-glow); transition: all var(--transition-time); position: relative; z-index: 10; }
-      .fab-main .icon-open { display: block; }
-      .fab-main .icon-close { display: none; }
+      .fab-main .icon-open { display: block; } .fab-main .icon-close { display: none; }
       .fab-main:hover { transform: scale(1.05); }
       .quick-call-widget.open .fab-main { transform: rotate(180deg); }
-      .quick-call-widget.open .fab-main .icon-open { display: none; }
-      .quick-call-widget.open .fab-main .icon-close { display: block; }
+      .quick-call-widget.open .fab-main .icon-open { display: none; } .quick-call-widget.open .fab-main .icon-close { display: block; }
       .fab-menu { position: absolute; bottom: 100%; left: 0; margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.75rem; transform: scale(0) translateY(50%); transform-origin: bottom left; opacity: 0; visibility: hidden; transition: all var(--transition-time); }
       .quick-call-widget.open .fab-menu { transform: scale(1) translateY(0); opacity: 1; visibility: visible; }
       .fab-menu a { width: 48px; height: 48px; background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: var(--shadow); }
       .fab-menu a:hover { background-color: var(--accent); color: #fff; opacity: 1; }
-      .fab-menu a.zalo-icon { color: #0068FF; }
-      .fab-menu a.whatsapp-icon { color: #25D366; }
-      .fab-menu a.map-icon { color: #EA4335; }
-      .fab-menu a:hover { color: #fff; }
+      .fab-menu a.zalo-icon { color: #0068FF; } .fab-menu a.whatsapp-icon { color: #25D366; } .fab-menu a.map-icon { color: #EA4335; } .fab-menu a:hover { color: #fff; }
       .fab-tooltip { position: absolute; bottom: 10px; left: 110%; background: var(--card-bg); border: 1px solid var(--border-color); padding: 0.5em 1em; border-radius: var(--radius-sm); box-shadow: var(--shadow); font-size: 0.9rem; white-space: nowrap; opacity: 0; visibility: hidden; transition: all var(--transition-time); pointer-events: none; }
       .fab-main:hover .fab-tooltip { opacity: 1; visibility: visible; left: 120%; }
       @keyframes glow { 0%, 100% { box-shadow: 0 4px 20px var(--accent-glow); } 50% { box-shadow: 0 6px 30px var(--accent-glow); transform: scale(1.02); } }
       .quick-call-widget.glow .fab-main { animation: glow 1.5s infinite ease-in-out; }
       
-      /* 16. Theme Selector Modal */
       .theme-selector-modal { position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); z-index: 2000; display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition-time); }
       .theme-selector-modal.open { display: flex; opacity: 1; }
       .theme-selector-dialog { background-color: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: 2rem; max-width: 600px; width: 90%; position: relative; }
@@ -491,24 +417,16 @@
       .theme-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: var(--radius-sm); transition: all var(--transition-time); opacity: 0; }
       .theme-card:hover::before { opacity: 1; }
       .theme-card.active { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
-      [data-style-preview="UltraTitanGlass"] { background: #0A84FF; color: #fff; }
-      [data-style-preview="UltraTitanGlass"]::before { box-shadow: 0 0 20px 5px rgba(10, 132, 255, 0.5); }
-      [data-style-preview="NeoMint"] { background: #30E8A8; color: #000; }
-      [data-style-preview="NeoMint"]::before { box-shadow: 0 0 20px 5px rgba(48, 232, 168, 0.5); }
-      [data-style-preview="MidnightPurple"] { background: #8A5CFF; color: #fff; }
-      [data-style-preview="MidnightPurple"]::before { box-shadow: 0 0 20px 5px rgba(138, 92, 255, 0.5); }
-      [data-style-preview="AeroGlassBlue"] { background: #007AFF; color: #fff; }
-      [data-style-preview="AeroGlassBlue"]::before { box-shadow: 0 0 20px 5px rgba(0, 122, 255, 0.5); }
-      [data-style-preview="MinimalWhite"] { background: #f0f0f2; color: #1c1c1e; }
-      [data-style-preview="MinimalWhite"]::before { box-shadow: 0 0 20px 5px rgba(28, 28, 30, 0.5); }
-      [data-style-preview="SunsetOrange"] { background: #FF6B00; color: #fff; }
-      [data-style-preview="SunsetOrange"]::before { box-shadow: 0 0 20px 5px rgba(255, 107, 0, 0.5); }
-      [data-style-preview="FacebookUltra"] { background: #0866FF; color: #fff; }
-      [data-style-preview="FacebookUltra"]::before { box-shadow: 0 0 20px 5px rgba(8, 102, 255, 0.5); }
-      [data-style-preview="MotoDarkCarbon"] { background: #E11C22; color: #fff; }
-      [data-style-preview="MotoDarkCarbon"]::before { box-shadow: 0 0 20px 5px rgba(225, 28, 34, 0.5); }
+      [data-style-preview="UltraTitanGlass"] { background: #0A84FF; color: #fff; } [data-style-preview="UltraTitanGlass"]::before { box-shadow: 0 0 20px 5px rgba(10, 132, 255, 0.5); }
+      [data-style-preview="NeoMint"] { background: #30E8A8; color: #000; } [data-style-preview="NeoMint"]::before { box-shadow: 0 0 20px 5px rgba(48, 232, 168, 0.5); }
+      [data-style-preview="MidnightPurple"] { background: #8A5CFF; color: #fff; } [data-style-preview="MidnightPurple"]::before { box-shadow: 0 0 20px 5px rgba(138, 92, 255, 0.5); }
+      [data-style-preview="AeroGlassBlue"] { background: #007AFF; color: #fff; } [data-style-preview="AeroGlassBlue"]::before { box-shadow: 0 0 20px 5px rgba(0, 122, 255, 0.5); }
+      [data-style-preview="MinimalWhite"] { background: #f0f0f2; color: #1c1c1e; } [data-style-preview="MinimalWhite"]::before { box-shadow: 0 0 20px 5px rgba(28, 28, 30, 0.5); }
+      [data-style-preview="SunsetOrange"] { background: #FF6B00; color: #fff; } [data-style-preview="SunsetOrange"]::before { box-shadow: 0 0 20px 5px rgba(255, 107, 0, 0.5); }
+      [data-style-preview="FacebookUltra"] { background: #0866FF; color: #fff; } [data-style-preview="FacebookUltra"]::before { box-shadow: 0 0 20px 5px rgba(8, 102, 255, 0.5); }
+      [data-style-preview="MotoDarkCarbon"] { background: #E11C22; color: #fff; } [data-style-preview="MotoDarkCarbon"]::before { box-shadow: 0 0 20px 5px rgba(225, 28, 34, 0.5); }
 
-      /* 17. Responsive Design */
+      /* 9. Responsive */
       @media (min-width: 769px) { .main-nav { display: block; } .mobile-menu-toggle { display: none; } }
       @media (max-width: 1024px) { :root { --footer-cols: 3; } .hero-section h1 { font-size: 2.5rem; } .hero-section .subtitle { font-size: 1.15rem; } }
       @media (max-width: 768px) { :root { --header-height: 60px; --footer-cols: 2; } h1 { font-size: 2.25rem; } h2 { font-size: 1.75rem; } .section { padding: 3rem 0; } .hero-section { min-height: 80vh; padding: 3rem 0; } .hero-cta { flex-direction: column; gap: 0.75rem; } .hero-cta .btn { width: 100%; max-width: 300px; margin: 0 auto; } .form-grid { grid-template-columns: 1fr; } .form-group.half-width { grid-column: 1 / -1; } .benefits-grid { grid-template-columns: 1fr; } .process-steps { grid-template-columns: 1fr; } .footer-top { grid-template-columns: 1fr 1fr; } .footer-col.tagline-col { grid-column: 1 / -1; } }
@@ -520,21 +438,19 @@
     <!-- App Shell: Header -->
     <header class="app-header glass-fixed">
         <div class="container">
-            <!-- LOGO ULTRA UPGRADED (No Image) -->
-            <a href="./" class="logo-ultra">
-                <span class="logo-badge" aria-hidden="true">
-                  <span class="material-symbols-rounded">two_wheeler</span>
-                </span>
-                <span class="logo-title">Hữu Hào</span>
+            <!-- LOGO ULTRA APPLIED HERE -->
+            <a href="./" class="logo">
+                <span class="icon">🛵</span> Hữu Hào
             </a>
             
-            <nav class="main-nav">
-                <ul><!-- Menu items are generated by JS --></ul>
-            </nav>
+            <nav class="main-nav"><ul><!-- JS generated --></ul></nav>
             
             <div class="header-actions">
                 <button class="style-toggle" aria-label="Tùy chỉnh giao diện" id="style-toggle-btn"><span class="material-symbols-rounded">palette</span></button>
-                <button class="theme-toggle" aria-label="Đổi giao diện Sáng/Tối" id="theme-toggle-btn"><span class="material-symbols-rounded icon-light">light_mode</span><span class="material-symbols-rounded icon-dark">dark_mode</span></button>
+                <button class="theme-toggle" aria-label="Đổi giao diện Sáng/Tối" id="theme-toggle-btn">
+                    <span class="material-symbols-rounded icon-light">light_mode</span>
+                    <span class="material-symbols-rounded icon-dark">dark_mode</span>
+                </button>
                 <button class="mobile-menu-toggle" aria-label="Mở menu" id="mobile-menu-toggle-btn"><span class="material-symbols-rounded">menu</span></button>
             </div>
         </div>
@@ -546,19 +462,19 @@
             <span class="logo">Menu</span>
             <button class="mobile-menu-toggle" aria-label="Đóng menu" id="mobile-menu-close-btn"><span class="material-symbols-rounded">close</span></button>
         </div>
-        <ul id="mobile-nav-list"><!-- Mobile menu items are generated by JS --></ul>
+        <ul id="mobile-nav-list"><!-- JS generated --></ul>
     </nav>
 
     <!-- App Shell: Main Content -->
     <main>
-        <!-- Section: Hero (Ultra Mini) -->
+        <!-- Section: Hero -->
         <section class="hero-section">
             <div class="container">
                 <h1 class="fade-in-ultra">⭐ THUÊ XE MÁY LONG BIÊN, HÀ NỘI – HỮU HÀO</h1>
                 <p class="subtitle fade-in-ultra" style="animation-delay: 0.2s;">📍 Xe mới, giao nhanh, giá hợp lý, hỗ trợ 24/7.</p>
                 <div class="hero-cta fade-in-ultra" style="animation-delay: 0.4s;">
-                    <a href="tel:0942467674" class="btn btn-primary btn-lg"><span class="material-symbols-rounded">call</span> Gọi ngay: 0942.467.674</a>
-                    <a href="https://zalo.me/0354904601" class="btn btn-secondary btn-lg btn-glass"><i class="fa-solid fa-comment-dots"></i> Chat Zalo: 0354.904.601</a>
+                    <a href="tel:0942467674" class="btn btn-primary btn-lg"><span class="material-symbols-rounded">call</span>Gọi ngay: 0942.467.674</a>
+                    <a href="https://zalo.me/0354904601" class="btn btn-secondary btn-lg btn-glass"><i class="fa-solid fa-comment-dots"></i>Chat Zalo: 0354.904.601</a>
                 </div>
                 <div class="hero-chips fade-in-ultra" style="animation-delay: 0.6s;">
                     <span class="chip">⚡ Giao nhanh 20’</span><span class="chip">💰 Cọc nhẹ</span><span class="chip">🛵 Xe ga/xe số</span><span class="chip">🚚 Giao tận nơi</span>
@@ -604,7 +520,7 @@
                             <li><span class="material-symbols-rounded">check_circle</span> Đặt cọc linh hoạt: Từ 1-3 triệu VNĐ hoặc giấy tờ tuỳ thân gốc.</li>
                             <li><span class="material-symbols-rounded">check_circle</span> Thanh toán tiền thuê khi nhận xe.</li>
                         </ul>
-                        <div class="text-center"><a href="thutuc.html" class="btn btn-lg btn-glass">Xem chi tiết thủ tục <span class="material-symbols-rounded">arrow_forward</span></a></div>
+                        <div class="text-center"><a href="thutuc.html" class="btn btn-lg btn-glass">Xem chi tiết thủ tục<span class="material-symbols-rounded">arrow_forward</span></a></div>
                     </div>
                 </div>
             </div>
@@ -647,10 +563,7 @@
                         <div class="slide"><div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">"Mình thuê xe tháng ở đây. Giá rất hợp lý, xe được bảo dưỡng miễn phí. Anh chủ nhiệt tình, hỗ trợ mình cả lúc 11h đêm. 10 điểm!"</p><p class="author">- John (Du khách Anh)</p></div></div>
                         <div class="slide"><div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><p class="testimonial-text">"Xe Vision mới keng, chạy êm ru. Thủ tục nhanh gọn, chỉ cần CCCD là xong. Gần bến xe Gia Lâm nên mình bắt xe về quê rất tiện."</p><p class="author">- Bạn Tuấn (Sinh viên)</p></div></div>
                     </div>
-                    <div class="slider-nav">
-                        <button id="slide-prev" aria-label="Đánh giá trước"><span class="material-symbols-rounded">arrow_back</span></button>
-                        <button id="slide-next" aria-label="Đánh giá sau"><span class="material-symbols-rounded">arrow_forward</span></button>
-                    </div>
+                    <div class="slider-nav"><button id="slide-prev" aria-label="Đánh giá trước"><span class="material-symbols-rounded">arrow_back</span></button><button id="slide-next" aria-label="Đánh giá sau"><span class="material-symbols-rounded">arrow_forward</span></button></div>
                 </div>
             </div>
         </section>
@@ -699,20 +612,17 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col tagline-col" style="grid-column: span 2 / auto;">
-                    <!-- LOGO ULTRA UPGRADED (Footer) -->
-                    <a href="./" class="logo-ultra">
-                        <span class="logo-badge" aria-hidden="true">
-                          <span class="material-symbols-rounded">two_wheeler</span>
-                        </span>
-                        <span class="logo-title">Hữu Hào</span>
+                    <!-- LOGO ULTRA APPLIED HERE TOO -->
+                    <a href="./" class="logo">
+                        <span class="icon">🛵</span> Hữu Hào
                     </a>
                     <p>Giao xe 20–40 phút • Giá minh bạch • Giấy tờ đầy đủ • Hỗ trợ 24/7</p>
-                    <div class="social-inline" id="footer-social-links"><!-- Social links generated by JS --></div>
+                    <div class="social-inline" id="footer-social-links"><!-- Generated by JS --></div>
                 </div>
-                <div class="footer-col" id="footer-col-2"><h5>Dịch vụ</h5><!-- Links generated by JS --></div>
-                <div class="footer-col" id="footer-col-3"><h5>Khu vực</h5><!-- Links generated by JS --></div>
-                <div class="footer-col" id="footer-col-4"><h5>Thông tin</h5><!-- Links generated by JS --></div>
-                <div class="footer-col" id="footer-col-5"><h5>Liên hệ</h5><!-- Links generated by JS --></div>
+                <div class="footer-col" id="footer-col-2"><h5>Dịch vụ</h5><!-- Generated by JS --></div>
+                <div class="footer-col" id="footer-col-3"><h5>Khu vực</h5><!-- Generated by JS --></div>
+                <div class="footer-col" id="footer-col-4"><h5>Thông tin</h5><!-- Generated by JS --></div>
+                <div class="footer-col" id="footer-col-5"><h5>Liên hệ</h5><!-- Generated by JS --></div>
             </div>
             <div class="footer-trust-strip">⭐ 4.9/5 từ khách hàng • Giao xe 20–40 phút • Hỗ trợ 24/7 • Xe bảo dưỡng định kỳ</div>
             <div class="footer-bottom">
@@ -722,7 +632,7 @@
         </div>
     </footer>
     
-    <!-- QuickCall Widget (Left) -->
+    <!-- Widgets -->
     <div class="quick-call-widget" id="quick-call-widget">
         <div class="fab-menu" id="quick-call-menu">
             <a href="tel:0942467674" aria-label="Gọi điện" class="call-icon"><span class="material-symbols-rounded">call</span></a>
@@ -736,12 +646,11 @@
         </div>
     </div>
     
-    <!-- Theme Selector Modal -->
     <div class="theme-selector-modal" id="theme-selector-modal" role="dialog" aria-modal="true" aria-labelledby="theme-selector-title">
         <div class="theme-selector-dialog">
             <button class="theme-selector-close" id="theme-selector-close-btn" aria-label="Đóng"><span class="material-symbols-rounded">close</span></button>
             <div class="theme-selector-header"><h3 id="theme-selector-title">Tùy chỉnh giao diện</h3><p class="text-muted">Chọn phong cách hiển thị yêu thích</p></div>
-            <div class="theme-grid" id="theme-grid"><!-- Theme cards generated by JS --></div>
+            <div class="theme-grid" id="theme-grid"><!-- Generated by JS --></div>
         </div>
     </div>
 
@@ -749,15 +658,19 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const CONFIG = {
+          BRAND_NAME: "Hữu Hào",
+          PHONES: { primary: "0942467674", zalo: "0354904601" },
           MENU: [
-            { "🏠 Trang chủ": "./" }, { "📄 Giới thiệu": "gioithieu.html" },
+            { "🏠 Trang chủ": "./" },
+            { "📄 Giới thiệu": "gioithieu.html" },
             { "⚙️ Dịch vụ": "#", "submenu": [ { "🏷️ Bảng giá": "banggia.html" }, { "📑 Thủ tục thuê xe": "thutuc.html" }, { "💰 Đặt cọc": "datcoc.html" }, { "🎁 Ưu đãi & khuyến mãi": "uudai.html" }, { "📅 Thuê theo ngày": "ngay.html" }, { "🗓️ Thuê theo tuần": "tuan.html" }, { "📆 Thuê theo tháng": "thang.html" } ] },
             { "📍 Khu vực giao xe": "#", "submenu": [ { "Long Biên": "longbien.html" }, { "Gia Lâm": "gialam.html" }, { "Phố Cổ": "phoco.html" }, { "Hoàn Kiếm": "hoankiem.html" }, { "Ba Đình": "badinh.html" }, { "Tây Hồ": "tayho.html" }, { "Đống Đa": "dongda.html" }, { "Cầu Giấy": "caugiay.html" }, { "Hà Đông": "hadong.html" }, { "Thanh Xuân": "thanhxuan.html" }, { "Từ Liêm": "tuliem.html" }, { "Ga Hà Nội": "gahn.html" } ] },
-            { "❓ FAQ": "faq.html" }, { "💬 Liên hệ": "lienhe.html" },
+            { "❓ FAQ": "faq.html" },
+            { "💬 Liên hệ": "lienhe.html" },
           ],
           FOOTER_COLS: {
-            "col2_DichVu": [ { "🏷️ Bảng giá": "banggia.html" }, { "📅 Theo ngày": "ngay.html" }, { "🗓️ Theo tuần": "tuan.html" }, { "📆 Theo tháng": "thang.html" }, { "🎁 Ưu đãi": "uudai.html" }, { "📑 Thủ tục": "thutuc.html" }, ],
-            "col3_DiaDiem": [ { "Long Biên": "longbien.html" }, { "Gia Lâm": "gialam.html" }, { "Phố Cổ": "phoco.html" }, { "Hoàn Kiếm": "hoankiem.html" }, { "Ba Đình": "badinh.html" }, { "Tây Hồ": "tayho.html" }, ],
+            "col2_DichVu": [ { "🏷️ Bảng giá": "banggia.html" }, { "📅 Theo ngày": "ngay.html" }, { "🗓️ Theo tuần": "tuan.html" }, { "📆 Theo tháng": "thang.html" }, { "🎁 Ưu đãi": "uudai.html" }, { "📑 Thủ tục": "thutuc.html" } ],
+            "col3_DiaDiem": [ { "Long Biên": "longbien.html" }, { "Gia Lâm": "gialam.html" }, { "Phố Cổ": "phoco.html" }, { "Hoàn Kiếm": "hoankiem.html" }, { "Ba Đình": "badinh.html" }, { "Tây Hồ": "tayho.html" } ],
             "col4_ThongTin": [ { "❓ FAQ": "faq.html" }, { "📜 Điều khoản sử dụng": "dieukhoansudung.html" }, { "🔒 Chính sách bảo mật": "chinhsachbaomat.html" } ],
             "col5_LienHe": [ { "💬 Liên hệ": "lienhe.html" }, { "📞 Gọi": "tel:0942467674" }, { "💬 Zalo": "https://zalo.me/0354904601" }, { "🟢 WhatsApp": "https://wa.me/84942467674" } ]
           },
@@ -767,44 +680,38 @@
             { "icon": "fa-solid fa-blog", "url": "https://thuexemaynguyentu.com", "label": "Blog" }
           ],
           THEME_RANDOMIZER: { ENABLED: true, POOL: [ "UltraTitanGlass", "NeoMint", "MidnightPurple", "AeroGlassBlue", "MinimalWhite", "SunsetOrange", "FacebookUltra", "MotoDarkCarbon" ], RANDOMIZE_ON_LOAD: true },
-          THEME_SELECTOR: { ENABLED: true, SAVE_LAST_THEME: true }
+          THEME_SELECTOR: { ENABLED: true, SAVE_LAST_THEME: true },
+          FEATURES: { USE_QUICKCALL_LEFT: true, USE_CARD_TILT: true, USE_SCROLL_ANIM: true, USE_VIEW_TRANSITIONS: true }
         };
 
-        const $ = (s) => document.querySelector(s), $$ = (s) => document.querySelectorAll(s), html = document.documentElement;
+        const $ = (s) => document.querySelector(s); const $$ = (s) => document.querySelectorAll(s); const html = document.documentElement;
 
-        // --- THEME ENGINE ---
-        const stylePresets = { "UltraTitanGlass": { name: "Titan Glass", icon: "shield" }, "NeoMint": { name: "Neo Mint", icon: "spa" }, "MidnightPurple": { name: "Midnight", icon: "bedtime" }, "AeroGlassBlue": { name: "Aero Blue", icon: "air" }, "MinimalWhite": { name: "Minimalist", icon: "check_box_outline_blank" }, "SunsetOrange": { name: "Sunset", icon: "wb_sunny" }, "FacebookUltra": { name: "Facebook", icon: "thumb_up" }, "MotoDarkCarbon": { name: "Dark Carbon", icon: "sports_motorsports" } };
-        function applyTheme(t) { t==='auto'?(html.removeAttribute('data-theme'),localStorage.removeItem('theme')):(html.setAttribute('data-theme',t),localStorage.setItem('theme',t)); }
-        function applyStyle(s) { if(!stylePresets[s])return;html.setAttribute('data-style',s);if(CONFIG.THEME_SELECTOR.SAVE_LAST_THEME)localStorage.setItem('style',s);$$('.theme-card').forEach(c=>c.classList.toggle('active',c.dataset.style===s)); }
+        // 1. Theme Engine
+        const stylePresets={ "UltraTitanGlass":{name:"Titan Glass",icon:"shield"},"NeoMint":{name:"Neo Mint",icon:"spa"},"MidnightPurple":{name:"Midnight",icon:"bedtime"},"AeroGlassBlue":{name:"Aero Blue",icon:"air"},"MinimalWhite":{name:"Minimalist",icon:"check_box_outline_blank"},"SunsetOrange":{name:"Sunset",icon:"wb_sunny"},"FacebookUltra":{name:"Facebook",icon:"thumb_up"},"MotoDarkCarbon":{name:"Dark Carbon",icon:"sports_motorsports"}};
+        function applyTheme(t){ t==='auto'?(html.removeAttribute('data-theme'),localStorage.removeItem('theme')):(html.setAttribute('data-theme',t),localStorage.setItem('theme',t)); }
+        function applyStyle(s){ if(!stylePresets[s])return;html.setAttribute('data-style',s);CONFIG.THEME_SELECTOR.SAVE_LAST_THEME&&localStorage.setItem('style',s);$$('.theme-card').forEach(c=>c.classList.toggle('active',c.dataset.style===s)); }
         $('#theme-toggle-btn').addEventListener('click',()=>{let t=html.getAttribute('data-theme');if(!t)t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';applyTheme(t==='light'?'dark':'light');});
-        if(CONFIG.THEME_SELECTOR.ENABLED){
-          CONFIG.THEME_RANDOMIZER.POOL.forEach(k=>{ if(!stylePresets[k])return;const c=document.createElement('div');c.className='theme-card';c.dataset.style=k;c.innerHTML=`<div class="theme-preview" data-style-preview="${k}"><span class="material-symbols-rounded">${stylePresets[k].icon}</span></div><span>${stylePresets[k].name}</span>`;c.addEventListener('click',()=>{applyStyle(k);$('#theme-selector-modal').classList.remove('open')});$('#theme-grid').appendChild(c);});
-          $('#style-toggle-btn').addEventListener('click',()=>$('#theme-selector-modal').classList.add('open'));
-          $('#theme-selector-close-btn').addEventListener('click',()=>$('#theme-selector-modal').classList.remove('open'));
-          $('#theme-selector-modal').addEventListener('click',e=>{if(e.target===$('#theme-selector-modal'))$('#theme-selector-modal').classList.remove('open')});
-        }
-        let s=localStorage.getItem('style');if(!s&&CONFIG.THEME_RANDOMIZER.RANDOMIZE_ON_LOAD)s=CONFIG.THEME_RANDOMIZER.POOL[Math.floor(Math.random()*CONFIG.THEME_RANDOMIZER.POOL.length)];applyStyle(s||CONFIG.THEME_RANDOMIZER.POOL[0]);
-        const savedTheme=localStorage.getItem('theme');if(savedTheme)applyTheme(savedTheme);
+        if(CONFIG.THEME_SELECTOR.ENABLED){ CONFIG.THEME_RANDOMIZER.POOL.forEach(k=>{const p=stylePresets[k];if(!p)return;const c=document.createElement('div');c.className='theme-card';c.dataset.style=k;c.innerHTML=`<div class="theme-preview" data-style-preview="${k}"><span class="material-symbols-rounded">${p.icon}</span></div><span>${p.name}</span>`;c.addEventListener('click',()=>{applyStyle(k);$('#theme-selector-modal').classList.remove('open');});$('#theme-grid').appendChild(c);}); $('#style-toggle-btn').addEventListener('click',()=>$('#theme-selector-modal').classList.add('open')); $('#theme-selector-close-btn').addEventListener('click',()=>$('#theme-selector-modal').classList.remove('open')); $('#theme-selector-modal').addEventListener('click',e=>{if(e.target===$('#theme-selector-modal'))$('#theme-selector-modal').classList.remove('open');}); }
+        let savedStyle=localStorage.getItem('style'); if(CONFIG.THEME_RANDOMIZER.RANDOMIZE_ON_LOAD&&!savedStyle){const p=CONFIG.THEME_RANDOMIZER.POOL;savedStyle=p[Math.floor(Math.random()*p.length)];} applyStyle(savedStyle||CONFIG.THEME_RANDOMIZER.POOL[0]); const savedTheme=localStorage.getItem('theme'); if(savedTheme)applyTheme(savedTheme);
 
-        // --- MENU & FOOTER ---
-        function createMenuItem(i){const k=Object.keys(i)[0],v=i[k],li=document.createElement('li'),a=document.createElement('a');a.href=Array.isArray(v)?'#':v;a.innerHTML=k;li.appendChild(a);if(Array.isArray(v)||i.submenu){a.innerHTML+=' <span class="material-symbols-rounded submenu-toggle">expand_more</span>';li.classList.add('has-dropdown');const ul=document.createElement('ul');ul.className='dropdown';(i.submenu||v).forEach(si=>ul.appendChild(createMenuItem(si)));li.appendChild(ul);}return li;}
-        CONFIG.MENU.forEach(i=>{$('.main-nav ul').appendChild(createMenuItem(i));$('#mobile-nav-list').appendChild(createMenuItem(i));});
-        Object.keys(CONFIG.FOOTER_COLS).forEach((k,i)=>{const col=$(`#footer-col-${i+2}`);if(col){const ul=document.createElement('ul');CONFIG.FOOTER_COLS[k].forEach(it=>{const ik=Object.keys(it)[0],li=document.createElement('li');li.innerHTML=`<a href="${it[ik]}">${ik}</a>`;ul.appendChild(li)});col.appendChild(ul)}});
+        // 2. Dynamic Menu & Footer
+        function createMenuItem(item){ const key=Object.keys(item)[0], val=item[key]; let li=document.createElement('li'), a=document.createElement('a'); a.href=Array.isArray(val)?'#':val; a.innerHTML=key; li.appendChild(a); if(Array.isArray(val)||(item.submenu&&item.submenu.length>0)){ a.innerHTML+=' <span class="material-symbols-rounded submenu-toggle">expand_more</span>'; li.classList.add('has-dropdown'); let ul=document.createElement('ul'); ul.className='dropdown'; (item.submenu||val).forEach(sub=>ul.appendChild(createMenuItem(sub))); li.appendChild(ul); } return li; }
+        CONFIG.MENU.forEach(i=>{ $('.main-nav ul').appendChild(createMenuItem(i)); $('#mobile-nav-list').appendChild(createMenuItem(i)); });
+        Object.keys(CONFIG.FOOTER_COLS).forEach((k,i)=>{ const col=$(`#footer-col-${i+2}`); if(col){ let ul=document.createElement('ul'); CONFIG.FOOTER_COLS[k].forEach(item=>{ let li=document.createElement('li'); li.innerHTML=`<a href="${Object.values(item)[0]}">${Object.keys(item)[0]}</a>`; ul.appendChild(li); }); col.appendChild(ul); }});
         CONFIG.SOCIALS.forEach(s=>$('#footer-social-links').innerHTML+=`<a href="${s.url}" target="_blank" aria-label="${s.label}"><i class="${s.icon}"></i></a>`);
-        $('#mobile-menu-toggle-btn').addEventListener('click',()=>$('#mobile-nav').classList.add('open'));
-        $('#mobile-menu-close-btn').addEventListener('click',()=>$('#mobile-nav').classList.remove('open'));
-        $$('.mobile-nav .has-dropdown > a').forEach(t=>t.addEventListener('click',e=>{e.preventDefault();t.parentElement.classList.toggle('submenu-open')}));
+
+        // 3. Mobile Nav
+        $('#mobile-menu-toggle-btn').addEventListener('click',()=>$('#mobile-nav').classList.add('open')); $('#mobile-menu-close-btn').addEventListener('click',()=>$('#mobile-nav').classList.remove('open'));
+        $$('.mobile-nav .has-dropdown > a').forEach(t=>t.addEventListener('click',e=>{e.preventDefault();t.parentElement.classList.toggle('submenu-open');}));
         $$('.mobile-nav a:not([href="#"])').forEach(l=>l.addEventListener('click',()=>$('#mobile-nav').classList.remove('open')));
 
-        // --- WIDGETS & ANIMATIONS ---
-        $('#quick-call-fab').addEventListener('click',()=>{const w=$('#quick-call-widget');w.classList.toggle('open');$('#quick-call-fab').setAttribute('aria-expanded',w.classList.contains('open'));w.classList.remove('glow')});
-        const h=new Date().getHours(),msg=$('#smart-context-message');msg.textContent=h>=5&&h<11?"Chào buổi sáng! Cần xe?":h>=11&&h<17?"Chào buổi chiều!":h>=17&&h<22?"Buổi tối vui vẻ! Hỗ trợ 24/7":"Chúng tôi hỗ trợ 24/7!";
-        setTimeout(()=>{if(!$('#quick-call-widget').classList.contains('open'))$('#quick-call-widget').classList.add('glow')},10000);
-        const tilt=$('#tilt-card');if(tilt){tilt.addEventListener('mousemove',e=>{const r=tilt.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;tilt.style.transform=`perspective(1000px) rotateX(${-(10*(y-r.height/2))/(r.height/2)}deg) rotateY(${(10*(x-r.width/2))/(r.width/2)}deg) scale(1.05)`});tilt.addEventListener('mouseleave',()=>tilt.style.transform='perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)')}
-        const obs=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');obs.unobserve(i.target)}}),{threshold:0.1});$$('.scroll-reveal').forEach(el=>obs.observe(el));
-        const slider=$('#testimonial-slider');if(slider){let cur=0;const t=$('#slider-track'),len=$$('.slide').length,up=()=>t.style.transform=`translateX(-${cur*100}%)`;$('#slide-next').addEventListener('click',()=>{cur=(cur+1)%len;up()});$('#slide-prev').addEventListener('click',()=>{cur=(cur-1+len)%len;up()})}
-        $('#contact-form')?.addEventListener('submit',e=>{e.preventDefault();$('#form-success-message').style.display='block';e.target.reset();setTimeout(()=>$('#form-success-message').style.display='none',5000)});
-        if(document.startViewTransition)$$('a').forEach(l=>{if(l.origin===location.origin&&!l.pathname.includes('.')&&!l.hash)l.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.button>0)return;e.preventDefault();document.startViewTransition(()=>location.href=l.href)})});
+        // 4. Widgets & Effects
+        if(CONFIG.FEATURES.USE_QUICKCALL_LEFT){ const w=$('#quick-call-widget'),f=$('#quick-call-fab'),s=$('#smart-context-message'),h=new Date().getHours(); f.addEventListener('click',()=>{w.classList.toggle('open');f.setAttribute('aria-expanded',w.classList.contains('open'));w.classList.remove('glow');}); s.textContent=h>=5&&h<11?"Chào buổi sáng! Cần xe?":h>=11&&h<17?"Chào buổi chiều!":h>=17&&h<22?"Buổi tối vui vẻ! Hỗ trợ 24/7":"Chúng tôi hỗ trợ 24/7!"; setTimeout(()=>{if(!w.classList.contains('open'))w.classList.add('glow');},10000); }
+        if(CONFIG.FEATURES.USE_CARD_TILT&&$('#tilt-card')){$('#tilt-card').addEventListener('mousemove',e=>{const r=$('#tilt-card').getBoundingClientRect();$('#tilt-card').style.transform=`perspective(1000px) rotateX(${-(10*(e.clientY-r.top-r.height/2)/(r.height/2))}deg) rotateY(${(10*(e.clientX-r.left-r.width/2)/(r.width/2))}deg) scale(1.05)`;});$('#tilt-card').addEventListener('mouseleave',()=>$('#tilt-card').style.transform='perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)');}
+        if(CONFIG.FEATURES.USE_SCROLL_ANIM){const obs=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');obs.unobserve(i.target);}}),{threshold:0.1});$$('.scroll-reveal').forEach(el=>obs.observe(el));}
+        if($('#testimonial-slider')){let i=0;const t=$('#slider-track'),s=$$('.slide').length;$('#slide-next').addEventListener('click',()=>{i=(i+1)%s;t.style.transform=`translateX(-${i*100}%)`});$('#slide-prev').addEventListener('click',()=>{i=(i-1+s)%s;t.style.transform=`translateX(-${i*100}%)`});}
+        if($('#contact-form'))$('#contact-form').addEventListener('submit',e=>{e.preventDefault();$('#form-success-message').style.display='block';e.target.reset();setTimeout(()=>$('#form-success-message').style.display='none',5000);});
+        if(CONFIG.FEATURES.USE_VIEW_TRANSITIONS&&document.startViewTransition){window.addEventListener('pageshow',()=>document.body.classList.remove('fade-in-ultra'));document.querySelectorAll('a').forEach(l=>{const u=new URL(l.href,window.location.origin);if(u.origin===window.location.origin&&!u.pathname.includes('.')&&!u.hash)l.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.button>0)return;e.preventDefault();document.startViewTransition(()=>window.location.href=l.href);});});}
       });
     </script>
     <script src="https://motoopen.github.io/chothuexemayhanoi/motoai_v38_1_debug_semantic_pricing.js" defer></script>
