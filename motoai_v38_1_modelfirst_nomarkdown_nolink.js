@@ -1,4 +1,4 @@
-/* motoai_v38_1_debug_semantic_pricing.js (customized no-markdown, no-links, precise model recognition)
+/* motoai_v38_1_modelfirst_nomarkdown_nolink.js
    ✅ GỘP: v27 (BM25 + Extractive QA + Auto-Price Learn + Multi-site)
         + v37.6 (UI nhỏ như Messenger + DeepContext + ưu tiên moto_sitemap.json)
         + v38.1 (Debug counters + console.table, fix UI input, iOS keyboard-safe)
@@ -80,12 +80,28 @@
   }
 
   // Loại bỏ thương hiệu khỏi chuỗi để nhận model chính xác
-  const BRANDS = ['honda','yamaha','suzuki','piaggio','vespa','vinfast','sym','kymco'];
+  // LƯU Ý: KHÔNG loại 'vespa' vì đây cũng là model được phép nhận diện
+  const BRANDS = ['honda','yamaha','suzuki','piaggio','vinfast','sym','kymco'];
   function stripBrands(text){
     return String(text||'')
       .replace(new RegExp(`\\b(${BRANDS.join('|')})\\b`, 'ig'), '')
       .replace(/\s{2,}/g,' ')
       .trim();
+  }
+
+  // Chuẩn hoá câu trả lời: bỏ markdown/link nếu được bật cờ
+  function sanitizeReply(s){
+    let out = String(s||'');
+    if(CFG.noLinksInReply){
+      out = out.replace(/\bhttps?:\/\/\S+/gi,'').replace(/\bwww\.\S+/gi,'');
+    }
+    if(CFG.noMarkdownReply){
+      // Bỏ cú pháp markdown phổ biến
+      out = out
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1') // [txt](url) -> txt
+        .replace(/[*_`~>]+/g, '');                 // *, _, `, ~, > bỏ hết
+    }
+    return out.trim();
   }
 
   /* ====== STORAGE KEYS ====== */
@@ -319,7 +335,7 @@
     '50cc':       { day:[200000],          week:[800000], month:[1700000] },
     'xe côn tay': { day:[300000],          week:[1200000], month:null }
   };
-  // Bổ sung model phổ biến: wave, sirius (fallback family nếu thiếu)
+  // Bổ sung model phổ biến
   PRICE_TABLE['wave']   = PRICE_TABLE['wave']   || { day:[150000], week:[600000,700000], month:[850000,1200000] };
   PRICE_TABLE['sirius'] = PRICE_TABLE['sirius'] || { day:[150000], week:[600000,700000], month:[850000,1200000] };
   PRICE_TABLE['blade']  = PRICE_TABLE['blade']  || { day:[150000], week:[600000,700000], month:[850000,1200000] };
@@ -466,9 +482,12 @@
     const bm = CFG.smart.semanticSearch ? buildBM25(docs) : null;
     const scored = bm
       ? docs.map(d=>({score: bm.score(query, d.id, tk(d.text).length||1), meta:d.meta}))
-              .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,k).map(x=>x.meta)
-      : idx.map(it=> Object.assign({score: tk(it.title+" "+it.text).filter(t=> tk(query).includes(t)).length}, it))
-           .filter(x=>x.score>0).sort((a,b)=>b.score-a-score).slice(0,k);
+            .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,k).map(x=>x.meta)
+      : idx.map(it=> Object.assign(
+          {score: tk(it.title+" "+it.text).filter(t=> tk(query).includes(t)).length}, it))
+           .filter(x=>x.score>0)
+           .sort((a,b)=> b.score - a.score)   // ✅ FIX: đúng cú pháp so sánh điểm
+           .slice(0,k);
     return scored;
   }
   function bestSentences(text, query, k=2){
@@ -848,7 +867,7 @@
     const isMobile = window.innerWidth < 480; const wait = (isMobile? 1600 + Math.random()*1200 : 2400 + Math.random()*2200);
     showTyping(); await sleep(wait);
     const ans = await deepAnswer(v);
-    hideTyping(); addMsg("bot", ans); pushCtx({from:"bot", raw:ans});
+    hideTyping(); addMsg("bot", sanitizeReply(ans)); pushCtx({from:"bot", raw:sanitizeReply(ans)});
     sending=false;
     ensureInputVisible();
   }
