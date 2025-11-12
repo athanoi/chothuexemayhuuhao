@@ -276,7 +276,6 @@ KIỂM TRA TỰ ĐỘNG (hãy đảm bảo khi xuất)
 	•	Không dùng fetch/AJAX để gửi form (dùng mailto hoặc chỉ front-end).
 	•	QuickCall link dùng tel:+84942467674, https://zalo.me/0354904601, https://wa.me/84942467674, và map link.
 	•	Footer có 6 cột, bằng dữ liệu đã cung cấp.
-	•	Bảo đảm không xuất thêm file nào khác, không thêm schema JSON-LD.
 
 YÊU CẦU VỀ PHẦN TRẢ VỀ
 	•	Chỉ trả về mã nguồn index.html (toàn bộ file, bắt đầu từ <!DOCTYPE html> đến </html>). Không mô tả, không giải thích, không thêm văn bản nào khác.
