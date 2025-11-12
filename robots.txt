@@ -1,0 +1,71 @@
+# robots.txt for https://athanoi.github.io/chothuexemayhuuhao/
+# Cho phép tất cả bot hợp lệ thu thập dữ liệu trang web
+
+User-agent: *
+Allow: /
+
+# Liệt kê rõ các bot chính được hỗ trợ
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# Chặn một số bot xấu, spam, scraper
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: AspiegelBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+# Khai báo sitemap cho công cụ tìm kiếm
+Sitemap: https://athanoi.github.io/chothuexemayhuuhao/sitemap.xml
+Sitemap: https://athanoi.github.io/chothuexemayhuuhao/sitemap-facebook.xml
