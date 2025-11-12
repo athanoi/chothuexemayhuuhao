@@ -257,10 +257,16 @@ HIỆU ỨNG & UX (chi tiết)
 	•	SEO: meta tags (title, description, canonical, og tags), lang="vi", proper heading structure h1..h2 etc.
 	•	Local storage: lưu theme (tên theme) và trạng thái dark/light; button toggle ở header.
 
+Mục tiêu: 1 khối Ultra App liền mạch = Menu + Hero + QuickCall (glassmorphism cao cấp, dark/light, mượt trên mọi kích thước).
+
+	•	Hero: multi-layer glass, không ảnh nền, gradient động + radial highlights; chữ cascade; CTA gradient (ripple + tilt); khi cuộn hero fade → header chuyển sang glass/translucent.
+	•	QuickCall: nút tròn bên trái, glass blur đa tầng, glow nhẹ, ripple; mở trượt 4 nút (Gọi, Zalo, Bản đồ, WhatsApp) với icon; accent theo theme; trap focus khi cần.
+	•	Đồng bộ: chia sẻ biến theme (--accent, radii, glass blur), cùng timing transition; dark/light toggle lưu localStorage (mặc định theo prefers-color-scheme).
+	•	A11y & perf: keyboard nav, visible focus, contrast ok, prefers-reduced-motion giảm hiệu ứng; tắt tilt/blur nặng trên thiết bị yếu.
+	
 KẾT QUẢ MONG MUỐN
 	•	Xuất một file index.html thỏa mọi yêu cầu trên.
 	•	Không đổi chuỗi dữ liệu thương hiệu, số điện thoại, email, địa chỉ, link mạng xã hội đã cho.
-	•	
 	•	Tập trung vào UX mobile-first, sau đó responsive cho desktop.
 	•	Nếu có bất kỳ tính năng nào không thể hỗ trợ trong 1 file (ví dụ: server-side), hãy implement fallback front-end (ví dụ: mailto cho form).
 
@@ -272,6 +278,6 @@ KIỂM TRA TỰ ĐỘNG (hãy đảm bảo khi xuất)
 	•	Footer có 6 cột, bằng dữ liệu đã cung cấp.
 	•	Bảo đảm không xuất thêm file nào khác, không thêm schema JSON-LD.
 
-YÊU CẦU VỀ PHẦN TRẢ VỀ (rất quan trọng)
+YÊU CẦU VỀ PHẦN TRẢ VỀ
 	•	Chỉ trả về mã nguồn index.html (toàn bộ file, bắt đầu từ <!DOCTYPE html> đến </html>). Không mô tả, không giải thích, không thêm văn bản nào khác.
 	•	File phải có indent hợp lý, dễ đọc.
