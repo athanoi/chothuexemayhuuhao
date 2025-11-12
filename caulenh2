@@ -257,6 +257,44 @@ HIỆU ỨNG & UX (chi tiết)
 	•	SEO: meta tags (title, description, canonical, og tags), lang="vi", proper heading structure h1..h2 etc.
 	•	Local storage: lưu theme (tên theme) và trạng thái dark/light; button toggle ở header.
 
+thêm 1 section hiển thị tốt cho cả 3 thiết bị nằm trong layout và 2 Cta
+
+🛵 Cho Thuê Xe Máy Hà Nội – Hữu Hào
+
+Địa chỉ cho thuê xe máy uy tín – giá rẻ tại Hoàn Kiếm, Phố Cổ, Long Biên (gần Bến xe Gia Lâm).
+Cung cấp xe ga, xe số, xe điện; giao tận nơi 20–40 phút; hỗ trợ 24/7; thuê theo giờ – ngày – tuần – tháng; xe mới, chất lượng đảm bảo.
+
+⸻
+
+📍 Địa chỉ
+
+1️⃣ Ngõ 5 Đ. Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội (Gần Bến xe Gia Lâm)
+2️⃣ 112 Nguyễn Văn Cừ, Long Biên, Hà Nội
+
+⸻
+
+📞 Liên hệ
+	•	☎️ Điện thoại: 0354 904 601 · 0942 467 674
+	•	💬 Zalo: zalo.me/0354904601￼
+	•	🌐 WhatsApp: wa.me/84942467674￼
+	•	📧 Gmail: nguyenhuuhao0202@gmail.com￼
+	•	🔗 Website: athanoi.github.io/chothuexemayhuuhao￼
+
+⸻
+
+⏰ Giờ làm việc
+	•	🕗 Mở cửa: 8:00 – 17:00
+	•	🚚 Giao xe 24/7 theo yêu cầu
+
+⸻
+
+💡 Ưu điểm nổi bật
+
+✅ Xe mới, máy khỏe, tiết kiệm xăng
+✅ Hỗ trợ giao xe tận nơi chỉ 20–40 phút
+✅ Có xe ga, xe số, xe điện cho thuê linh hoạt
+✅ Phục vụ tận tâm – giá rẻ – thủ tục nhanh gọn
+
 Mục tiêu: 1 khối Ultra App liền mạch = Menu + Hero + QuickCall (glassmorphism cao cấp, dark/light, mượt trên mọi kích thước).
 
 	•	Hero: multi-layer glass, không ảnh nền, gradient động + radial highlights; chữ cascade; CTA gradient (ripple + tilt); khi cuộn hero fade → header chuyển sang glass/translucent.
