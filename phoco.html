@@ -19,10 +19,11 @@
 <!-- ===== FONTS (REQUIRED) ===== -->
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" integrity="sha512-Sl1Z9nI0a3+u3G8J5rGmQmQzq1mSx0wQyR0k0s6o3z3E7v7hF2qf5y1CkG3m7B3q2l7m8l9k5p6o7s8t9u0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,600,0,0" rel="stylesheet" />
+<!-- Font Awesome 6 Free (no SRI to avoid integrity mismatch across mirrors) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" referrerpolicy="no-referrer" />
 
-<!-- ===== SAFARI PIN / FAVICON (OPTIONAL PLACEHOLDER) ===== -->
+<!-- ===== FAVICON (SVG EMOJI) ===== -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛵</text></svg>">
 
 <!-- ===== JSON-LD (LocalBusiness) ===== -->
@@ -114,6 +115,14 @@
     overflow-x:hidden;
   }
 
+  /* Material Symbols ligatures */
+  .icon{
+    font-family:"Material Symbols Rounded";
+    font-weight:400;font-style:normal;line-height:1;font-size:1.25rem;
+    font-variation-settings:'FILL' 0,'wght' 600,'GRAD' 0,'opsz' 24;
+  }
+  .fa-fw{width:1.25em;text-align:center}
+
   /* ===================== UTILITIES ===================== */
   .container{max-width:var(--maxw);margin:auto;padding:0 16px}
   .glass{
@@ -137,6 +146,9 @@
   .btn.secondary{background:linear-gradient(135deg,var(--accent-2),color-mix(in oklch,var(--accent-2) 70%, #00a97f))}
   .btn:focus-visible{outline:none;box-shadow:var(--ring)}
   .btn:hover{filter:saturate(1.1);transform:translateY(-1px)}
+  .btn .ripple{position:absolute;border-radius:50%;pointer-events:none;inset:auto auto 0 0;transform:translate(-50%,-50%);opacity:.25;background:#fff;animation:ripple .6s ease-out}
+  @keyframes ripple{from{width:0;height:0;opacity:.35}to{width:480px;height:480px;opacity:0}}
+
   .chip{
     display:inline-flex;align-items:center;gap:.4rem;padding:.5rem .75rem;border-radius:999px;
     background:color-mix(in oklch,var(--accent) 10%,transparent);
@@ -144,8 +156,6 @@
     color:color-mix(in oklch,var(--text) 92%, var(--muted));
     font-weight:600;font-size:.9rem
   }
-  .icon{font-family:"Material Symbols Rounded";font-weight:400;font-style:normal;line-height:1;font-size:1.25rem}
-  .fa-fw{width:1.25em;text-align:center}
 
   /* ===================== HEADER / NAV ===================== */
   header.site{
@@ -328,21 +338,6 @@
     ::view-transition-old(root),::view-transition-new(root){animation-duration:.3s}
   }
 
-  /* ===================== MISC ===================== */
-  .badge{display:inline-flex;align-items:center;gap:.5rem;padding:8px 12px;border-radius:999px;background:color-mix(in oklch,var(--accent) 12%, transparent);border:1px solid color-mix(in oklch,var(--accent) 30%, transparent);font-weight:800}
-  .muted{color:var(--muted)}
-  .spacer{height:14px}
-
-  /* ===================== MOBILE NAV DRAWER ===================== */
-  .drawer{position:fixed;inset:0;display:none}
-  .drawer.open{display:block}
-  .drawer .scrim{position:absolute;inset:0;background:#0008;backdrop-filter:blur(2px)}
-  .drawer .panel{
-    position:absolute;inset:auto 0 0 0;background:var(--bg);border-top-left-radius:18px;border-top-right-radius:18px;padding:16px;
-    max-height:80vh;overflow:auto;box-shadow:0 -10px 30px rgba(0,0,0,.3)
-  }
-  .drawer .panel a, .drawer .panel button{display:flex;align-items:center;gap:.6rem;padding:12px;border-radius:12px;text-decoration:none;color:var(--text);border:var(--glass-border);background:var(--glass);font-weight:700}
-
   /* ===================== ACCESSIBILITY ===================== */
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   a.skip{position:absolute;left:-9999px;top:auto;transition:transform .2s}
@@ -406,7 +401,7 @@
             <input class="input" type="text" id="interest" placeholder="Sở thích (ẩm thực, lịch sử…)" inputmode="text" />
           </div>
           <button class="btn" id="suggestPlan"><i class="fa-solid fa-wand-magic-sparkles fa-fw"></i> Gợi ý</button>
-          <div id="planResult" class="glass" style="display:none;padding:12px;border-radius:12px"></div>
+          <div id="planResult" class="glass" style="display:none;padding:12px;border-radius:12px;white-space:pre-line"></div>
         </div>
       </div>
 
@@ -764,7 +759,7 @@
     MotoDarkCarbon:{accent:"#30D5C8",accent2:"#9B59B6",radius:"20px"}
   };
 
-  // ===================== RUNTIME =====================
+  // ===================== RUNTIME HELPERS =====================
   const qs = (s,root=document)=>root.querySelector(s);
   const qsa = (s,root=document)=>[...root.querySelectorAll(s)];
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -923,10 +918,16 @@
   // ===================== QUICKCALL =====================
   if(USE_QUICKCALL){
     const qc = qs('#quickcall'); const toggle = qs('#qcToggle'); const panel = qs('#qcPanel');
-    toggle.addEventListener('click', ()=>{
+    toggle.addEventListener('click', (ev)=>{
+      // ripple
+      const r = document.createElement('span');
+      r.className='ripple'; const rect = toggle.getBoundingClientRect();
+      r.style.left = (ev.clientX - rect.left)+'px'; r.style.top = (ev.clientY - rect.top)+'px';
+      toggle.appendChild(r); setTimeout(()=>r.remove(), 650);
+
       const open = qc.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open);
-      panel.setAttribute('aria-hidden', !open);
+      panel.setAttribute('aria-hidden', String(!open));
       if(open) panel.querySelector('a')?.focus();
     });
     // Hide when keyboard opens (mobile)
@@ -946,7 +947,14 @@
   }
 
   // ===================== MINI PLAN SUGGESTION =====================
-  qs('#suggestPlan')?.addEventListener('click', ()=>{
+  qs('#suggestPlan')?.addEventListener('click', (ev)=>{
+    // ripple on CTA
+    const btn = ev.currentTarget;
+    const r = document.createElement('span'); r.className='ripple';
+    const rect = btn.getBoundingClientRect();
+    r.style.left = (ev.clientX - rect.left)+'px'; r.style.top = (ev.clientY - rect.top)+'px';
+    btn.appendChild(r); setTimeout(()=>r.remove(), 650);
+
     const s = qs('#start').value.trim() || 'Phố Cổ';
     const d = qs('#duration').value.trim() || '1 ngày';
     const i = qs('#interest').value.trim() || 'ẩm thực & phố cổ';
@@ -1011,21 +1019,18 @@
     "https://www.pinterest.com/thuexemaynguyentu/",
     "https://www.instagram.com/thuexemaynguyentu/"
   ];
-  // Could be used for link previews or sitemap micro list later.
+  // Reserved for future: link previews, sitemap, etc.
 
-  // ===================== SEO / OPEN GRAPH (toggle respected) =====================
+  // ===================== SEO / OPEN GRAPH (toggle) =====================
   if(!USE_SEO_META){
     qsa('meta[name="description"],meta[property^="og:"]').forEach(m=>m.remove());
   }
 
   // ===================== PERFORMANCE GUARDS =====================
-  // Disable heavy effects on low-end devices
   const lowEnd = navigator.deviceMemory && navigator.deviceMemory <= 2;
   if(lowEnd){
     document.documentElement.style.setProperty('--blur','4px');
   }
 </script>
-```
-
   </body>
 </html>
