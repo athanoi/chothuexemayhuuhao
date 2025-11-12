@@ -163,52 +163,123 @@ APP_SHELL={
   AI_HINT:"Đồng bộ menu, footer, hero mini-app và quickcall theo cùng 1 style, tạo cảm giác app một trang."
 };
 
-MENU=[
-  {"🏠 Trang chủ":"index.html"},
-  {"📄 Giới thiệu":"gioithieu.html"},
-  {"⚙️ Dịch vụ":[
-    {"📑 Thủ tục":"thutuc.html"},
-    {"🛵 Loại xe":"loaixe.html"},
-    {"📘 Hướng dẫn":"huongdan.html"},
-    {"💡 Kinh nghiệm":"kinhnghiem.html"},
-    {"📍 Địa điểm":"diadiem.html"},
-    {"🎁 Ưu đãi":"uudai.html"}
-  ]},
-  {"🏷️ Bảng giá":"banggia.html"},
-  {"⚖️ Điều khoản":"https://motoopen.github.io/thuexemayohoankiem/dieukhoansudung.html"},
-  {"🔒 Bảo mật":"https://motoopen.github.io/thuexemayohoankiem/chinhsachbaomat.html"},
-  {"❓ FAQ":"faq.html"},
-  {"💬 Liên hệ":"lienhe.html"}
-];
+# ===================== MENU CHÍNH =====================
 
-FOOTER_COLUMNS=[
-  {"title":"🏠 Trang chủ","href":"index.html"},
-  {"title":"📄 Giới thiệu","href":"gioithieu.html"},
-  {"title":"⚙️ Dịch vụ","href":"dichvu.html"},
-  {"title":"🏷️ Bảng giá","href":"banggia.html"},
-  {"title":"⚖️ Điều khoản","href":"https://motoopen.github.io/thuexemayohoankiem/dieukhoansudung.html"},
-  {"title":"🔒 Bảo mật","href":"https://motoopen.github.io/thuexemayohoankiem/chinhsachbaomat.html"},
-  {"title":"❓ FAQ","href":"faq.html"},
-  {"title":"💬 Liên hệ","href":"lienhe.html"},
-  {"title":"🌐 Website","icon":"globe","href":"https://thuexemaynguyentu.com"},
-  {"title":"📞 Gọi","icon":"phone","href":"tel:0942467674"},
-  {"title":"💬 Zalo","icon":"zalo","href":"https://zalo.me/0942467674"},
-  {"title":"📷 Instagram","icon":"instagram","href":"https://www.instagram.com/nguyentumotorbike/"},
-  {"title":"⭐ TripAdvisor","icon":"tripadvisor","href":"https://www.tripadvisor.com/Attraction_Review-g21333608-d9826317-Reviews-Nguyen_Tu_Motorbike_Rental-Long_Bien_Hanoi.html"},
-  {"title":"📘 Facebook","icon":"facebook","href":"https://m.facebook.com/chothuexemay0857255868/"}
-];
+"MENU": [
+  { "🏠 Trang chủ": "./" },
+  { "📄 Giới thiệu": "gioithieu.html" },
 
-HERO_MINIAPP={
-  ENABLED:true,
-  TYPE:"service-grid",
-  TITLE:"Đặt xe nhanh cùng Nguyễn Tú",
-  SUBTITLE:"Chọn loại xe bạn cần và nhận xe trong 20–40 phút",
-  BUTTONS:[
-    {"label":"🚀 Đặt xe ngay","href":"lienhe.html"},
-    {"label":"🛵 Xem bảng giá","href":"banggia.html"},
-    {"label":"💬 Chat MotoAI","href":"#motoai"}
-  ]
-};
+  {
+    "⚙️ Dịch vụ": [
+      { "🏷️ Bảng giá": "banggia.html" },
+      { "📑 Thủ tục thuê xe": "thutuc.html" },
+      { "💰 Đặt cọc": "datcoc.html" },
+      { "🎁 Ưu đãi & khuyến mãi": "uudai.html" },
+      { "📅 Thuê theo ngày": "ngay.html" },
+      { "🗓️ Thuê theo tuần": "tuan.html" },
+      { "📆 Thuê theo tháng": "thang.html" }
+    ]
+  },
+
+  {
+    "📍 Khu vực giao xe": [
+      { "Long Biên": "longbien.html" },
+      { "Gia Lâm": "gialam.html" },
+      { "Phố Cổ": "phoco.html" },
+      { "Hoàn Kiếm": "hoankiem.html" },
+      { "Ba Đình": "badinh.html" },
+      { "Tây Hồ": "tayho.html" },
+      { "Đống Đa": "dongda.html" },
+      { "Cầu Giấy": "caugiay.html" },
+      { "Hà Đông": "hadong.html" },
+      { "Thanh Xuân": "thanhxuan.html" },
+      { "Từ Liêm": "tuliem.html" },
+      { "Ga Hà Nội": "gahn.html" }
+    ]
+  },
+
+  { "❓ Câu hỏi thường gặp (FAQ)": "faq.html" },
+  { "💬 Liên hệ & hỗ trợ": "lienhe.html" },
+  { "📜 Điều khoản sử dụng": "dieukhoansudung.html" },
+  { "🔒 Chính sách bảo mật": "chinhsachbaomat.html" }
+],
+
+
+
+# ===================== HERO =====================
+- Gradient xanh titan (#0A84FF → #1B5FFF → #111826).  
+- H1: ⭐ CHO THUÊ XE MÁY HÀ NỘI – NGUYỄN TÚ  
+- Mô tả: 📍 Xe mới, giao nhanh, giá hợp lý, hỗ trợ 24/7.  
+- CTA:  
+  - 📞 Gọi ngay → tel:0942467674  
+  - 💬 Chat Zalo → ZALO  
+- Chips: ⚡ Giao nhanh 20’, 💰 Cọc nhẹ, 🛵 Xe ga/xe số, 🚚 Giao tận nơi.  
+- Mini-form “🧭 Gợi ý lịch trình” (3 input + nút Gợi ý).
+
+# ===================== SECTION CHÍNH =====================
+1️⃣ Vì sao chọn chúng tôi — 6 lợi ích (verified, headset_mic, location_on, workspace_premium, shield, timer).  
+2️⃣ Dịch vụ nổi bật — Card tilt + CTA “Xem chi tiết” → `dichvu.html`.  
+3️⃣ Bảng giá tóm tắt — CTA “Xem bảng giá chi tiết” → `banggia.html`.  
+4️⃣ Quy trình thuê xe — 6!bước animation fade-slide.  
+ 5️⃣ Đánh giá khách hàng — Slider ⭐⭐⭐⭐⭐ (3 người, feedback thực).  
+6️⃣ Faq: Hỏi đáp 5 câu
+ 
+
+"FOOTER_6COL": {
+  "STYLE": "glass",
+  "GRID": { "DESKTOP": 6, "TABLET": 3, "MOBILE": 2 },
+  "TAGLINE": {
+    "TITLE": "Thuê xe máy Hà Nội giá rẻ",
+    "DESC": "Giao xe 20–40 phút • Giá minh bạch • Giấy tờ đầy đủ • Hỗ trợ 24/7"
+  },
+  "COLS": {
+    "col1_TrangChu": [
+      { "🏠 Trang chủ": "./" },
+      { "📄 Giới thiệu": "gioithieu.html" }
+    ],
+    "col2_DichVu": [
+      { "🏷️ Bảng giá": "banggia.html" },
+      { "📅 Theo ngày": "ngay.html" },
+      { "🗓️ Theo tuần": "tuan.html" },
+      { "📆 Theo tháng": "thang.html" },
+      { "🎁 Ưu đãi": "uudai.html" },
+      { "📑 Thủ tục": "thutuc.html" },
+      { "💰 Đặt cọc": "datcoc.html" }
+    ],
+    "col3_DiaDiem": [
+      { "Long Biên": "longbien.html" },
+      { "Gia Lâm": "gialam.html" },
+      { "Phố Cổ": "phoco.html" },
+      { "Hoàn Kiếm": "hoankiem.html" },
+      { "Ba Đình": "badinh.html" },
+      { "Tây Hồ": "tayho.html" },
+      { "Đống Đa": "dongda.html" },
+      { "Cầu Giấy": "caugiay.html" },
+      { "Hà Đông": "hadong.html" },
+      { "Thanh Xuân": "thanhxuan.html" },
+      { "Từ Liêm": "tuliem.html" },
+      { "Ga Hà Nội": "gahn.html" }
+    ],
+    "col4_ThongTin": [
+      { "❓ FAQ": "faq.html" },
+      { "📜 Điều khoản sử dụng": "dieukhoansudung.html" },
+      { "🔒 Chính sách bảo mật": "chinhsachbaomat.html" }
+    ],
+    "col5_LienHe": [
+      { "💬 Liên hệ": "lienhe.html" },
+      { "🌐 Website": "https://thuexemaynguyentu.com" },
+      { "📞 Gọi": "tel:+84942467674" },
+      { "💬 Zalo": "https://zalo.me/0354904601" },
+      { "🟢 WhatsApp": "https://wa.me/84942467674" }
+    ],
+    "col6_Social": [
+      { "Facebook": "https://m.facebook.com/thuexemayhanoigiare/" },
+      { "Instagram": "https://www.instagram.com/nguyentumotorbike/" },
+      { "YouTube": "https://www.youtube.com/channel/UCvUBwV24U4c5-q1iJ-ZL0Rg" },
+      { "TripAdvisor": "https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html" }
+    ]
+  },
+
 
 BODY_SECTIONS={
   USE_FADEIN:true,
@@ -294,26 +365,9 @@ BODY_SECTIONS={
   ]
 };
 
-KIEM_TRA_MENU_FOOTER={
-  MENU_EXPECT:[
-    "index.html","gioithieu.html","dichvu.html","banggia.html",
-    "https://motoopen.github.io/thuexemayohoankiem/dieukhoansudung.html",
-    "https://motoopen.github.io/thuexemayohoankiem/chinhsachbaomat.html",
-    "faq.html","lienhe.html"
-  ],
-  FOOTER_EXPECT:[
-    "index.html","gioithieu.html","dichvu.html","banggia.html",
-    "https://motoopen.github.io/thuexemayohoankiem/dieukhoansudung.html",
-    "https://motoopen.github.io/thuexemayohoankiem/chinhsachbaomat.html",
-    "faq.html","lienhe.html"
-  ],
-  RULES:{
-    MUST_MATCH:true,
-    REPORT_OLD:["dieukhoan.html","baomat.html"],
-    ON_ERROR:"đổi sang link GitHub Pages mới",
-    auto_fix:true
-  }
-};
+
+
+
 
 THEME_DRIFT={
   ENABLED:true,
@@ -439,22 +493,7 @@ CREATIVE_HINTS_EXTRA={
   PERFORMANCE_NOTE:"Giảm DOM load, inline CSS cần thiết, defer script, tránh repaint layout."
 };
 
-RENDER_HINTS={
-  MENU_STRUCTURE:"Tạo menu chính theo cấu trúc trong MENU=[...] (có dropdown, icon emoji). Giữ nguyên thứ tự và nhóm dịch vụ. Menu dạng glass fixed top, hiệu ứng hover mượt, đồng bộ màu accent.",
-  FOOTER_LAYOUT:"Tạo footer theo FOOTER_COLUMNS=[...] nhưng chia thành 6 cột responsive dạng grid: \
-1️⃣ Khám phá → Trang chủ, Giới thiệu; \
-2️⃣ Dịch vụ → Dịch vụ, Bảng giá, Hướng dẫn; \
-3️⃣ Blog & Ưu đãi → Kinh nghiệm, Ưu đãi; \
-4️⃣ Chính sách → Điều khoản, Bảo mật, FAQ; \
-5️⃣ Liên hệ → Liên hệ, Website, Gọi, Zalo; \
-6️⃣ Mạng xã hội → Facebook, Instagram, TripAdvisor. \
-Giữ nguyên emoji, href, icon. Dùng grid 6 cột, auto-collapse còn 2 cột trên mobile. Có tagline và quickcall bên trái.",
-  FOOTER_STYLE:"Footer dạng glass mini-dock, đồng bộ theme UltraTitanGlass, có shadow nhẹ, icon social tròn nhỏ, hover sáng nhẹ.",
-  HEADER_STYLE:"Menu glass fixed top, có bóng mờ khi scroll, icon hiển thị rõ, đồng bộ theme.",
-  THEME_MODE:"Hỗ trợ Light / Dark mode tự động (theo hệ thống), có nút chuyển theme góc trên. Khi người dùng đổi theme, toàn bộ màu, shadow và glass phải cập nhật tức thì.",
-  COLOR_SYNC:"Tự động đồng bộ accent màu chính (#0A84FF, #00C49A) giữa header, footer, hero, nút CTA và icon.",
-  GENERATOR_NOTE:"Khi render HTML, phải tự sinh menu và footer dựa trên JSON MENU và FOOTER_COLUMNS. Không được bỏ, gộp hay đổi tên link. Giữ semantic HTML (nav, ul/li, footer, h4)."
-};
+
 
 Bạn là trình tạo HTML one-file chuyên nghiệp.  
 Sinh ra 1 file duy nhất: **index.html** (HTML + CSS + JS nội tuyến, không dùng jQuery, Bootstrap hay API ngoài).  
@@ -474,32 +513,7 @@ Ngôn ngữ: tiếng Việt tự nhiên (không “ạ”, “nhé”, “nha”
 
 ## 🎨 META + CẤU HÌNH
 (giữ nguyên như bạn đã gửi ở trên – Gemini đọc toàn bộ block JSON này để render)
-[📌 dán toàn bộ META, CONTACT, STYLE, FEATURES, APP_SHELL, MENU, FOOTER_COLUMNS, HERO_MINIAPP, BODY_SECTIONS, KIEM_TRA_MENU_FOOTER, THEME_DRIFT, STYLE_SELECTOR, SMART_INTERACT, GLASS_ANIM, LAZYLOAD_EXTEND, ADAPTIVE_MODE, SCRIPT_OPTIMIZER, CREATIVE_MODE_HINT, AI_DIRECTIVE, SMART_SEO, USER_FLOW_HINTS, VALIDATION, CREATIVE_HINTS_EXTRA — không thay đổi]
-
----
-
-## 🧩 RENDER_HINTS (chỉ đạo rõ ràng cho Gemini)
-
-RENDER_HINTS={
-  MENU_STRUCTURE:"Tạo <ul class='nav-menu'> theo JSON MENU=[...] — có dropdown cho nhóm Dịch vụ, giữ emoji icon, glass fixed top, blur nhẹ 6–8px, opacity ~0.9, hover sáng hơn.",
-  MENU_AUTO_ACTIVE:"Thêm class active cho trang hiện tại (so khớp href).",
-  FOOTER_LAYOUT:"Tạo footer từ FOOTER_COLUMNS=[...] — chia 6 cột responsive grid: \
-1️⃣ Khám phá (Trang chủ, Giới thiệu) \
-2️⃣ Dịch vụ (Dịch vụ, Bảng giá, Hướng dẫn) \
-3️⃣ Blog & Ưu đãi (Kinh nghiệm, Ưu đãi, Blog) \
-4️⃣ Chính sách (Điều khoản, Bảo mật, FAQ) \
-5️⃣ Liên hệ (Liên hệ, Website, Gọi, Zalo) \
-6️⃣ Mạng xã hội (Facebook, Instagram, TripAdvisor). \
-Có tagline và quickcall ở góc trái, giữ icon emoji hoặc Font Awesome tương ứng.",
-  FOOTER_STYLE:"Footer glass mini-dock, có blur nhẹ, border-top mảnh, icon social tròn, hover phát sáng, đồng bộ màu accent.",
-  HEADER_STYLE:"Header glass fixed-top, có shadow khi scroll, đồng bộ accent và blur. Khi scroll >120px, nền đậm hơn.",
-  THEME_MODE:"Hỗ trợ Light / Dark mode thực: dùng thuộc tính data-theme-mode='light' hoặc 'dark' để điều khiển CSS. Nút chuyển theme có biểu tượng ☀️ / 🌙, đặt trong header, toggle bằng JS trong IIFE.",
-  COLOR_SYNC:"Accent #0A84FF (chính) và #00C49A (phụ) được đồng bộ cho menu, footer, hero và nút CTA.",
-  HERO_STYLE:"Hero miniapp đồng bộ glass style, có CTA nổi bật và hiệu ứng hover ripple.",
-  GENERATOR_NOTE:"Gemini phải thực sự sinh menu và footer từ JSON (không hardcode). Toàn bộ code phải hợp lệ HTML5, semantic, inline CSS/JS, tương thích mobile."
-};
-
----
+[📌 dán toàn bộ META, CONTACT, STYLE, FEATURES, APP_SHELL, MENU, FOOTER_COLUMNS, HERO_MINIAPP, BODY_SECTIONS, KIEM_TRA_MENU_FOOTER, THEME_DRIFT, STYLE_SELECTOR, SMART_INTERACT, GLASS_ANIM, LAZYLOAD_EXTEND, ADAPTIVE_MODE, SCRIPT_OPTIMIZER, CREATIVE_MODE_HINT, AI_DIRECTIVE, SMART_SEO, USER_FLOW_HINTS, VALIDATION, CREATIVE_HINTS_EXTRA — không thay 
 
 🎯 **Kết thúc lệnh:**
 > Sinh ra 1 file `index.html` one-file hoàn chỉnh theo cấu hình trên, có:
