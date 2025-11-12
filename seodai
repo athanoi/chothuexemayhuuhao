@@ -1,0 +1,64 @@
+Ok, mình đề xuất “khẩu phần chữ” cho từng section để không bị thin content (dựa trên trang dịch vụ địa phương như của bạn). Có 2 mức: Tối thiểu an toàn (đủ tránh mỏng) và Lý tưởng cạnh tranh (để SEO mạnh hơn).
+
+Kế hoạch word count theo section
+
+Section (theo code của bạn)	Tối thiểu an toàn	Lý tưởng cạnh tranh	Ghi chú triển khai nhanh
+Hero .hero (tiêu đề + mô tả ngắn)	50–80 từ	80–120 từ	Thêm 2–3 câu mô tả lợi ích + địa điểm phủ Long Biên/Hoàn Kiếm/Gia Lâm.
+Benefits “Vì Sao Chọn Hữu Hào?”	200–280 từ	300–400 từ	Viết 1 đoạn mở 70–100 từ; mỗi thẻ lợi ích 35–50 từ (6 thẻ ≈ 210–300 từ).
+Services “Dịch Vụ Nổi Bật”	300–450 từ	450–650 từ	Viết intro 60–100 từ; mỗi service-card 100–160 từ (3 thẻ). Thêm bullet: mẫu xe, đối tượng phù hợp, điều kiện thuê.
+Process “Quy Trình Thuê Xe”	180–260 từ	260–360 từ	Viết intro 40–60 từ; mỗi bước 35–60 từ (4 bước). Tránh chỉ 1 câu ngắn.
+Reviews “Khách Hàng Nói Gì?”	180–300 từ	250–450 từ	3–5 review, mỗi review 60–90 từ, có mốc thời gian + bối cảnh (giao ở đâu, xe gì).
+FAQ “Câu Hỏi Thường Gặp”	6–8 câu x 80–120 từ	8–12 câu x 100–150 từ	Tránh trả lời 1–2 câu. Mỗi câu có ví dụ/ngoại lệ/chi phí phát sinh.
+Footer/Contact (NAP + khu vực)	80–120 từ	120–180 từ	Viết rõ 2 địa chỉ, hotline, giờ mở cửa, khu vực phục vụ, link trang bảng giá/thủ tục.
+
+Tổng trang khuyến nghị
+	•	Tối thiểu an toàn: ~1.1k – 1.5k từ
+	•	Lý tưởng cạnh tranh: ~1.6k – 2.3k từ
+(Trang location như Long Biên có thể nhắm 1.5k–2k từ để lên top từ khóa địa phương.)
+
+⸻
+
+Việc cần làm ngay trên code của bạn (ngắn gọn)
+	•	Hero: thêm 2–3 câu mô tả (dịch vụ + khu vực + thời gian giao 20–40’).
+	•	Benefits: mỗi thẻ thay 1 câu ngắn bằng 2–3 câu (lợi ích + ví dụ thực tế).
+	•	Services: mở rộng phần mô tả trong mỗi service-card lên 100–160 từ (nêu mẫu xe, ai nên thuê, giá tham chiếu, lưu ý).
+	•	Process: mỗi bước viết 2 câu (việc bạn làm + việc khách cần chuẩn bị).
+	•	Reviews: kéo lên 3–5 review, mỗi cái 4–6 câu (có model xe, địa điểm giao, thời điểm).
+	•	FAQ: tăng lên 8–10 câu, mỗi câu ~100–140 từ (đặt cọc, tính giờ, giao tối, hủy/chuyển lịch, hỏng xe, giấy tờ).
+	•	Footer: chèn đoạn 1–2 câu mô tả ngắn về phạm vi phục vụ + 2 địa chỉ đầy đủ NAP.
+
+⸻
+
+Đo từ tự động (copy script này vào Console để audit nhanh)
+
+// Dán vào DevTools Console
+const plan = [
+  ['.hero', 'Hero'],
+  ['section .section-title:has(h2:contains("Vì Sao Chọn Hữu Hào?"))', 'Benefits Title'],
+  ['.benefits-grid', 'Benefits Grid'],
+  ['section:has(h2:contains("Dịch Vụ Nổi Bật"))', 'Services'],
+  ['section:has(h2:contains("Quy Trình Thuê Xe"))', 'Process'],
+  ['section:has(h2:contains("Khách Hàng Nói Gì"))', 'Reviews'],
+  ['section:has(h2:contains("Câu Hỏi Thường Gặp"))', 'FAQ'],
+  ['footer', 'Footer']
+];
+function wc(t){return (t||'').replace(/\s+/g,' ').trim().split(' ').filter(Boolean).length}
+const rep = plan.map(([sel,name])=>{
+  const el = document.querySelector(sel);
+  const text = el ? el.innerText : '';
+  return {section:name, words: wc(text)};
+});
+console.table(rep);
+const total = rep.reduce((s,r)=>s+r.words,0);
+console.log('Total words:', total);
+
+(Nếu :contains() không chạy trong trình duyệt của bạn, thay bằng cách chọn gần đúng theo class/id rồi đếm).
+
+⸻
+
+Tip ngắn tránh “thin content”
+	•	Không trùng lặp: trang Long Biên khác Hoàn Kiếm (mốc giao xe, điểm hẹn, cung đường, ví dụ thực tế).
+	•	Thêm dữ liệu địa phương: tên khu, trục đường, thời gian giao thực tế, phí ngoài giờ.
+	•	Bổ sung schema: LocalBusiness, Product (gói thuê), FAQPage, Review.
+	•	Meta: Title ≤ 60 ký tự; Description 150–160 ký tự; tránh nhồi keyword.
+	•	Alt ảnh: mô tả xe/mẫu/địa điểm (VD: “Vision giao tại Vinhomes Ocean Park”).
