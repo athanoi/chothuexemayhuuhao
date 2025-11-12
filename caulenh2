@@ -260,16 +260,14 @@ HIỆU ỨNG & UX (chi tiết)
 KẾT QUẢ MONG MUỐN
 	•	Xuất một file index.html thỏa mọi yêu cầu trên.
 	•	Không đổi chuỗi dữ liệu thương hiệu, số điện thoại, email, địa chỉ, link mạng xã hội đã cho.
-	•	Nội dung tiếng Việt tự nhiên, ngắn gọn, không dùng “ạ/nhé/nha”.
+	•	
 	•	Tập trung vào UX mobile-first, sau đó responsive cho desktop.
 	•	Nếu có bất kỳ tính năng nào không thể hỗ trợ trong 1 file (ví dụ: server-side), hãy implement fallback front-end (ví dụ: mailto cho form).
 
 KIỂM TRA TỰ ĐỘNG (hãy đảm bảo khi xuất)
 	•	File có <meta name="description"> với nội dung description bên trên.
 	•	Font CDN links có đủ 3 font được liệt kê.
-	•	JS được bọc IIFE và script tag có defer.
 	•	Không dùng fetch/AJAX để gửi form (dùng mailto hoặc chỉ front-end).
-	•	Map iframe sử dụng link map.
 	•	QuickCall link dùng tel:+84942467674, https://zalo.me/0354904601, https://wa.me/84942467674, và map link.
 	•	Footer có 6 cột, bằng dữ liệu đã cung cấp.
 	•	Bảo đảm không xuất thêm file nào khác, không thêm schema JSON-LD.
