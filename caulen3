@@ -283,3 +283,4 @@ KIỂM TRA TỰ ĐỘNG (hãy đảm bảo khi xuất)
 YÊU CẦU VỀ PHẦN TRẢ VỀ (rất quan trọng)
 	•	Chỉ trả về mã nguồn index.html (toàn bộ file, bắt đầu từ <!DOCTYPE html> đến </html>). Không mô tả, không giải thích, không thêm văn bản nào khác.
 	•	File phải có indent hợp lý, dễ đọc.
+Menu chính (Header) và footer theo đúng cấu trúc JSON tôi yêu cầu.
