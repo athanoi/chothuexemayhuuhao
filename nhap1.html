@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- ===================== SEO / META ===================== -->
+    <title>Cho thuê xe máy Hà Nội - Hữu Hào | Uy tín - Giá rẻ - Giao xe tận nơi</title>
+    <meta name="description" content="Địa chỉ cho thuê xe máy uy tín tại Hoàn Kiếm, Phố Cổ, Long Biên (gần Bến xe Gia Lâm). Xe ga, xe số, xe điện; giao tận nơi 20–40 phút; hỗ trợ 24/7; thuê theo giờ, ngày, tuần, tháng; giá tốt, chất lượng.">
+    <meta name="keywords" content="thuê xe máy hà nội, thuê xe máy hoàn kiếm, thuê xe máy long biên, thuê xe máy phố cổ, thuê xe máy gia lâm, nguyễn tú motorbike">
+    <meta name="author" content="Nguyen Huu Hao">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://athanoi.github.io/chothuexemayhuuhao/">
+    <meta property="og:title" content="Cho thuê xe máy Hà Nội - Hữu Hào">
+    <meta property="og:description" content="Giao xe 20–40 phút • Giá minh bạch • Giấy tờ đầy đủ • Hỗ trợ 24/7.">
+    <meta property="og:image" content="https://placehold.co/1200x630/0A84FF/ffffff?text=Thue+Xe+May+Ha+Noi">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ===================== CSS STYLES ===================== -->
+    <style>
+        /* --- RESET & VARIABLES --- */
+        :root {
+            /* Palette */
+            --primary: #0A84FF;
+            --primary-dark: #0060c0;
+            --accent: #00C49A;
+            --danger: #FF3B30;
+            --warning: #FF9500;
+            
+            /* Light Theme Defaults */
+            --bg-body: #f9fafa;
+            --bg-glass: rgba(255, 255, 255, 0.65);
+            --bg-glass-strong: rgba(255, 255, 255, 0.85);
+            --text-main: #111826;
+            --text-muted: #6B7280;
+            --border-glass: rgba(255, 255, 255, 0.5);
+            --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+            --shadow-hover: 0 12px 40px rgba(10, 132, 255, 0.25);
+            
+            /* Dimensions */
+            --radius-lg: 20px;
+            --radius-md: 16px;
+            --radius-sm: 8px;
+            --header-height: 70px;
+        }
+
+        [data-theme="dark"] {
+            --bg-body: #0c0d0f;
+            --bg-glass: rgba(20, 22, 28, 0.65);
+            --bg-glass-strong: rgba(20, 22, 28, 0.85);
+            --text-main: #f9fafa;
+            --text-muted: #9ca3af;
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 12px 40px rgba(10, 132, 255, 0.15);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        
+        html { scroll-behavior: smooth; font-size: 16px; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* --- UTILITIES --- */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .glass {
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
+            box-shadow: var(--shadow-glass);
+        }
+
+        .glass-strong {
+            background: var(--bg-glass-strong);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.3s;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #1B5FFF);
+            color: white;
+            box-shadow: 0 4px 15px rgba(10, 132, 255, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(10, 132, 255, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .section-title p { color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+        /* --- HEADER --- */
+        .header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: var(--header-height);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .header.scrolled {
+            background: var(--bg-glass-strong);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-glass);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo i { font-size: 1.8rem; }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-item { position: relative; }
+        .nav-link {
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 8px 0;
+        }
+        .nav-link:hover { color: var(--primary); }
+
+        /* Dropdown */
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: var(--bg-body);
+            min-width: 220px;
+            padding: 15px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-glass);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-glass);
+        }
+        .nav-item:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+        .dropdown li { margin-bottom: 10px; }
+        .dropdown li:last-child { margin-bottom: 0; }
+        .dropdown a {
+            display: block;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        .dropdown a:hover { background: rgba(10, 132, 255, 0.1); color: var(--primary); }
+
+        .theme-toggle {
+            background: transparent;
+            border: none;
+            font-size: 1.2rem;
+            color: var(--text-main);
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        .theme-toggle:hover { background: rgba(128,128,128,0.1); }
+
+        .mobile-menu-btn { display: none; font-size: 1.5rem; cursor: pointer; color: var(--text-main); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            padding-top: 100px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: radial-gradient(circle at top right, rgba(10, 132, 255, 0.1), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(0, 196, 154, 0.1), transparent 40%);
+        }
+
+        .hero-bg-anim {
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(10,132,255,0.05) 0%, transparent 50%);
+            animation: rotateBg 20s linear infinite;
+            z-index: -1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, var(--primary), #1B5FFF, #111826);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        [data-theme="dark"] .hero-text h1 {
+            background: linear-gradient(to right, var(--primary), #60a5fa, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-desc { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px; }
+
+        .hero-chips { display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 30px; }
+        .chip {
+            padding: 6px 12px;
+            background: rgba(10, 132, 255, 0.1);
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .hero-btns { display: flex; gap: 15px; }
+
+        .hero-form-card {
+            padding: 30px;
+            border-radius: var(--radius-lg);
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem; }
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border-glass);
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(5px);
+            color: var(--text-main);
+            font-family: inherit;
+            outline: none;
+            transition: border 0.3s;
+        }
+        [data-theme="dark"] .form-input { background: rgba(0,0,0,0.3); }
+        .form-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(10,132,255,0.1); }
+
+        /* --- SECTIONS GENERIC --- */
+        .section { padding: 80px 0; position: relative; }
+        
+        /* Benefits */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        
+        .benefit-card {
+            padding: 30px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .benefit-card:hover { transform: translateY(-10px); }
+        .benefit-icon {
+            width: 60px; height: 60px;
+            background: rgba(10, 132, 255, 0.1);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+
+        /* Services (Tilt) */
+        .service-card {
+            position: relative;
+            height: 100%;
+            padding: 40px 30px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transform-style: preserve-3d;
+            transition: transform 0.1s;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.2), transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        .service-card:hover::before { opacity: 1; }
+        .service-card h3 { margin-bottom: 15px; font-size: 1.5rem; }
+
+        /* Pricing Table */
+        .pricing-summary {
+            overflow-x: auto;
+            border-radius: var(--radius-lg);
+        }
+        .table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        .table th, .table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-glass);
+        }
+        .table th { background: rgba(10, 132, 255, 0.1); color: var(--primary); font-weight: 700; }
+
+        /* Process */
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .process-steps::before {
+            content: ''; position: absolute; top: 40px; left: 0; right: 0; height: 2px;
+            background: var(--border-glass); z-index: -1;
+        }
+        .step { text-align: center; flex: 1; }
+        .step-num {
+            width: 80px; height: 80px;
+            background: var(--bg-body);
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto 20px;
+            transition: 0.3s;
+        }
+        .step:hover .step-num { background: var(--primary); color: white; transform: scale(1.1); }
+
+        /* Testimonials */
+        .review-card { padding: 30px; border-radius: var(--radius-lg); }
+        .stars { color: var(--warning); margin-bottom: 15px; }
+        .user-info { display: flex; align-items: center; gap: 15px; margin-top: 20px; }
+        .avatar { width: 50px; height: 50px; border-radius: 50%; background: #ccc; object-fit: cover; }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        .faq-question:hover { background: rgba(10, 132, 255, 0.05); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+            color: var(--text-muted);
+        }
+        .faq-item.active .faq-answer { padding: 0 20px 20px; max-height: 500px; }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+
+        /* --- FOOTER --- */
+        .footer {
+            padding: 60px 0 20px;
+            margin-top: 60px;
+            border-top: 1px solid var(--border-glass);
+            background: rgba(10, 132, 255, 0.03);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col a { font-size: 0.9rem; color: var(--text-muted); }
+        .footer-col a:hover { color: var(--primary); padding-left: 5px; }
+        
+        .social-links { display: flex; gap: 15px; }
+        .social-link {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            background: rgba(10, 132, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            transition: 0.3s;
+        }
+        .social-link:hover { background: var(--primary); color: white; transform: translateY(-3px); }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-glass);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* --- QUICK CALL WIDGET --- */
+        .quick-call-dock {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .qc-main-btn {
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(10, 132, 255, 0.4);
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+        .qc-main-btn:hover { transform: scale(1.1); }
+        
+        .qc-menu {
+            position: absolute;
+            left: 100%; top: 50%;
+            transform: translateY(-50%) scale(0);
+            transform-origin: left center;
+            display: flex;
+            gap: 10px;
+            margin-left: 15px;
+            padding: 10px;
+            border-radius: 50px;
+            background: var(--bg-glass-strong);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-glass);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .quick-call-dock.active .qc-menu {
+            transform: translateY(-50%) scale(1);
+            opacity: 1;
+            pointer-events: all;
+        }
+        .quick-call-dock.active .qc-main-btn { animation: none; background: var(--danger); transform: rotate(45deg); }
+
+        .qc-item {
+            width: 45px; height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .qc-tel { background: #34C759; }
+        .qc-zalo { background: #0068FF; }
+        .qc-map { background: #FF3B30; }
+        .qc-wa { background: #25D366; }
+
+        /* --- ANIMATIONS --- */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(10, 132, 255, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(10, 132, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(10, 132, 255, 0); }
+        }
+
+        @keyframes rotateBg {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 1024px) {
+            .hero-content { grid-template-columns: 1fr; text-align: center; }
+            .hero-text h1 { font-size: 2.8rem; }
+            .hero-chips, .hero-btns { justify-content: center; }
+            .hero-form-card { max-width: 500px; margin: 0 auto; }
+            .process-steps { flex-direction: column; gap: 40px; }
+            .process-steps::before { width: 2px; height: 100%; top: 0; left: 50%; transform: translateX(-50%); }
+            .footer-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: var(--header-height); left: 0; right: 0;
+                background: var(--bg-body);
+                flex-direction: column;
+                padding: 20px;
+                border-bottom: 1px solid var(--border-glass);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.4s ease;
+                align-items: flex-start;
+            }
+            .nav-menu.active { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+            .nav-item { width: 100%; }
+            .dropdown {
+                position: static;
+                box-shadow: none;
+                background: rgba(0,0,0,0.03);
+                opacity: 1; visibility: visible;
+                transform: none;
+                display: none;
+                padding-left: 20px;
+            }
+            .nav-item:hover .dropdown { display: block; }
+            
+            .mobile-menu-btn { display: block; }
+            
+            .grid-3, .grid-2 { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            
+            .hero-text h1 { font-size: 2rem; }
+            
+            /* Adjust Quick Call for mobile: Bottom Left */
+            .quick-call-dock { top: auto; bottom: 20px; transform: none; left: 20px; }
+            .qc-menu { top: auto; bottom: 100%; left: 0; transform-origin: bottom center; flex-direction: column; margin: 0 0 15px 0; }
+            .quick-call-dock.active .qc-menu { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- === HEADER === -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="./" class="logo">
+                <i class="fa-solid fa-motorcycle"></i> NGUYỄN TÚ
+            </a>
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="./" class="nav-link">🏠 Trang chủ</a></li>
+                    <li class="nav-item"><a href="gioithieu.html" class="nav-link">📄 Giới thiệu</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">⚙️ Dịch vụ <i class="fa-solid fa-chevron-down" style="font-size:0.7em"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="banggia.html">🏷️ Bảng giá</a></li>
+                            <li><a href="thutuc.html">📑 Thủ tục thuê xe</a></li>
+                            <li><a href="datcoc.html">💰 Đặt cọc</a></li>
+                            <li><a href="uudai.html">🎁 Ưu đãi</a></li>
+                            <li><a href="ngay.html">📅 Thuê theo ngày</a></li>
+                            <li><a href="tuan.html">🗓️ Thuê theo tuần</a></li>
+                            <li><a href="thang.html">📆 Thuê theo tháng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">📍 Khu vực <i class="fa-solid fa-chevron-down" style="font-size:0.7em"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="longbien.html">Long Biên</a></li>
+                            <li><a href="gialam.html">Gia Lâm</a></li>
+                            <li><a href="phoco.html">Phố Cổ</a></li>
+                            <li><a href="hoankiem.html">Hoàn Kiếm</a></li>
+                            <li><a href="badinh.html">Ba Đình</a></li>
+                            <li><a href="caugiay.html">Cầu Giấy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="lienhe.html" class="nav-link">💬 Liên hệ</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Đổi giao diện">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- === HERO SECTION === -->
+    <section class="hero">
+        <div class="hero-bg-anim"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <h1>CHO THUÊ XE MÁY HÀ NỘI<br>NGUYỄN TÚ MOTORBIKE</h1>
+                    <p class="hero-desc">📍 Xe mới 2024 - 2025, giao xe nhanh 20 phút, giá chỉ từ 100k. Hỗ trợ sự cố 24/7 toàn Hà Nội.</p>
+                    
+                    <div class="hero-chips">
+                        <span class="chip"><span class="material-symbols-rounded">bolt</span> Giao nhanh 20’</span>
+                        <span class="chip"><span class="material-symbols-rounded">payments</span> Cọc thấp</span>
+                        <span class="chip"><span class="material-symbols-rounded">two_wheeler</span> Đa dạng xe</span>
+                        <span class="chip"><span class="material-symbols-rounded">local_shipping</span> Giao tận nơi</span>
+                    </div>
+
+                    <div class="hero-btns">
+                        <a href="tel:0942467674" class="btn btn-primary"><i class="fa-solid fa-phone-volume"></i> Gọi ngay</a>
+                        <a href="https://zalo.me/0354904601" class="btn btn-outline"><i class="fa-solid fa-comment-dots"></i> Chat Zalo</a>
+                    </div>
+                </div>
+
+                <div class="hero-form-card glass reveal" style="transition-delay: 0.2s">
+                    <h3 style="margin-bottom: 20px; color: var(--primary)">🧭 Gợi ý lịch trình & Báo giá</h3>
+                    <form onsubmit="event.preventDefault(); alert('Hệ thống đã nhận yêu cầu! Chúng tôi sẽ liên hệ lại trong 5 phút.');">
+                        <div class="form-group">
+                            <label>Loại xe mong muốn</label>
+                            <select class="form-input">
+                                <option>Xe số (Wave, Sirius)</option>
+                                <option>Xe ga (Vision, AirBlade)</option>
+                                <option>Xe côn tay (Winner, Exciter)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày nhận xe</label>
+                            <input type="date" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="tel" placeholder="Nhập SĐT của bạn" class="form-input" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%">Nhận tư vấn miễn phí</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === BENEFITS === -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Vì sao chọn Nguyễn Tú?</h2>
+                <p>Dịch vụ chuyên nghiệp, tận tâm với hơn 10 năm kinh nghiệm</p>
+            </div>
+            <div class="grid-3">
+                <div class="benefit-card glass reveal">
+                    <div class="benefit-icon"><span class="material-symbols-rounded">verified</span></div>
+                    <h3>Xe Mới Chất Lượng</h3>
+                    <p>Bảo dưỡng định kỳ, xe chạy êm, tiết kiệm xăng.</p>
+                </div>
+                <div class="benefit-card glass reveal">
+                    <div class="benefit-icon"><span class="material-symbols-rounded">timer</span></div>
+                    <h3>Giao Xe Siêu Tốc</h3>
+                    <p>Có mặt sau 20-40 phút tại Phố Cổ & Long Biên.</p>
+                </div>
+                <div class="benefit-card glass reveal">
+                    <div class="benefit-icon"><span class="material-symbols-rounded">support_agent</span></div>
+                    <h3>Hỗ Trợ 24/7</h3>
+                    <p>Cứu hộ, đổi xe tận nơi nếu có sự cố bất ngờ.</p>
+                </div>
+                <div class="benefit-card glass reveal">
+                    <div class="benefit-icon"><span class="material-symbols-rounded">payments</span></div>
+                    <h3>Giá Cả Minh Bạch</h3>
+                    <p>Không phí ẩn, niêm yết rõ ràng, giảm giá thuê dài.</p>
+                </div>
+                <div class="benefit-card glass reveal">
+                    <div class="benefit-icon"><span class="material-symbols-rounded">assignment</span></div>
+                    <h3>Thủ Tục Đơn Giản</h3>
+                    <p>Chỉ cần CCCD/Passport, không giữ giấy tờ gốc.</p>
+                </div>
+                <div class="benefit-card glass reveal">
+                    <div class="benefit-icon"><span class="material-symbols-rounded">handshake</span></div>
+                    <h3>Uy Tín Lâu Năm</h3>
+                    <p>Hàng nghìn khách hàng hài lòng trên TripAdvisor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FEATURED SERVICES (TILT) === -->
+    <section class="section" style="background: rgba(10,132,255,0.02)">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Dịch Vụ Nổi Bật</h2>
+            </div>
+            <div class="grid-3">
+                <a href="ngay.html" class="js-tilt-card">
+                    <div class="service-card glass-strong">
+                        <span class="material-symbols-rounded" style="font-size: 40px; color: var(--accent); margin-bottom: 15px;">calendar_today</span>
+                        <h3>Thuê Theo Ngày</h3>
+                        <p>Phù hợp du lịch ngắn ngày, công tác. Giá chỉ từ 100k/ngày.</p>
+                        <div style="margin-top: 20px; color: var(--primary); font-weight: 600;">Xem chi tiết &rarr;</div>
+                    </div>
+                </a>
+                <a href="tuan.html" class="js-tilt-card">
+                    <div class="service-card glass-strong">
+                        <span class="material-symbols-rounded" style="font-size: 40px; color: var(--accent); margin-bottom: 15px;">date_range</span>
+                        <h3>Thuê Theo Tuần</h3>
+                        <p>Tiết kiệm hơn 20%. Thoải mái khám phá Hà Nội và các vùng lân cận.</p>
+                        <div style="margin-top: 20px; color: var(--primary); font-weight: 600;">Xem chi tiết &rarr;</div>
+                    </div>
+                </a>
+                <a href="thang.html" class="js-tilt-card">
+                    <div class="service-card glass-strong">
+                        <span class="material-symbols-rounded" style="font-size: 40px; color: var(--accent); margin-bottom: 15px;">event_note</span>
+                        <h3>Thuê Theo Tháng</h3>
+                        <p>Dành cho sinh viên, người đi làm. Giá cực ưu đãi, hỗ trợ bảo dưỡng free.</p>
+                        <div style="margin-top: 20px; color: var(--primary); font-weight: 600;">Xem chi tiết &rarr;</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- === PRICING SUMMARY === -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Bảng Giá Tham Khảo</h2>
+                <p>Giá có thể thay đổi tùy vào loại xe và thời điểm (Lễ/Tết)</p>
+            </div>
+            <div class="glass pricing-summary reveal">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Loại xe</th>
+                            <th>1 Ngày</th>
+                            <th>3-5 Ngày</th>
+                            <th>Theo Tháng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Xe Số (Wave, Sirius)</td>
+                            <td>100k - 120k</td>
+                            <td>90k / ngày</td>
+                            <td>1.2tr - 1.5tr</td>
+                        </tr>
+                        <tr>
+                            <td>Xe Ga (Vision, Lead)</td>
+                            <td>130k - 150k</td>
+                            <td>120k / ngày</td>
+                            <td>1.8tr - 2.5tr</td>
+                        </tr>
+                        <tr>
+                            <td>Xe Ga Cao Cấp (SH, AirBlade)</td>
+                            <td>200k - 300k</td>
+                            <td>180k / ngày</td>
+                            <td>Thỏa thuận</td>
+                        </tr>
+                        <tr>
+                            <td>Xe Côn Tay (Winner, Ex)</td>
+                            <td>150k - 200k</td>
+                            <td>140k / ngày</td>
+                            <td>2.5tr - 3.0tr</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="banggia.html" class="btn btn-primary">Xem bảng giá chi tiết</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- === PROCESS === -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Quy Trình Thuê Xe</h2>
+            </div>
+            <div class="process-steps reveal">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h4>Liên hệ</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted)">Gọi điện hoặc nhắn Zalo đặt xe.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h4>Giao xe</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted)">Nhận xe tại cửa hàng hoặc giao tận nơi.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h4>Ký HĐ</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted)">Kiểm tra xe, ký hợp đồng & thanh toán.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <h4>Vi vu</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted)">Thoải mái sử dụng xe.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <h4>Trả xe</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted)">Trả xe và nhận lại giấy tờ cọc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === TESTIMONIALS === -->
+    <section class="section" style="background: var(--bg-glass-strong)">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Khách Hàng Nói Gì?</h2>
+            </div>
+            <div class="grid-3">
+                <div class="review-card glass reveal">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Xe rất mới, chạy bốc. Anh chủ nhiệt tình giao xe tận khách sạn ở Phố Cổ lúc 9h tối. Giá cả hợp lý so với mặt bằng chung."</p>
+                    <div class="user-info">
+                        <img src="https://placehold.co/50x50/0A84FF/ffffff?text=M" alt="User" class="avatar">
+                        <div>
+                            <strong>Minh Tuấn</strong><br>
+                            <small>Du lịch từ SG</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card glass reveal">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Dịch vụ tuyệt vời. Mình thuê xe Winner đi phượt Mộc Châu 3 ngày, xe chạy ngon lành không lỗi lầm gì. 10 điểm!"</p>
+                    <div class="user-info">
+                        <img src="https://placehold.co/50x50/00C49A/ffffff?text=J" alt="User" class="avatar">
+                        <div>
+                            <strong>John Smith</strong><br>
+                            <small>Tourist</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card glass reveal">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Thủ tục nhanh gọn, không rườm rà. Mình thuê theo tháng để đi làm, xe được bảo dưỡng định kỳ nên rất yên tâm."</p>
+                    <div class="user-info">
+                        <img src="https://placehold.co/50x50/FF9500/ffffff?text=H" alt="User" class="avatar">
+                        <div>
+                            <strong>Thu Hương</strong><br>
+                            <small>Nhân viên văn phòng</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FAQ === -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Câu Hỏi Thường Gặp</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;" class="reveal">
+                <div class="faq-item glass">
+                    <div class="faq-question">Cần giấy tờ gì để thuê xe? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Bạn cần có CCCD/CMND hoặc Hộ chiếu (đối với người nước ngoài) và Bằng lái xe máy hợp lệ. Chúng tôi sẽ chụp ảnh lại và đối chiếu, có thể giữ lại 1 loại giấy tờ hoặc cọc tiền tùy xe.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <div class="faq-question">Có giao xe tận nơi không? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Có. Chúng tôi hỗ trợ giao xe tận nơi tại các quận nội thành Hà Nội (Hoàn Kiếm, Long Biên, Ba Đình...) trong khoảng 20-40 phút. Phí ship tùy khoảng cách.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <div class="faq-question">Xe hỏng dọc đường thì sao? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Đừng lo, hãy gọi ngay hotline 0942.467.674. Chúng tôi hỗ trợ sự cố 24/7. Nếu lỗi do xe, chúng tôi sẽ đổi xe khác cho bạn ngay lập tức.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <div class="faq-question">Thời gian tính ngày thuê thế nào? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>1 ngày thuê được tính là 24 tiếng kể từ lúc nhận xe. Nếu quá giờ sẽ tính thêm phụ phí theo giờ.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass">
+                    <div class="faq-question">Có kèm mũ bảo hiểm không? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Có. Mỗi xe thuê được kèm 2 mũ bảo hiểm chất lượng, 1 áo mưa và 1 lít xăng có sẵn trong xe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer class="footer glass-strong">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col">
+                    <h4>Trang Chủ</h4>
+                    <ul>
+                        <li><a href="./">🏠 Trang chủ</a></li>
+                        <li><a href="gioithieu.html">📄 Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="banggia.html">🏷️ Bảng giá</a></li>
+                        <li><a href="ngay.html">📅 Theo ngày</a></li>
+                        <li><a href="tuan.html">🗓️ Theo tuần</a></li>
+                        <li><a href="thang.html">📆 Theo tháng</a></li>
+                        <li><a href="uudai.html">🎁 Ưu đãi</a></li>
+                        <li><a href="thutuc.html">📑 Thủ tục</a></li>
+                        <li><a href="datcoc.html">💰 Đặt cọc</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Khu Vực</h4>
+                    <ul>
+                        <li><a href="longbien.html">Long Biên</a></li>
+                        <li><a href="gialam.html">Gia Lâm</a></li>
+                        <li><a href="phoco.html">Phố Cổ</a></li>
+                        <li><a href="hoankiem.html">Hoàn Kiếm</a></li>
+                        <li><a href="badinh.html">Ba Đình</a></li>
+                        <li><a href="tayho.html">Tây Hồ</a></li>
+                        <li><a href="gahn.html">Ga Hà Nội</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Thông Tin</h4>
+                    <ul>
+                        <li><a href="faq.html">❓ FAQ</a></li>
+                        <li><a href="dieukhoansudung.html">📜 Điều khoản</a></li>
+                        <li><a href="chinhsachbaomat.html">🔒 Bảo mật</a></li>
+                    </ul>
+                </div>
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul>
+                        <li><a href="tel:0942467674">📞 0942.467.674</a></li>
+                        <li><a href="https://zalo.me/0354904601">💬 Zalo Chat</a></li>
+                        <li><a href="https://wa.me/84942467674">🟢 WhatsApp</a></li>
+                        <li><a href="https://thuexemaynguyentu.com">🌐 Website</a></li>
+                    </ul>
+                </div>
+                <!-- Col 6 -->
+                <div class="footer-col">
+                    <h4>Kết Nối</h4>
+                    <div class="social-links">
+                        <a href="https://m.facebook.com/thuexemayhanoigiare/" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nguyentumotorbike/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCvUBwV24U4c5-q1iJ-ZL0Rg" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tripadvisor.com.vn/Attraction_Review-g21333608-d33882055-Reviews-Nguyen_Ha_Motorbike_Rental-Long_Bien_Hanoi.html" class="social-link"><i class="fa-solid fa-plane"></i></a>
+                    </div>
+                    <p style="margin-top: 15px; font-size: 0.8rem; color: var(--text-muted)">
+                        112 Nguyễn Văn Cừ, Long Biên, HN
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Cho thuê xe máy Hữu Hào - Nguyễn Tú Motorbike. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- === QUICK CALL DOCK === -->
+    <div class="quick-call-dock" id="quickCall">
+        <div class="qc-menu">
+            <a href="tel:0942467674" class="qc-item qc-tel" title="Gọi điện"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://zalo.me/0354904601" class="qc-item qc-zalo" title="Zalo"><i class="fa-solid fa-comment"></i></a>
+            <a href="https://maps.app.goo.gl/UrmE3YBPNfFVGSew6" class="qc-item qc-map" title="Bản đồ"><i class="fa-solid fa-location-dot"></i></a>
+            <a href="https://wa.me/84942467674" class="qc-item qc-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="qc-main-btn" onclick="toggleQuickCall()">
+            <i class="fa-solid fa-phone-flip"></i>
+        </div>
+    </div>
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script>
+        // --- THEME ENGINE ---
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            body.setAttribute('data-theme', 'dark');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // --- MOBILE MENU ---
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        const mobileIcon = mobileBtn.querySelector('i');
+
+        mobileBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            if (navMenu.classList.contains('active')) {
+                mobileIcon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                mobileIcon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+
+        // --- SCROLL HEADER ---
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // --- QUICK CALL DOCK ---
+        function toggleQuickCall() {
+            document.getElementById('quickCall').classList.toggle('active');
+            const btnIcon = document.querySelector('.qc-main-btn i');
+            if (document.getElementById('quickCall').classList.contains('active')) {
+                btnIcon.classList.replace('fa-phone-flip', 'fa-xmark');
+            } else {
+                btnIcon.classList.replace('fa-xmark', 'fa-phone-flip');
+            }
+        }
+
+        // --- TILT EFFECT (Simple Vanilla Implementation) ---
+        const cards = document.querySelectorAll('.js-tilt-card');
+        
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.querySelector('.service-card').style.setProperty('--mouse-x', `${x}px`);
+                card.querySelector('.service-card').style.setProperty('--mouse-y', `${y}px`);
+                
+                // Slight 3D rotation
+                const rotateX = (y / rect.height - 0.5) * -10; // -5 to 5 deg
+                const rotateY = (x / rect.width - 0.5) * 10;
+                
+                card.querySelector('.service-card').style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('.service-card').style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+            });
+        });
+
+        // --- SCROLL ANIMATION (IntersectionObserver) ---
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // --- FAQ TOGGLE ---
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                // Toggle current
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
