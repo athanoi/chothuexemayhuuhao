@@ -1115,6 +1115,47 @@
         text-align: center;
         font-size: 0.9rem;
       }
+
+      /* === FOOTER CONTACTS UPDATED STYLE === */
+      .footer-contacts-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px; /* Gap giữa các mục */
+        margin-bottom: 15px;
+        padding: 0;
+        list-style: none;
+      }
+      .footer-contacts-list li {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+      .footer-contacts-list li strong {
+        color: var(--text-color);
+      }
+      .footer-contacts-list a {
+        color: var(--text-muted);
+      }
+      .footer-contacts-list a:hover {
+        color: var(--accent);
+      }
+
+      /* Responsive adjustments for Footer Contacts */
+      @media (max-width: 1024px) {
+        .footer-contacts-list {
+          gap: 8px 15px; /* Thu hẹp khoảng cách trên tablet */
+        }
+      }
+      @media (max-width: 600px) {
+        .footer-contacts-list {
+          flex-direction: column; /* Xếp dọc trên mobile */
+          align-items: center;
+          gap: 10px;
+        }
+      }
       
       /* 15. QuickCall (Left) */
       .quick-call-widget {
@@ -1806,9 +1847,33 @@
                 ⭐ 4.9/5 từ khách hàng • Giao xe 20–40 phút • Hỗ trợ 24/7 • Xe bảo dưỡng định kỳ
             </div>
             
+            <!-- MỚI: CONTACT INFO SECTION -->
             <div class="footer-bottom">
+                 <!-- Added class 'footer-contacts-list' styled in CSS for responsive display -->
+                <ul class="footer-contacts-list">
+                    <li>
+                        <span class="material-symbols-rounded">location_on</span>
+                        <span><strong>Địa chỉ:</strong> Ngõ 5 Nguyễn Văn Cừ, Long Biên, Hà Nội</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">call</span>
+                        <strong>Tel:</strong> <a href="tel:0354904601">0354904601</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">language</span>
+                        <strong>Website:</strong> <a href="https://athanoi.github.io/chothuexemayhuuhao">athanoi.github.io/chothuexemayhuuhao</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">mail</span>
+                        <strong>Email:</strong> <a href="mailto:nguyenhuuhao0202@gmail.com">nguyenhuuhao0202@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">schedule</span>
+                        <strong>Giờ mở cửa:</strong> 8h–17h
+                    </li>
+                </ul>
+
                 <p>&copy; 2024 <a href="https://athanoi.github.io/chothuexemayhuuhao/">Cho thuê xe máy Hà Nội - Hữu Hào</a>. All rights reserved.</p>
-                <p>Địa chỉ: Ngõ 5 Đ. Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội (Gần Bến Xe Gia Lâm)</p>
             </div>
         </div>
     </footer>
@@ -1869,7 +1934,7 @@
           MENU: [
             { "🏠 Trang chủ": "./" },
             { "📄 Giới thiệu": "gioithieu.html" },
-            {
+            { 
               "⚙️ Dịch vụ": "#",
               "submenu": [
                 { "🏷️ Bảng giá": "banggia.html" },
@@ -1881,7 +1946,7 @@
                 { "📆 Thuê theo tháng": "thang.html" }
               ]
             },
-            {
+            { 
               "📍 Khu vực giao xe": "#",
               "submenu": [
                 { "Long Biên": "longbien.html" },
@@ -1938,7 +2003,7 @@
           THEME_RANDOMIZER: {
             ENABLED: true,
             POOL: [
-              "UltraTitanGlass", "NeoMint", "MidnightPurple", "AeroGlassBlue",
+              "UltraTitanGlass", "NeoMint", "MidnightPurple", "AeroGlassBlue", 
               "MinimalWhite", "SunsetOrange", "FacebookUltra", "MotoDarkCarbon"
             ],
             RANDOMIZE_ON_LOAD: true
